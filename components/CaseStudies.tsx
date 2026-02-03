@@ -21,7 +21,7 @@ const CASE_STUDIES: CaseStudy[] = [
   {
     id: "flarie",
     company: "Flarie",
-    logo: "/Kluvo-Site-2k26/flarie-logo.svg",
+    logo: "/Kluvo-Site-2k26/flarie-logo.png",
     results: "Restored a 100% consistent flow of qualified meetings across 4 channels.",
     challenge: "A severe lack of meetings despite having capable and experienced account executives.",
     fullStory: {
@@ -388,7 +388,7 @@ const CaseStudies: React.FC = () => {
                     <img
                       src={study.logo}
                       alt={study.company}
-                      className="max-h-12 w-auto object-contain grayscale group-hover:grayscale-0 transition-all duration-500 opacity-80 group-hover:opacity-100"
+                      className="max-h-8 w-auto object-contain grayscale group-hover:grayscale-0 transition-all duration-500 opacity-80 group-hover:opacity-100"
                     />
                   </td>
                   <td className="p-8">
