@@ -659,9 +659,10 @@ const CaseStudies: React.FC = () => {
               },
               {
                 quote: "Once the system was in place, everything clicked. Getting real time confirmation from the SDR team that they’d found a match was a genuine win.",
-                author: "Jean Middleton",
+                author: "Chris Burton",
                 role: "Chief Creative Producer",
-                industry: "Suite Creative"
+                industry: "Suite Creative",
+                image: "/Kluvo-Site-2k26/chris-burton.jpeg"
               }
             ].map((t, i) => (
               <div key={i} className="min-w-[400px] bg-white p-12 rounded-[40px] border border-slate-100 shadow-sm flex flex-col justify-between hover:shadow-2xl transition-all duration-500">
