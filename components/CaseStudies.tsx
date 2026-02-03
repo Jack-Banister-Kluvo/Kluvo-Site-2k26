@@ -21,7 +21,7 @@ const CASE_STUDIES: CaseStudy[] = [
   {
     id: "flarie",
     company: "Flarie",
-    logo: "https://images.crunchbase.com/image/upload/c_pad,h_170,w_170,f_auto,g_faces,z_1,q_auto:eco,dpr_1/idsw51rkh1vptclis38l",
+    logo: "/Kluvo-Site-2k26/flarie-logo.svg",
     results: "Restored a 100% consistent flow of qualified meetings across 4 channels.",
     challenge: "A severe lack of meetings despite having capable and experienced account executives.",
     fullStory: {
@@ -40,7 +40,7 @@ const CASE_STUDIES: CaseStudy[] = [
   {
     id: "big-red-jelly",
     company: "Big Red Jelly",
-    logo: "https://bigredjelly.com/wp-content/uploads/2023/11/BRJ-Logo-Black.png",
+    logo: "/Kluvo-Site-2k26/big-red-jelly-logo.svg",
     results: "Sustained increase in qualified meetings feeding into 100% in-house closers.",
     challenge: "Pipeline volume — experienced closers, but not enough qualified meetings to sustain growth.",
     fullStory: {
@@ -59,7 +59,7 @@ const CASE_STUDIES: CaseStudy[] = [
   {
     id: "lumi",
     company: "Lumi",
-    logo: "https://hirewithlumi.com/wp-content/uploads/2023/06/Lumi-Logo-Main.png",
+    logo: "/Kluvo-Site-2k26/lumi-logo.svg",
     results: "Outbound performance across 2 global regions with 0 internal hiring friction.",
     challenge: "Scaling top-of-funnel generation across markets without being limited by internal hiring speed.",
     fullStory: {
@@ -78,7 +78,7 @@ const CASE_STUDIES: CaseStudy[] = [
   {
     id: "outbound-solutions",
     company: "Outbound Solutions",
-    logo: "https://outboundsolutions.net/wp-content/uploads/2023/05/Outbound-Solutions-Logotype-1.png",
+    logo: "/Kluvo-Site-2k26/outbound-solutions-logo.svg",
     results: "100s of positive email replies converted into booked discovery calls weekly.",
     challenge: "High reply volume was being under-monetized due to slow or inconsistent follow-up.",
     fullStory: {
@@ -97,7 +97,7 @@ const CASE_STUDIES: CaseStudy[] = [
   {
     id: "silverlight-research",
     company: "Silverlight Research",
-    logo: "https://silverlightgroup.com/wp-content/uploads/2021/05/silverlight_logo_dark.png",
+    logo: "/Kluvo-Site-2k26/silverlight-logo.png",
     results: "Consistent output from a team of 6 managed agents for 18 months.",
     challenge: "Limited internal capacity to manage a growing outbound- and admin-heavy operation.",
     fullStory: {
