@@ -80,7 +80,7 @@ const RESEARCH_DATA: ResearchItem[] = [
       role: 'SDR Training Lead',
       avatar: 'https://i.pravatar.cc/150?u=elena'
     },
-    imageUrl: '/Kluvo-Site-2k26/cold-call-mastery.avif'
+    imageUrl: '/Kluvo-Site-2k26/cold-call-mastery-v2.avif'
   },
   {
     id: '4',
