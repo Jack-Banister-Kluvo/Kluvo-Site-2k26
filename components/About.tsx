@@ -5,13 +5,13 @@ const TEAM = [
   {
     name: "Jack Banister",
     role: "Managing Director",
-    image: "/jack-banister.jpg",
+    image: "/Kluvo-Site-2k26/jack-banister.jpg",
     desc: "4 years in high-ticket B2B sales. Jack designs outbound systems built for predictable pipeline."
   },
   {
     name: "Joseph Kennedy",
     role: "Marketing Director",
-    image: "/joseph-kennedy.png",
+    image: "/Kluvo-Site-2k26/joseph-kennedy.png",
     desc: "Rich experience Enterprise sales, specialising in sales training and development of SDRs."
   }
 ];
@@ -57,18 +57,18 @@ const About: React.FC = () => {
           <div className="absolute top-[10%] right-[10%] w-[50%] h-[50%] bg-[#2e4841]/5 blur-[120px] rounded-full animate-liquid" />
           <div className="absolute bottom-[10%] left-[10%] w-[40%] h-[40%] bg-[#9daaa6]/5 blur-[100px] rounded-full animate-liquid" style={{ animationDelay: '-5s' }} />
         </div>
-        
+
         <div className="max-w-7xl mx-auto px-6 text-center relative z-10">
           <div className="inline-block mb-4 animate-reveal" style={{ animationDelay: '0.1s' }}>
             <span className="text-[10px] font-black uppercase tracking-[0.5em] text-[#61756f] bg-white border border-slate-100 px-6 py-2 rounded-full shadow-sm">
               The Human Engine
             </span>
           </div>
-          
+
           <h1 className="text-5xl md:text-7xl lg:text-[84px] font-black tracking-tighter leading-[0.9] text-[#0d2b23] mb-6 animate-reveal" style={{ animationDelay: '0.3s' }}>
-            B2B <br/> Pipeline <span className="text-[#2e4841] italic relative">Generation<span className="absolute -bottom-2 left-0 w-full h-2 bg-[#2e4841]/5 rounded-full" /></span>.
+            B2B <br /> Pipeline <span className="text-[#2e4841] italic relative">Generation<span className="absolute -bottom-2 left-0 w-full h-2 bg-[#2e4841]/5 rounded-full" /></span>.
           </h1>
-          
+
           <p className="max-w-2xl mx-auto text-lg md:text-xl text-[#61756f] font-medium leading-relaxed animate-reveal" style={{ animationDelay: '0.5s' }}>
             We started Kluvo with a simple realization: B2B companies don’t need more leads, they need more <span className="text-[#0d2b23] font-bold">meaningful conversations</span>. We built the agency we wished we could hire.
           </p>
@@ -96,12 +96,12 @@ const About: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <div className="relative group">
             <div className="absolute -inset-4 bg-[#2e4841]/5 rounded-[56px] blur-2xl group-hover:bg-[#2e4841]/10 transition-all duration-700" />
-            
+
             <div className="relative rounded-[48px] shadow-2xl overflow-hidden aspect-[16/9] lg:h-[600px] w-full bg-slate-900">
-              <video 
-                autoPlay 
-                muted 
-                loop 
+              <video
+                autoPlay
+                muted
+                loop
                 playsInline
                 className="w-full h-full object-cover grayscale opacity-60 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-1000"
                 poster="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=1200"
@@ -109,7 +109,7 @@ const About: React.FC = () => {
                 <source src="https://assets.mixkit.co/videos/preview/mixkit-business-people-having-a-meeting-in-a-bright-office-41221-large.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
-              
+
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
 
               <div className="absolute bottom-10 left-10 right-10 p-8 bg-white/10 backdrop-blur-md rounded-3xl border border-white/20 text-white z-10">
@@ -118,28 +118,28 @@ const About: React.FC = () => {
               </div>
             </div>
           </div>
-          
+
           <div className="space-y-12">
             <div className="space-y-6">
-               <span className="text-orange-500 font-black uppercase tracking-[0.3em] text-[10px]">Our Philosophy</span>
-               <h2 className="text-5xl font-black text-[#0d2b23] tracking-tighter leading-tight">We bridge the gap between product and person.</h2>
-               <p className="text-xl text-[#61756f] leading-relaxed font-medium">
-                 The modern B2B buyer is overwhelmed. They don't want to be 'sold' to; they want to be understood. At Kluvo, we focus on the intersection of data-driven intent and empathetic human outreach.
-               </p>
-               <p className="text-xl text-[#61756f] leading-relaxed font-medium">
-                 We don't just find emails; we find the reasons why those people should talk to you. Our methodology is built on years of identifying the subtle signals that precede a major software purchase.
-               </p>
+              <span className="text-orange-500 font-black uppercase tracking-[0.3em] text-[10px]">Our Philosophy</span>
+              <h2 className="text-5xl font-black text-[#0d2b23] tracking-tighter leading-tight">We bridge the gap between product and person.</h2>
+              <p className="text-xl text-[#61756f] leading-relaxed font-medium">
+                The modern B2B buyer is overwhelmed. They don't want to be 'sold' to; they want to be understood. At Kluvo, we focus on the intersection of data-driven intent and empathetic human outreach.
+              </p>
+              <p className="text-xl text-[#61756f] leading-relaxed font-medium">
+                We don't just find emails; we find the reasons why those people should talk to you. Our methodology is built on years of identifying the subtle signals that precede a major software purchase.
+              </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-               <div className="p-8 bg-white border border-slate-100 rounded-[32px] shadow-sm">
-                  <h4 className="font-black text-[#0d2b23] mb-4">The Result</h4>
-                  <p className="text-[#61756f] font-medium leading-relaxed">Shorter sales cycles, higher average contract values, and a predictable revenue engine.</p>
-               </div>
-               <div className="p-8 bg-white border border-slate-100 rounded-[32px] shadow-sm">
-                  <h4 className="font-black text-[#0d2b23] mb-4">The Standard</h4>
-                  <p className="text-[#61756f] font-medium leading-relaxed">Dedicated SDRs who actually know your industry. We are not a call center.</p>
-               </div>
+              <div className="p-8 bg-white border border-slate-100 rounded-[32px] shadow-sm">
+                <h4 className="font-black text-[#0d2b23] mb-4">The Result</h4>
+                <p className="text-[#61756f] font-medium leading-relaxed">Shorter sales cycles, higher average contract values, and a predictable revenue engine.</p>
+              </div>
+              <div className="p-8 bg-white border border-slate-100 rounded-[32px] shadow-sm">
+                <h4 className="font-black text-[#0d2b23] mb-4">The Standard</h4>
+                <p className="text-[#61756f] font-medium leading-relaxed">Dedicated SDRs who actually know your industry. We are not a call center.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -178,9 +178,9 @@ const About: React.FC = () => {
           {TEAM.map((member, i) => (
             <div key={i} className="group flex flex-col items-center text-center">
               <div className="relative overflow-hidden rounded-[40px] aspect-[4/5] mb-8 w-full max-w-md shadow-2xl">
-                <img 
-                  src={member.image} 
-                  alt={member.name} 
+                <img
+                  src={member.image}
+                  alt={member.name}
                   className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0d2b23]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -199,17 +199,17 @@ const About: React.FC = () => {
       <section className="py-24 bg-[#fcfcfc]">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <div className="p-16 rounded-[56px] border border-slate-100 bg-white shadow-sm relative overflow-hidden">
-             <div className="absolute top-0 right-0 w-32 h-32 bg-[#2e4841]/5 rounded-full -mr-16 -mt-16" />
-             <h3 className="text-4xl font-black text-[#0d2b23] mb-6">Join our remote-first team</h3>
-             <p className="text-[#61756f] text-lg font-medium leading-relaxed mb-10">We're always looking for senior sales strategists, data scientists, and creative writers who want to redefine B2B outbound.</p>
-             <a 
-               href="https://tally.so/r/3xqP2d"
-               target="_blank"
-               rel="noopener noreferrer"
-               className="inline-block text-[#0d2b23] font-black uppercase tracking-[0.4em] text-xs hover:text-[#2e4841] transition-colors border-b-2 border-[#0d2b23] pb-1"
-             >
-               join our team
-             </a>
+            <div className="absolute top-0 right-0 w-32 h-32 bg-[#2e4841]/5 rounded-full -mr-16 -mt-16" />
+            <h3 className="text-4xl font-black text-[#0d2b23] mb-6">Join our remote-first team</h3>
+            <p className="text-[#61756f] text-lg font-medium leading-relaxed mb-10">We're always looking for senior sales strategists, data scientists, and creative writers who want to redefine B2B outbound.</p>
+            <a
+              href="https://tally.so/r/3xqP2d"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block text-[#0d2b23] font-black uppercase tracking-[0.4em] text-xs hover:text-[#2e4841] transition-colors border-b-2 border-[#0d2b23] pb-1"
+            >
+              join our team
+            </a>
           </div>
         </div>
       </section>
