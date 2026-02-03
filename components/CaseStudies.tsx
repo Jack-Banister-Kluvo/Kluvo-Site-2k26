@@ -125,91 +125,91 @@ const PREDICTABLE_TABS = [
 ];
 
 const CHALLENGES_SOLVED = [
-  { 
-    id: 0, 
-    title: "Speaking to the wrong leads", 
-    problem: "We’re putting time and effort into outbound, but the people we’re speaking to aren’t the right decision makers. Conversations stall, deals don’t progress, and it feels like activity without momentum.", 
-    solution: "We design targeting and outreach around real buying signals and decision maker relevance. By defining the ICP properly and aligning messaging across phone, email, LinkedIn, and WhatsApp, we ensure your team speaks to the right people not just more people.", 
-    quoteAuthor: "Sarah", 
-    quoteRole: "Sales Director", 
-    solutionAuthor: "Jack Banister", 
-    solutionRole: "Managing Director" 
+  {
+    id: 0,
+    title: "Speaking to the wrong leads",
+    problem: "We’re putting time and effort into outbound, but the people we’re speaking to aren’t the right decision makers. Conversations stall, deals don’t progress, and it feels like activity without momentum.",
+    solution: "We design targeting and outreach around real buying signals and decision maker relevance. By defining the ICP properly and aligning messaging across phone, email, LinkedIn, and WhatsApp, we ensure your team speaks to the right people not just more people.",
+    quoteAuthor: "Sarah",
+    quoteRole: "Sales Director",
+    solutionAuthor: "Jack Banister",
+    solutionRole: "Managing Director"
   },
-  { 
-    id: 1, 
-    title: "Not wanting to risk a hire", 
-    problem: "Hiring internally feels like a gamble. Once we commit to salary, tools, and onboarding, we’re locked in even if performance doesn’t show up.", 
-    solution: "We provide a ready made outbound function without the permanent commitment. You get experienced specialists, proven processes, and full operational support without the long term risk of a bad hire or internal overhead.", 
-    quoteAuthor: "Mike", 
-    quoteRole: "SaaS Founder", 
-    solutionAuthor: "Joseph Kennedy", 
-    solutionRole: "Marketing Director" 
+  {
+    id: 1,
+    title: "Not wanting to risk a hire",
+    problem: "Hiring internally feels like a gamble. Once we commit to salary, tools, and onboarding, we’re locked in even if performance doesn’t show up.",
+    solution: "We provide a ready made outbound function without the permanent commitment. You get experienced specialists, proven processes, and full operational support without the long term risk of a bad hire or internal overhead.",
+    quoteAuthor: "Mike",
+    quoteRole: "SaaS Founder",
+    solutionAuthor: "Joseph Kennedy",
+    solutionRole: "Marketing Director"
   },
-  { 
-    id: 2, 
-    title: "Ramp time and training drag", 
-    problem: "Even when we hire well, it takes months before someone is fully productive. Training, shadowing, and trial and error slow down growth while targets keep moving.", 
-    solution: "Our teams are already trained in outbound methodology. Within weeks, you have specialists executing live campaigns using proven playbooks removing months of ramp time and getting results faster.", 
-    quoteAuthor: "David", 
-    quoteRole: "VP of Sales", 
-    solutionAuthor: "Jack Banister", 
-    solutionRole: "Managing Director" 
+  {
+    id: 2,
+    title: "Ramp time and training drag",
+    problem: "Even when we hire well, it takes months before someone is fully productive. Training, shadowing, and trial and error slow down growth while targets keep moving.",
+    solution: "Our teams are already trained in outbound methodology. Within weeks, you have specialists executing live campaigns using proven playbooks removing months of ramp time and getting results faster.",
+    quoteAuthor: "David",
+    quoteRole: "VP of Sales",
+    solutionAuthor: "Jack Banister",
+    solutionRole: "Managing Director"
   },
-  { 
-    id: 3, 
-    title: "Speaking to not enough leads", 
-    problem: "We know our sales team can close, but their calendars aren’t full. There simply aren’t enough qualified conversations happening each week.", 
-    solution: "We rebuild the top of your funnel using an omnichannel approach that increases connection rates and meeting volume. By combining calling, email, LinkedIn, and WhatsApp, we create consistent first contact and a predictable flow of qualified meetings.", 
-    quoteAuthor: "James", 
-    quoteRole: "Growth Lead", 
-    solutionAuthor: "Joseph Kennedy", 
-    solutionRole: "Marketing Director" 
+  {
+    id: 3,
+    title: "Speaking to not enough leads",
+    problem: "We know our sales team can close, but their calendars aren’t full. There simply aren’t enough qualified conversations happening each week.",
+    solution: "We rebuild the top of your funnel using an omnichannel approach that increases connection rates and meeting volume. By combining calling, email, LinkedIn, and WhatsApp, we create consistent first contact and a predictable flow of qualified meetings.",
+    quoteAuthor: "James",
+    quoteRole: "Growth Lead",
+    solutionAuthor: "Joseph Kennedy",
+    solutionRole: "Marketing Director"
   },
-  { 
-    id: 4, 
-    title: "Day to day management drag", 
-    problem: "Managing SDRs takes constant attention coaching QA reporting motivation and tooling issues. It pulls senior people away from strategy and closing.", 
-    solution: "We run the entire outbound operation end to end. Recruitment training management QA tooling and reporting are all handled by us so your leadership team can focus on growth not supervision.", 
-    quoteAuthor: "Andy", 
-    quoteRole: "Ops Director", 
-    solutionAuthor: "Jack Banister", 
-    solutionRole: "Managing Director" 
+  {
+    id: 4,
+    title: "Day to day management drag",
+    problem: "Managing SDRs takes constant attention coaching QA reporting motivation and tooling issues. It pulls senior people away from strategy and closing.",
+    solution: "We run the entire outbound operation end to end. Recruitment training management QA tooling and reporting are all handled by us so your leadership team can focus on growth not supervision.",
+    quoteAuthor: "Andy",
+    quoteRole: "Ops Director",
+    solutionAuthor: "Jack Banister",
+    solutionRole: "Managing Director"
   }
 ];
 
 const TECH_PARTNERS = [
-  { 
-    name: 'Sales Navigator', 
+  {
+    name: 'Sales Navigator',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/>
+        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect width="4" height="12" x="2" y="9" /><circle cx="4" cy="4" r="2" />
       </svg>
     )
   },
-  { 
-    name: 'ZoomInfo', 
+  {
+    name: 'ZoomInfo',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <circle cx="12" cy="12" r="10"/><path d="M12 2a7 7 0 0 1 7 7c0 2.5-1.3 4.7-3.3 6l3.3 5H5l3.3-5C6.3 13.7 5 11.5 5 9a7 7 0 0 1 7-7z"/>
+        <circle cx="12" cy="12" r="10" /><path d="M12 2a7 7 0 0 1 7 7c0 2.5-1.3 4.7-3.3 6l3.3 5H5l3.3-5C6.3 13.7 5 11.5 5 9a7 7 0 0 1 7-7z" />
       </svg>
     )
   },
-  { 
-    name: 'HubSpot', 
+  {
+    name: 'HubSpot',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <rect width="16" height="20" x="4" y="2" rx="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M8 10h.01"/><path d="M16 10h.01"/><path d="M8 14h.01"/><path d="M16 14h.01"/>
+        <rect width="16" height="20" x="4" y="2" rx="2" /><path d="M9 22v-4h6v4" /><path d="M8 6h.01" /><path d="M16 6h.01" /><path d="M8 10h.01" /><path d="M16 10h.01" /><path d="M8 14h.01" /><path d="M16 14h.01" />
       </svg>
     )
   },
-  { 
-    name: 'Clay', 
+  {
+    name: 'Clay',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/>
-        <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/>
-        <path d="M9 12H4s.5-1 1-4c2 0 3.03 0 3.03 0"/>
-        <path d="M12 15v5s1-.5 4-1c0-2 0-3.03 0-3.03"/>
+        <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" />
+        <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" />
+        <path d="M9 12H4s.5-1 1-4c2 0 3.03 0 3.03 0" />
+        <path d="M12 15v5s1-.5 4-1c0-2 0-3.03 0-3.03" />
       </svg>
     )
   }
@@ -232,7 +232,7 @@ const CaseStudies: React.FC = () => {
         {/* Detail Hero */}
         <section className="pt-32 pb-20 px-6">
           <div className="max-w-7xl mx-auto">
-            <button 
+            <button
               onClick={() => setSelectedCaseId(null)}
               className="group flex items-center gap-3 text-[#9daaa6] hover:text-[#0d2b23] font-black text-xs uppercase tracking-widest mb-16 transition-colors"
             >
@@ -278,38 +278,38 @@ const CaseStudies: React.FC = () => {
         <section className="py-24 px-6">
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-20">
             <div className="lg:col-span-4 space-y-12">
-               <div>
-                 <span className="text-[10px] font-black uppercase tracking-[0.4em] text-orange-500 block mb-6">01. Overview</span>
-                 <p className="text-xl text-[#61756f] font-medium leading-relaxed">{selectedCase.fullStory.overview}</p>
-               </div>
-               <div className="p-10 bg-white border border-slate-100 rounded-[40px]">
-                  <h4 className="font-black text-[#0d2b23] mb-4">Strategic Focus</h4>
-                  <p className="text-[#61756f] text-sm leading-relaxed font-medium">We replaced the standard volume-led approach with a precision-led intent framework to capture the 'Buying Window'.</p>
-               </div>
+              <div>
+                <span className="text-[10px] font-black uppercase tracking-[0.4em] text-orange-500 block mb-6">01. Overview</span>
+                <p className="text-xl text-[#61756f] font-medium leading-relaxed">{selectedCase.fullStory.overview}</p>
+              </div>
+              <div className="p-10 bg-white border border-slate-100 rounded-[40px]">
+                <h4 className="font-black text-[#0d2b23] mb-4">Strategic Focus</h4>
+                <p className="text-[#61756f] text-sm leading-relaxed font-medium">We replaced the standard volume-led approach with a precision-led intent framework to capture the 'Buying Window'.</p>
+              </div>
             </div>
             <div className="lg:col-span-8 space-y-16">
-               <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-                  <div className="space-y-6">
-                    <h3 className="text-2xl font-black text-[#0d2b23]">The Challenge</h3>
-                    <p className="text-[#61756f] font-medium leading-relaxed">{selectedCase.fullStory.challengeDetail}</p>
-                  </div>
-                  <div className="space-y-6">
-                    <h3 className="text-2xl font-black text-[#0d2b23]">The Solution</h3>
-                    <p className="text-[#61756f] font-medium leading-relaxed">{selectedCase.fullStory.solutionDetail}</p>
-                  </div>
-               </div>
-               <div className="bg-[#fcfcfc] border border-slate-200 border-dashed p-16 rounded-[56px]">
-                  <h3 className="text-3xl font-black text-[#0d2b23] mb-8">Long-term Impact</h3>
-                  <p className="text-2xl text-[#0d2b23] font-medium leading-relaxed mb-10">
-                    {selectedCase.fullStory.impactDetail}
-                  </p>
-                  <button 
-                    onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })}
-                    className="bg-[#0d2b23] text-white px-10 py-5 rounded-2xl font-black transition-all hover:scale-105 active:scale-95 shadow-2xl shadow-[#0d2b23]/20"
-                  >
-                    Start your growth journey
-                  </button>
-               </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div className="space-y-6">
+                  <h3 className="text-2xl font-black text-[#0d2b23]">The Challenge</h3>
+                  <p className="text-[#61756f] font-medium leading-relaxed">{selectedCase.fullStory.challengeDetail}</p>
+                </div>
+                <div className="space-y-6">
+                  <h3 className="text-2xl font-black text-[#0d2b23]">The Solution</h3>
+                  <p className="text-[#61756f] font-medium leading-relaxed">{selectedCase.fullStory.solutionDetail}</p>
+                </div>
+              </div>
+              <div className="bg-[#fcfcfc] border border-slate-200 border-dashed p-16 rounded-[56px]">
+                <h3 className="text-3xl font-black text-[#0d2b23] mb-8">Long-term Impact</h3>
+                <p className="text-2xl text-[#0d2b23] font-medium leading-relaxed mb-10">
+                  {selectedCase.fullStory.impactDetail}
+                </p>
+                <button
+                  onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })}
+                  className="bg-[#0d2b23] text-white px-10 py-5 rounded-2xl font-black transition-all hover:scale-105 active:scale-95 shadow-2xl shadow-[#0d2b23]/20"
+                >
+                  Start your growth journey
+                </button>
+              </div>
             </div>
           </div>
         </section>
@@ -336,11 +336,10 @@ const CaseStudies: React.FC = () => {
               <button
                 key={tab.id}
                 onClick={() => setActivePredictableTab(tab.id)}
-                className={`p-5 rounded-2xl text-left font-black text-sm transition-all border ${
-                  activePredictableTab === tab.id
-                    ? 'bg-white border-slate-100 text-[#2e4841] shadow-xl shadow-black/5 flex justify-between items-center'
-                    : 'bg-transparent border-transparent text-[#61756f] hover:bg-white/50'
-                }`}
+                className={`p-5 rounded-2xl text-left font-black text-sm transition-all border ${activePredictableTab === tab.id
+                  ? 'bg-white border-slate-100 text-[#2e4841] shadow-xl shadow-black/5 flex justify-between items-center'
+                  : 'bg-transparent border-transparent text-[#61756f] hover:bg-white/50'
+                  }`}
               >
                 {tab.title}
                 {activePredictableTab === tab.id && (
@@ -386,18 +385,18 @@ const CaseStudies: React.FC = () => {
               {CASE_STUDIES.map((study, idx) => (
                 <tr key={idx} className="group hover:bg-[#fcfcfc] transition-colors">
                   <td className="p-8">
-                    <img 
-                      src={study.logo} 
-                      alt={study.company} 
-                      className="max-h-12 w-auto object-contain grayscale group-hover:grayscale-0 transition-all duration-500 opacity-80 group-hover:opacity-100" 
+                    <img
+                      src={study.logo}
+                      alt={study.company}
+                      className="max-h-12 w-auto object-contain grayscale group-hover:grayscale-0 transition-all duration-500 opacity-80 group-hover:opacity-100"
                     />
                   </td>
                   <td className="p-8">
                     <p className="font-bold text-[#0d2b23] text-sm leading-relaxed">
-                      {study.results.split(' ').map((word, i) => 
-                        ['100', '56', '203', '3', '125', '155', '80', '51', '$50K', '$8K', '6', '8', '17', '7', '2', '18', '4', '100%'].includes(word.replace(/[^0-9$K%]/g, '')) 
-                        ? <span key={i} className="font-black text-[#0d2b23]">{word} </span> 
-                        : word + ' '
+                      {study.results.split(' ').map((word, i) =>
+                        ['100', '56', '203', '3', '125', '155', '80', '51', '$50K', '$8K', '6', '8', '17', '7', '2', '18', '4', '100%'].includes(word.replace(/[^0-9$K%]/g, ''))
+                          ? <span key={i} className="font-black text-[#0d2b23]">{word} </span>
+                          : word + ' '
                       )}
                     </p>
                   </td>
@@ -407,7 +406,7 @@ const CaseStudies: React.FC = () => {
                     </p>
                   </td>
                   <td className="p-8 text-right">
-                    <button 
+                    <button
                       onClick={() => setSelectedCaseId(study.id)}
                       className="text-[#2e4841] font-bold text-sm hover:underline decoration-2 underline-offset-4"
                     >
@@ -419,7 +418,7 @@ const CaseStudies: React.FC = () => {
             </tbody>
           </table>
           <div className="p-10 text-center border-t border-slate-100 bg-[#fcfcfc]">
-             <p className="text-[#61756f] font-black text-sm">30+ other SaaS companies</p>
+            <p className="text-[#61756f] font-black text-sm">30+ other SaaS companies</p>
           </div>
         </div>
       </section>
@@ -452,48 +451,48 @@ const CaseStudies: React.FC = () => {
           <div className="bg-white p-12 rounded-[48px] border border-slate-100 shadow-2xl relative">
             <h4 className="text-xs font-bold text-[#61756f] mb-12 text-center uppercase tracking-widest">Example: Appointments vs. new revenue growth over 12 months</h4>
             <div className="h-80 flex items-end justify-between gap-2 relative">
-               {[0, 10, 20, 30, 40].map(val => (
-                 <div key={val} className="absolute w-full h-[1px] bg-slate-100" style={{ bottom: `${(val/40)*100}%` }}>
-                   <span className="absolute -left-8 -translate-y-1/2 text-[10px] font-bold text-[#61756f]">{val}</span>
-                 </div>
-               ))}
-               
-               {[0, 100, 200, 300, 400].map(val => (
-                 <span key={val} className="absolute -right-12 text-[10px] font-bold text-[#2e4841]" style={{ bottom: `${(val/400)*100}%` }}>
-                   {val}K
-                 </span>
-               ))}
-               
-               <div className="absolute -left-12 top-1/2 -rotate-90 origin-left text-[10px] font-bold text-indigo-500 uppercase tracking-widest">Appointments</div>
-               <div className="absolute -right-20 top-1/2 rotate-90 origin-right text-[10px] font-bold text-[#2e4841] uppercase tracking-widest">Revenue ($)</div>
+              {[0, 10, 20, 30, 40].map(val => (
+                <div key={val} className="absolute w-full h-[1px] bg-slate-100" style={{ bottom: `${(val / 40) * 100}%` }}>
+                  <span className="absolute -left-8 -translate-y-1/2 text-[10px] font-bold text-[#61756f]">{val}</span>
+                </div>
+              ))}
 
-               {[6, 9, 14, 20, 26, 30, 40, 40, 40, 40, 40, 40].map((h, i) => (
-                 <div key={i} className="flex-1 bg-indigo-500/10 rounded-t-sm" style={{ height: `${(h/40)*100}%` }} />
-               ))}
-               
-               <svg className="absolute inset-0 w-full h-full overflow-visible pointer-events-none">
-                  <path 
-                    d="M0 320 C 50 310, 100 280, 150 250 S 250 200, 300 150 S 400 50, 500 0" 
-                    fill="none" 
-                    stroke="url(#chartGrad)" 
-                    strokeWidth="4"
-                  />
-                  <path 
-                    d="M0 320 C 50 310, 100 280, 150 250 S 250 200, 300 150 S 400 50, 500 0 L 500 320 L 0 320 Z" 
-                    fill="url(#chartArea)" 
-                    className="opacity-40"
-                  />
-                  <defs>
-                    <linearGradient id="chartGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-                      <stop offset="0%" stopColor="#2e4841" />
-                      <stop offset="100%" stopColor="#0d2b23" />
-                    </linearGradient>
-                    <linearGradient id="chartArea" x1="0%" y1="0%" x2="0%" y2="100%">
-                      <stop offset="0%" stopColor="#2e4841" />
-                      <stop offset="100%" stopColor="#ffffff" />
-                    </linearGradient>
-                  </defs>
-               </svg>
+              {[0, 100, 200, 300, 400].map(val => (
+                <span key={val} className="absolute -right-12 text-[10px] font-bold text-[#2e4841]" style={{ bottom: `${(val / 400) * 100}%` }}>
+                  {val}K
+                </span>
+              ))}
+
+              <div className="absolute -left-12 top-1/2 -rotate-90 origin-left text-[10px] font-bold text-indigo-500 uppercase tracking-widest">Appointments</div>
+              <div className="absolute -right-20 top-1/2 rotate-90 origin-right text-[10px] font-bold text-[#2e4841] uppercase tracking-widest">Revenue ($)</div>
+
+              {[6, 9, 14, 20, 26, 30, 40, 40, 40, 40, 40, 40].map((h, i) => (
+                <div key={i} className="flex-1 bg-indigo-500/10 rounded-t-sm" style={{ height: `${(h / 40) * 100}%` }} />
+              ))}
+
+              <svg className="absolute inset-0 w-full h-full overflow-visible pointer-events-none">
+                <path
+                  d="M0 320 C 50 310, 100 280, 150 250 S 250 200, 300 150 S 400 50, 500 0"
+                  fill="none"
+                  stroke="url(#chartGrad)"
+                  strokeWidth="4"
+                />
+                <path
+                  d="M0 320 C 50 310, 100 280, 150 250 S 250 200, 300 150 S 400 50, 500 0 L 500 320 L 0 320 Z"
+                  fill="url(#chartArea)"
+                  className="opacity-40"
+                />
+                <defs>
+                  <linearGradient id="chartGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stopColor="#2e4841" />
+                    <stop offset="100%" stopColor="#0d2b23" />
+                  </linearGradient>
+                  <linearGradient id="chartArea" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stopColor="#2e4841" />
+                    <stop offset="100%" stopColor="#ffffff" />
+                  </linearGradient>
+                </defs>
+              </svg>
             </div>
             <div className="mt-8 flex justify-between px-2 text-[10px] font-black text-[#61756f]">
               {[2, 4, 6, 8, 10, 12].map(m => <span key={m}>{m}</span>)}
@@ -508,7 +507,7 @@ const CaseStudies: React.FC = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="bg-[#1e1e1e] rounded-[56px] p-12 md:p-24 overflow-hidden relative">
             <div className="absolute top-0 left-0 w-64 h-64 bg-[#2e4841]/20 blur-[100px] -ml-20 -mt-20" />
-            
+
             <h2 className="text-5xl md:text-6xl font-black text-white text-center mb-24 tracking-tighter">
               Challenges we solve
             </h2>
@@ -519,11 +518,10 @@ const CaseStudies: React.FC = () => {
                   <button
                     key={c.id}
                     onClick={() => setActiveChallengeId(c.id)}
-                    className={`p-6 rounded-2xl text-left transition-all border ${
-                      activeChallengeId === c.id
-                        ? 'bg-[#2e4841] border-[#2e4841] text-white flex justify-between items-center shadow-lg shadow-[#2e4841]/20'
-                        : 'bg-[#282828]/50 border-white/5 text-[#9daaa6] hover:bg-[#282828]'
-                    }`}
+                    className={`p-6 rounded-2xl text-left transition-all border ${activeChallengeId === c.id
+                      ? 'bg-[#2e4841] border-[#2e4841] text-white flex justify-between items-center shadow-lg shadow-[#2e4841]/20'
+                      : 'bg-[#282828]/50 border-white/5 text-[#9daaa6] hover:bg-[#282828]'
+                      }`}
                   >
                     <span className="font-bold text-sm leading-snug">{c.title}</span>
                     {activeChallengeId === c.id && (
@@ -545,8 +543,8 @@ const CaseStudies: React.FC = () => {
                     <div className="mt-6 flex flex-col items-end">
                       <p className="text-white font-black text-sm">{CHALLENGES_SOLVED[activeChallengeId].quoteAuthor}</p>
                       <div className="flex items-center gap-2">
-                         <div className="h-[1px] w-8 bg-white/20" />
-                         <p className="text-[#9daaa6] text-[10px] font-black uppercase tracking-[0.2em]">{CHALLENGES_SOLVED[activeChallengeId].quoteRole || 'Client Partner'}</p>
+                        <div className="h-[1px] w-8 bg-white/20" />
+                        <p className="text-[#9daaa6] text-[10px] font-black uppercase tracking-[0.2em]">{CHALLENGES_SOLVED[activeChallengeId].quoteRole || 'Client Partner'}</p>
                       </div>
                     </div>
                   </div>
@@ -556,7 +554,7 @@ const CaseStudies: React.FC = () => {
                   <h4 className="text-2xl font-black text-[#2e4841]">Solution</h4>
                   <div className="relative">
                     <p className="text-[#fcfcfc]/90 text-xl leading-relaxed pr-12 font-medium">
-                       {CHALLENGES_SOLVED[activeChallengeId].solution}
+                      {CHALLENGES_SOLVED[activeChallengeId].solution}
                     </p>
                     <div className="mt-8 flex items-center justify-end">
                       <div className="text-right">
@@ -577,34 +575,34 @@ const CaseStudies: React.FC = () => {
       {/* 5. Top-tier Tools Section */}
       <section className="py-24 max-w-7xl mx-auto px-6">
         <div className="bg-white border border-slate-100 shadow-sm rounded-[56px] p-12 md:p-24 overflow-hidden relative text-[#0d2b23]">
-           <div className="text-center mb-24 max-w-3xl mx-auto">
-             <span className="text-[10px] font-black uppercase tracking-[0.4em] text-[#2e4841] block mb-4">
-               TECHNOLOGY ENABLED
-             </span>
-             <h2 className="text-5xl font-black mb-8 leading-tight tracking-tighter">Top-tier tools at no extra cost</h2>
-             <p className="text-[#61756f] text-lg font-medium leading-relaxed">
-               Save up to $10,000 annually on premium lead generation and marketing tools — all included in our retainer.
-             </p>
-           </div>
+          <div className="text-center mb-24 max-w-3xl mx-auto">
+            <span className="text-[10px] font-black uppercase tracking-[0.4em] text-[#2e4841] block mb-4">
+              TECHNOLOGY ENABLED
+            </span>
+            <h2 className="text-5xl font-black mb-8 leading-tight tracking-tighter">Top-tier tools at no extra cost</h2>
+            <p className="text-[#61756f] text-lg font-medium leading-relaxed">
+              Save up to $10,000 annually on premium lead generation and marketing tools — all included in our retainer.
+            </p>
+          </div>
 
-           <div className="max-w-5xl mx-auto">
-              <h4 className="text-xs font-black mb-12 text-center uppercase tracking-[0.3em] text-[#9daaa6]">Our tech partners</h4>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-                 {TECH_PARTNERS.map(tool => (
-                   <div key={tool.name} className="bg-[#fcfcfc] border border-slate-100 p-10 rounded-[32px] flex flex-col items-center justify-center transition-all hover:bg-white hover:shadow-2xl hover:border-[#2e4841]/20 group">
-                      <div className="mb-6 transition-transform group-hover:scale-110 duration-500">
-                        {tool.icon}
-                      </div>
-                      <span className="font-black text-xs text-[#0d2b23] uppercase tracking-widest text-center group-hover:text-[#2e4841] transition-colors">{tool.name}</span>
-                   </div>
-                 ))}
-              </div>
-              <div className="mt-16 text-center">
-                 <p className="text-[11px] font-bold text-[#9daaa6] uppercase tracking-widest leading-relaxed max-w-lg mx-auto">
-                   WE INTEGRATE THE BEST-IN-CLASS STACK TO ENSURE YOUR OUTBOUND ENGINE OPERATES WITH SURGICAL PRECISION.
-                 </p>
-              </div>
-           </div>
+          <div className="max-w-5xl mx-auto">
+            <h4 className="text-xs font-black mb-12 text-center uppercase tracking-[0.3em] text-[#9daaa6]">Our tech partners</h4>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              {TECH_PARTNERS.map(tool => (
+                <div key={tool.name} className="bg-[#fcfcfc] border border-slate-100 p-10 rounded-[32px] flex flex-col items-center justify-center transition-all hover:bg-white hover:shadow-2xl hover:border-[#2e4841]/20 group">
+                  <div className="mb-6 transition-transform group-hover:scale-110 duration-500">
+                    {tool.icon}
+                  </div>
+                  <span className="font-black text-xs text-[#0d2b23] uppercase tracking-widest text-center group-hover:text-[#2e4841] transition-colors">{tool.name}</span>
+                </div>
+              ))}
+            </div>
+            <div className="mt-16 text-center">
+              <p className="text-[11px] font-bold text-[#9daaa6] uppercase tracking-widest leading-relaxed max-w-lg mx-auto">
+                WE INTEGRATE THE BEST-IN-CLASS STACK TO ENSURE YOUR OUTBOUND ENGINE OPERATES WITH SURGICAL PRECISION.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -621,37 +619,43 @@ const CaseStudies: React.FC = () => {
                 quote: "Really impressed so far. Things have been moving smoothly, and it’s genuinely great to work with you there will be many other opportunities to work on together",
                 author: "Ciaran Hastie",
                 role: "Managing director",
-                industry: "Public Sector Access"
+                industry: "Public Sector Access",
+                image: "/Kluvo-Site-2k26/ciaran-hastie.png"
               },
               {
                 quote: "Absolute pleasure working with the lads. It was refreshing to chat to others on the same page as me, and there’s definitely potential for exciting projects together.",
                 author: "Ben Guttridge",
                 role: "Managing director",
-                industry: "Auxo Digital"
+                industry: "Auxo Digital",
+                image: "/Kluvo-Site-2k26/ben-guttridge.png"
               },
               {
                 quote: "Hands on and transparent throughout, with constant communication and a genuinely collaborative approach.",
                 author: "Alex Monro",
                 role: "Director",
-                industry: "Devon Energy"
+                industry: "Devon Energy",
+                image: "/Kluvo-Site-2k26/alex-monro.jpeg"
               },
               {
                 quote: "We've seen a 50% increase in qualified appointments. The quality of the leads is significantly higher than our previous agency.",
                 author: "Kevin Lynch",
                 role: "CEO",
-                industry: "ICS LA"
+                industry: "ICS LA",
+                image: "/Kluvo-Site-2k26/kevin-lynch.jpeg"
               },
               {
                 quote: "Finally, an agency that understands the creative industry. Their messaging feels authentic and resonates with design leaders.",
                 author: "Wes Townsend",
                 role: "Creative Director",
-                industry: "Garbanzo"
+                industry: "Garbanzo",
+                image: "/Kluvo-Site-2k26/wes-townsend.jpeg"
               },
               {
                 quote: "They helped us uncover new angles and alternative routes to market we hadn’t previously considered.",
                 author: "Aman Mittal",
                 role: "CEO",
-                industry: "Transcount"
+                industry: "Transcount",
+                image: "/Kluvo-Site-2k26/aman-mittal.jpeg"
               },
               {
                 quote: "Once the system was in place, everything clicked. Getting real time confirmation from the SDR team that they’d found a match was a genuine win.",
@@ -661,27 +665,29 @@ const CaseStudies: React.FC = () => {
               }
             ].map((t, i) => (
               <div key={i} className="min-w-[400px] bg-white p-12 rounded-[40px] border border-slate-100 shadow-sm flex flex-col justify-between hover:shadow-2xl transition-all duration-500">
-                 <div>
-                   <div className="flex items-center justify-between mb-8">
-                     <div className="flex text-[#2e4841] gap-1">
-                        {[...Array(5)].map((_, i) => <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>)}
-                        <span className="text-[#0d2b23] font-black text-xs ml-2">5.0</span>
-                     </div>
-                     <span className="bg-[#fcfcfc] border border-slate-100 text-[#61756f] px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest">{t.industry}</span>
-                   </div>
-                   <p className="text-xl font-medium text-[#0d2b23] leading-relaxed pr-6 mb-12">
-                     “{t.quote}”
-                   </p>
-                 </div>
-                 <div className="flex items-center gap-4">
-                   <div className="w-12 h-12 rounded-full bg-slate-100 border border-slate-200 flex items-center justify-center font-black text-[#0d2b23]">
-                      {t.author[0]}
-                   </div>
-                   <div>
-                     <p className="font-black text-[#0d2b23] text-sm">{t.author}</p>
-                     <p className="text-[#61756f] text-[10px] font-black uppercase tracking-widest">{t.role}</p>
-                   </div>
-                 </div>
+                <div>
+                  <div className="flex items-center justify-between mb-8">
+                    <div className="flex text-[#2e4841] gap-1">
+                      {[...Array(5)].map((_, i) => <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>)}
+                      <span className="text-[#0d2b23] font-black text-xs ml-2">5.0</span>
+                    </div>
+                    <span className="bg-[#fcfcfc] border border-slate-100 text-[#61756f] px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest">{t.industry}</span>
+                  </div>
+                  <p className="text-xl font-medium text-[#0d2b23] leading-relaxed pr-6 mb-12">
+                    “{t.quote}”
+                  </p>
+                </div>
+                <div className="flex items-center gap-4">
+                  <img
+                    src={t.image}
+                    alt={t.author}
+                    className="w-12 h-12 rounded-full object-cover border border-slate-200"
+                  />
+                  <div>
+                    <p className="font-black text-[#0d2b23] text-sm">{t.author}</p>
+                    <p className="text-[#61756f] text-[10px] font-black uppercase tracking-widest">{t.role}</p>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
