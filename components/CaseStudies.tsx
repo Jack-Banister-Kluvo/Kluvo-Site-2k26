@@ -21,7 +21,7 @@ const CASE_STUDIES: CaseStudy[] = [
   {
     id: "flarie",
     company: "Flarie",
-    logo: "/Kluvo-Site-2k26/flarie-logo-new.png",
+    logo: `${import.meta.env.BASE_URL}flarie-logo-new.png`,
     results: "Restored a 100% consistent flow of qualified meetings across 4 channels.",
     challenge: "A severe lack of meetings despite having capable and experienced account executives.",
     fullStory: {
@@ -40,7 +40,7 @@ const CASE_STUDIES: CaseStudy[] = [
   {
     id: "big-red-jelly",
     company: "Big Red Jelly",
-    logo: "/Kluvo-Site-2k26/brj-logo.png",
+    logo: `${import.meta.env.BASE_URL}brj-logo.png`,
     results: "Sustained increase in qualified meetings feeding into 100% in-house closers.",
     challenge: "Pipeline volume — experienced closers, but not enough qualified meetings to sustain growth.",
     fullStory: {
@@ -59,7 +59,7 @@ const CASE_STUDIES: CaseStudy[] = [
   {
     id: "lumi",
     company: "Lumi",
-    logo: "/Kluvo-Site-2k26/lumi-logo.png",
+    logo: `${import.meta.env.BASE_URL}lumi-logo.png`,
     results: "Outbound performance across 2 global regions with 0 internal hiring friction.",
     challenge: "Scaling top-of-funnel generation across markets without being limited by internal hiring speed.",
     fullStory: {
@@ -78,7 +78,7 @@ const CASE_STUDIES: CaseStudy[] = [
   {
     id: "outbound-solutions",
     company: "Outbound Solutions",
-    logo: "/Kluvo-Site-2k26/outbound-solutions-logo.png",
+    logo: `${import.meta.env.BASE_URL}outbound-solutions-logo.png`,
     results: "100s of positive email replies converted into booked discovery calls weekly.",
     challenge: "High reply volume was being under-monetized due to slow or inconsistent follow-up.",
     fullStory: {
@@ -97,7 +97,7 @@ const CASE_STUDIES: CaseStudy[] = [
   {
     id: "silverlight-research",
     company: "Silverlight Research",
-    logo: "/Kluvo-Site-2k26/silverlight-logo.png",
+    logo: `${import.meta.env.BASE_URL}silverlight-logo.png`,
     results: "Consistent output from a team of 6 managed agents for 18 months.",
     challenge: "Limited internal capacity to manage a growing outbound- and admin-heavy operation.",
     fullStory: {
@@ -620,49 +620,49 @@ const CaseStudies: React.FC = () => {
                 author: "Ciaran Hastie",
                 role: "Managing director",
                 industry: "Public Sector Access",
-                image: "/Kluvo-Site-2k26/ciaran-hastie.png"
+                image: `${import.meta.env.BASE_URL}ciaran-hastie.png`
               },
               {
                 quote: "Absolute pleasure working with the lads. It was refreshing to chat to others on the same page as me, and there’s definitely potential for exciting projects together.",
                 author: "Ben Guttridge",
                 role: "Managing director",
                 industry: "Auxo Digital",
-                image: "/Kluvo-Site-2k26/ben-guttridge.png"
+                image: `${import.meta.env.BASE_URL}ben-guttridge.png`
               },
               {
                 quote: "Hands on and transparent throughout, with constant communication and a genuinely collaborative approach.",
                 author: "Alex Monro",
                 role: "Director",
                 industry: "Devon Energy",
-                image: "/Kluvo-Site-2k26/alex-monro.jpeg"
+                image: `${import.meta.env.BASE_URL}alex-monro.jpeg`
               },
               {
                 quote: "We've seen a 50% increase in qualified appointments. The quality of the leads is significantly higher than our previous agency.",
                 author: "Kevin Lynch",
                 role: "CEO",
                 industry: "ICS LA",
-                image: "/Kluvo-Site-2k26/kevin-lynch.jpeg"
+                image: `${import.meta.env.BASE_URL}kevin-lynch.jpeg`
               },
               {
                 quote: "Finally, an agency that understands the creative industry. Their messaging feels authentic and resonates with design leaders.",
                 author: "Wes Townsend",
                 role: "Creative Director",
                 industry: "Garbanzo",
-                image: "/Kluvo-Site-2k26/wes-townsend.jpeg"
+                image: `${import.meta.env.BASE_URL}wes-townsend.jpeg`
               },
               {
                 quote: "They helped us uncover new angles and alternative routes to market we hadn’t previously considered.",
                 author: "Aman Mittal",
                 role: "CEO",
                 industry: "Transcount",
-                image: "/Kluvo-Site-2k26/aman-mittal.jpeg"
+                image: `${import.meta.env.BASE_URL}aman-mittal.jpeg`
               },
               {
                 quote: "Once the system was in place, everything clicked. Getting real time confirmation from the SDR team that they’d found a match was a genuine win.",
                 author: "Jean Middleton",
                 role: "Chief Creative Producer",
                 industry: "Suite Creative",
-                image: "/Kluvo-Site-2k26/jean-middleton.png"
+                image: `${import.meta.env.BASE_URL}jean-middleton.png`
               }
             ].map((t, i) => (
               <div key={i} className="min-w-[400px] bg-white p-12 rounded-[40px] border border-slate-100 shadow-sm flex flex-col justify-between hover:shadow-2xl transition-all duration-500">

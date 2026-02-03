@@ -5,13 +5,13 @@ const TEAM = [
   {
     name: "Jack Banister",
     role: "Managing Director",
-    image: "/Kluvo-Site-2k26/jack-banister.jpg",
+    image: `${import.meta.env.BASE_URL}jack-banister.jpg`,
     desc: "4 years in high-ticket B2B sales. Jack designs outbound systems built for predictable pipeline."
   },
   {
     name: "Joseph Kennedy",
     role: "Marketing Director",
-    image: "/Kluvo-Site-2k26/joseph-kennedy.png",
+    image: `${import.meta.env.BASE_URL}joseph-kennedy.png`,
     desc: "Rich experience Enterprise sales, specialising in sales training and development of SDRs."
   }
 ];

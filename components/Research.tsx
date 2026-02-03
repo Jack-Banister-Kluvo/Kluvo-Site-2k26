@@ -42,7 +42,7 @@ const RESEARCH_DATA: ResearchItem[] = [
       role: 'Head of Strategy',
       avatar: 'https://i.pravatar.cc/150?u=sarah'
     },
-    imageUrl: '/Kluvo-Site-2k26/omnichannel-blueprint.avif'
+    imageUrl: `${import.meta.env.BASE_URL}omnichannel-blueprint.avif`
   },
   {
     id: '2',
@@ -61,7 +61,7 @@ const RESEARCH_DATA: ResearchItem[] = [
       role: 'Data Scientist',
       avatar: 'https://i.pravatar.cc/150?u=marcus'
     },
-    imageUrl: '/Kluvo-Site-2k26/b2b-sales-trends.avif'
+    imageUrl: `${import.meta.env.BASE_URL}b2b-sales-trends.avif`
   },
   {
     id: '3',
@@ -80,7 +80,7 @@ const RESEARCH_DATA: ResearchItem[] = [
       role: 'SDR Training Lead',
       avatar: 'https://i.pravatar.cc/150?u=elena'
     },
-    imageUrl: '/Kluvo-Site-2k26/cold-call-mastery-v2.avif'
+    imageUrl: `${import.meta.env.BASE_URL}cold-call-mastery-v2.avif`
   },
   {
     id: '4',
@@ -98,7 +98,7 @@ const RESEARCH_DATA: ResearchItem[] = [
       role: 'Growth Advisor',
       avatar: 'https://i.pravatar.cc/150?u=david'
     },
-    imageUrl: '/Kluvo-Site-2k26/gtm-strategy-2026.avif'
+    imageUrl: `${import.meta.env.BASE_URL}gtm-strategy-2026.avif`
   }
 ];
 
