@@ -384,11 +384,11 @@ const CaseStudies: React.FC = () => {
             <tbody className="divide-y divide-slate-100">
               {CASE_STUDIES.map((study, idx) => (
                 <tr key={idx} className="group hover:bg-[#fcfcfc] transition-colors">
-                  <td className="p-8">
+                  <td className="p-8 text-center">
                     <img
                       src={study.logo}
                       alt={study.company}
-                      className="max-h-8 w-auto object-contain grayscale group-hover:grayscale-0 transition-all duration-500 opacity-80 group-hover:opacity-100"
+                      className="h-8 w-auto object-contain grayscale group-hover:grayscale-0 transition-all duration-500 opacity-80 group-hover:opacity-100 mx-auto"
                     />
                   </td>
                   <td className="p-8">
