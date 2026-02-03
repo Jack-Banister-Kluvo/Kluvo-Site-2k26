@@ -42,7 +42,7 @@ const RESEARCH_DATA: ResearchItem[] = [
       role: 'Head of Strategy',
       avatar: 'https://i.pravatar.cc/150?u=sarah'
     },
-    imageUrl: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80&w=1200'
+    imageUrl: '/Kluvo-Site-2k26/omnichannel-blueprint.avif'
   },
   {
     id: '2',
@@ -61,7 +61,7 @@ const RESEARCH_DATA: ResearchItem[] = [
       role: 'Data Scientist',
       avatar: 'https://i.pravatar.cc/150?u=marcus'
     },
-    imageUrl: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200'
+    imageUrl: '/Kluvo-Site-2k26/b2b-sales-trends.avif'
   },
   {
     id: '3',
@@ -80,7 +80,7 @@ const RESEARCH_DATA: ResearchItem[] = [
       role: 'SDR Training Lead',
       avatar: 'https://i.pravatar.cc/150?u=elena'
     },
-    imageUrl: 'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80&w=1200'
+    imageUrl: '/Kluvo-Site-2k26/cold-call-mastery.avif'
   },
   {
     id: '4',
@@ -98,7 +98,7 @@ const RESEARCH_DATA: ResearchItem[] = [
       role: 'Growth Advisor',
       avatar: 'https://i.pravatar.cc/150?u=david'
     },
-    imageUrl: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1200'
+    imageUrl: '/Kluvo-Site-2k26/gtm-strategy-2026.avif'
   }
 ];
 
@@ -253,8 +253,8 @@ const Research: React.FC<ResearchProps> = ({ onCtaClick }) => {
               key={cat}
               onClick={() => setActiveCategory(cat)}
               className={`px-8 py-3 rounded-full text-sm font-bold transition-all border ${activeCategory === cat
-                  ? 'bg-[#0d2b23] text-white border-[#0d2b23] shadow-lg shadow-[#0d2b23]/20'
-                  : 'bg-white text-[#61756f] border-slate-100 hover:border-[#2e4841] hover:text-[#2e4841]'
+                ? 'bg-[#0d2b23] text-white border-[#0d2b23] shadow-lg shadow-[#0d2b23]/20'
+                : 'bg-white text-[#61756f] border-slate-100 hover:border-[#2e4841] hover:text-[#2e4841]'
                 }`}
             >
               {cat}
