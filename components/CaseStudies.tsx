@@ -21,7 +21,7 @@ const CASE_STUDIES: CaseStudy[] = [
   {
     id: "flarie",
     company: "Flarie",
-    logo: "/Kluvo-Site-2k26/flarie-logo.png",
+    logo: "/Kluvo-Site-2k26/flarie-logo-new.png",
     results: "Restored a 100% consistent flow of qualified meetings across 4 channels.",
     challenge: "A severe lack of meetings despite having capable and experienced account executives.",
     fullStory: {
@@ -40,7 +40,7 @@ const CASE_STUDIES: CaseStudy[] = [
   {
     id: "big-red-jelly",
     company: "Big Red Jelly",
-    logo: "/Kluvo-Site-2k26/big-red-jelly-logo.svg",
+    logo: "/Kluvo-Site-2k26/brj-logo.png",
     results: "Sustained increase in qualified meetings feeding into 100% in-house closers.",
     challenge: "Pipeline volume — experienced closers, but not enough qualified meetings to sustain growth.",
     fullStory: {
@@ -59,7 +59,7 @@ const CASE_STUDIES: CaseStudy[] = [
   {
     id: "lumi",
     company: "Lumi",
-    logo: "/Kluvo-Site-2k26/lumi-logo.svg",
+    logo: "/Kluvo-Site-2k26/lumi-logo.png",
     results: "Outbound performance across 2 global regions with 0 internal hiring friction.",
     challenge: "Scaling top-of-funnel generation across markets without being limited by internal hiring speed.",
     fullStory: {
@@ -78,7 +78,7 @@ const CASE_STUDIES: CaseStudy[] = [
   {
     id: "outbound-solutions",
     company: "Outbound Solutions",
-    logo: "/Kluvo-Site-2k26/outbound-solutions-logo.svg",
+    logo: "/Kluvo-Site-2k26/outbound-solutions-logo.png",
     results: "100s of positive email replies converted into booked discovery calls weekly.",
     challenge: "High reply volume was being under-monetized due to slow or inconsistent follow-up.",
     fullStory: {
