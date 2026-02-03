@@ -42,7 +42,7 @@ const CLIENT_STEPS = [
     id: 3,
     title: 'Deal closure',
     desc: 'All that’s left for you to do is attend booked appointments, run sales negotiations, and sign new deals.',
-    stat: '10-30* closed deals',
+    stat: '10-30* deals',
     subStat: 'REVENUE OPPORTUNITIES',
     label: 'CONVERSIONS',
     width: 270,
