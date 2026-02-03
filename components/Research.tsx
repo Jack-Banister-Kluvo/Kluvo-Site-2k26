@@ -80,7 +80,7 @@ const RESEARCH_DATA: ResearchItem[] = [
       role: 'SDR Training Lead',
       avatar: 'https://i.pravatar.cc/150?u=elena'
     },
-    imageUrl: 'https://images.unsplash.com/photo-152202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=1200'
+    imageUrl: 'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80&w=1200'
   },
   {
     id: '4',
@@ -121,8 +121,8 @@ const Research: React.FC<ResearchProps> = ({ onCtaClick }) => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [selectedArticleId]);
 
-  const filteredData = activeCategory === 'All' 
-    ? RESEARCH_DATA 
+  const filteredData = activeCategory === 'All'
+    ? RESEARCH_DATA
     : RESEARCH_DATA.filter(item => item.category === activeCategory);
 
   const highlightedItem = filteredData[0];
@@ -133,13 +133,13 @@ const Research: React.FC<ResearchProps> = ({ onCtaClick }) => {
   if (selectedArticleId && selectedArticle) {
     return (
       <div className="bg-white min-h-screen">
-        <div 
+        <div
           className="fixed top-20 left-0 h-1 bg-[#2e4841] z-[60] transition-all duration-200"
           style={{ width: `${scrollProgress}%` }}
         />
 
         <div className="max-w-7xl mx-auto px-6 pt-32 pb-32">
-          <button 
+          <button
             onClick={() => {
               setSelectedArticleId(null);
               window.scrollTo(0, 0);
@@ -166,7 +166,7 @@ const Research: React.FC<ResearchProps> = ({ onCtaClick }) => {
                 <h1 className="text-4xl md:text-6xl font-black text-[#0d2b23] leading-tight tracking-tighter mb-10">
                   {selectedArticle.title}
                 </h1>
-                
+
                 {/* Author section removed for a cleaner look */}
 
                 <div className="prose prose-lg max-w-none">
@@ -199,20 +199,20 @@ const Research: React.FC<ResearchProps> = ({ onCtaClick }) => {
                 <div className="bg-[#0d2b23] rounded-[32px] p-8 text-white shadow-2xl">
                   <h3 className="text-2xl font-black mb-4">Ready to scale?</h3>
                   <p className="text-[#9daaa6] mb-8 font-medium">Get a custom strategy audit for your outbound sales engine.</p>
-                  <button 
+                  <button
                     onClick={onCtaClick}
                     className="w-full bg-white text-[#0d2b23] py-4 rounded-xl font-black transition-all hover:scale-105 active:scale-95"
                   >
                     Book Discovery Call
                   </button>
                 </div>
-                
+
                 <div className="bg-white border border-slate-100 rounded-[32px] p-8">
                   <h4 className="font-black text-[#0d2b23] mb-6 uppercase text-[10px] tracking-[0.2em]">Related Research</h4>
                   <div className="space-y-6">
                     {RESEARCH_DATA.filter(a => a.id !== selectedArticleId).slice(0, 2).map(item => (
-                      <button 
-                        key={item.id} 
+                      <button
+                        key={item.id}
                         onClick={() => {
                           setSelectedArticleId(item.id);
                           window.scrollTo(0, 0);
@@ -252,11 +252,10 @@ const Research: React.FC<ResearchProps> = ({ onCtaClick }) => {
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}
-              className={`px-8 py-3 rounded-full text-sm font-bold transition-all border ${
-                activeCategory === cat
+              className={`px-8 py-3 rounded-full text-sm font-bold transition-all border ${activeCategory === cat
                   ? 'bg-[#0d2b23] text-white border-[#0d2b23] shadow-lg shadow-[#0d2b23]/20'
                   : 'bg-white text-[#61756f] border-slate-100 hover:border-[#2e4841] hover:text-[#2e4841]'
-              }`}
+                }`}
             >
               {cat}
             </button>
@@ -267,7 +266,7 @@ const Research: React.FC<ResearchProps> = ({ onCtaClick }) => {
       <section className="max-w-7xl mx-auto px-6 pb-32 relative z-10 space-y-12">
         {/* Highlighted Featured Item */}
         {highlightedItem && (
-          <div 
+          <div
             onClick={() => {
               setSelectedArticleId(highlightedItem.id);
               window.scrollTo(0, 0);
@@ -275,8 +274,8 @@ const Research: React.FC<ResearchProps> = ({ onCtaClick }) => {
             className="group cursor-pointer bg-white border border-slate-100 rounded-[48px] overflow-hidden flex flex-col lg:flex-row shadow-sm hover:shadow-2xl hover:border-[#2e4841]/20 transition-all duration-700 min-h-[500px]"
           >
             <div className="lg:w-3/5 overflow-hidden">
-              <img 
-                src={highlightedItem.imageUrl} 
+              <img
+                src={highlightedItem.imageUrl}
                 alt={highlightedItem.title}
                 className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 scale-105 group-hover:scale-100"
               />
@@ -316,8 +315,8 @@ const Research: React.FC<ResearchProps> = ({ onCtaClick }) => {
         {remainingItems.length > 0 && (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pt-12">
             {remainingItems.map((item) => (
-              <div 
-                key={item.id} 
+              <div
+                key={item.id}
                 onClick={() => {
                   setSelectedArticleId(item.id);
                   window.scrollTo(0, 0);
@@ -325,8 +324,8 @@ const Research: React.FC<ResearchProps> = ({ onCtaClick }) => {
                 className="group cursor-pointer bg-white border border-slate-100 rounded-[32px] overflow-hidden flex flex-col hover:shadow-xl hover:border-[#2e4841]/20 transition-all duration-500"
               >
                 <div className="h-64 overflow-hidden">
-                  <img 
-                    src={item.imageUrl} 
+                  <img
+                    src={item.imageUrl}
                     alt={item.title}
                     className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100"
                   />
