@@ -18,25 +18,7 @@ interface CaseStudy {
 }
 
 const CASE_STUDIES: CaseStudy[] = [
-  {
-    id: "flarie",
-    company: "Flarie",
-    logo: `${import.meta.env.BASE_URL}flarie-logo-new.png`,
-    results: "Restored a 100% consistent flow of qualified meetings across 4 channels.",
-    challenge: "A severe lack of meetings despite having capable and experienced account executives.",
-    fullStory: {
-      heroTitle: "Restoring predictable meeting volume for high-performance sales teams.",
-      overview: "Flarie had a strong product and a solid sales team, but a clear bottleneck at the very top of the funnel. Account executives simply didn’t have enough qualified conversations booked to operate at full capacity.",
-      challengeDetail: "The internal motion wasn't generating enough initial touchpoints in the FMCG sector. Account executives were operating below capacity due to a thin pipeline and inconsistent prospecting.",
-      solutionDetail: "We rebuilt the top of the pipeline from first principles. Re-identified decision-makers in fast-moving goods across the UK and executed a 4-channel outreach combining cold calling, email, LinkedIn, and WhatsApp.",
-      impactDetail: "The outcome was a structured, repeatable outbound system that materially increased meeting volume and gave Flarie’s sales team the calendar density they needed to operate effectively.",
-      stats: [
-        { label: "Engagement Channels", val: "4" },
-        { label: "Target Sector", val: "FMCG" },
-        { label: "Setup Time", val: "4 Wks" }
-      ]
-    }
-  },
+
   {
     id: "big-red-jelly",
     company: "Big Red Jelly",
