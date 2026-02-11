@@ -16,11 +16,12 @@ import Research from './components/Research';
 import ResearchControl from './components/ResearchControl';
 import CaseStudies from './components/CaseStudies';
 import About from './components/About';
+import LeadMagnetWall from './components/LeadMagnetWall';
 
 const App: React.FC = () => {
   const [showAssistant, setShowAssistant] = useState(false);
   const [showCalendar, setShowCalendar] = useState(false);
-  const [view, setView] = useState<'home' | 'pricing' | 'research' | 'admin' | 'case-studies' | 'about'>('home');
+  const [view, setView] = useState<'home' | 'pricing' | 'research' | 'admin' | 'case-studies' | 'about' | 'resource'>('home');
   const [isDark, setIsDark] = useState(false);
 
   const toggleDark = () => {
@@ -33,6 +34,13 @@ const App: React.FC = () => {
   };
 
   useEffect(() => {
+    // Check for /resource route on initial load
+    if (window.location.pathname === '/resource') {
+      setView('resource');
+    }
+  }, []);
+
+  useEffect(() => {
     window.scrollTo(0, 0);
   }, [view]);
 
@@ -41,7 +49,7 @@ const App: React.FC = () => {
       {view !== 'admin' && (
         <Navbar onCtaClick={() => setShowCalendar(true)} setView={setView} currentView={view} />
       )}
-      
+
       <main className={view !== 'admin' ? "pt-20" : ""}>
         {view === 'home' && (
           <>
@@ -93,13 +101,22 @@ const App: React.FC = () => {
           </div>
         )}
 
+        {view === 'resource' && (
+          <div className="animate-in zoom-in-95 duration-500 fixed inset-0 z-50 bg-[#fcfcfc]">
+            <LeadMagnetWall onExit={() => {
+              setView('home');
+              window.history.pushState({}, '', '/');
+            }} />
+          </div>
+        )}
+
         {view !== 'admin' && (
           <section className="py-24 bg-[#0d2b23] text-white text-center">
             <div className="max-w-4xl mx-auto px-6">
               <h2 className="text-4xl md:text-5xl font-black mb-8 leading-tight">
-                Our clients close <span className="text-[#9daaa6]">25% more deals</span><br/>with their dream accounts
+                Our clients close <span className="text-[#9daaa6]">25% more deals</span><br />with their dream accounts
               </h2>
-              <button 
+              <button
                 onClick={() => setShowCalendar(true)}
                 className="bg-white text-[#0d2b23] px-10 py-5 rounded-2xl text-xl font-black transition-all hover:scale-105 active:scale-95 shadow-2xl shadow-black/40"
               >
