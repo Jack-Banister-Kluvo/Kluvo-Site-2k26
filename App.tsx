@@ -18,6 +18,7 @@ import CaseStudies from './components/CaseStudies';
 import About from './components/About';
 import LeadMagnetWall from './components/LeadMagnetWall';
 import { SpeedInsights } from '@vercel/speed-insights/react';
+import { Analytics } from '@vercel/analytics/react';
 
 const App: React.FC = () => {
   const [showAssistant, setShowAssistant] = useState(false);
@@ -143,6 +144,7 @@ const App: React.FC = () => {
         <CalendarModal onClose={() => setShowCalendar(false)} />
       )}
       <SpeedInsights />
+      <Analytics />
     </div>
   );
 };
