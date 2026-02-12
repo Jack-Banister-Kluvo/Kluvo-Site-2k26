@@ -9,16 +9,16 @@ interface LeadMagnetWallProps {
 // Config Object
 const config = {
   tag: "Free Resource",
-  title: "The B2B Outbound Playbook 2026",
-  subtitle: "The exact framework we use to generate 400+ qualified meetings per year for Series A-C SaaS companies.",
+  title: "The Outbound Script That Booked 1,000+ Qualified B2B Meetings",
+  subtitle: "The exact cold call framework our SDR team uses to consistently book qualified meetings for SaaS & IT companies.",
   image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&q=80&w=1200",
   features: [
-    "3 step omnichannel synchronization map",
-    "High-conversion LinkedIn message templates",
-    "The 'Cold Calling' framework that beats gatekeepers",
-    "SDR Management & KPI tracking spreadsheet"
+    "The exact opener behind 1,000+ booked meetings",
+    "Pain amplification that gets prospects to qualify themselves",
+    "Objection neutralisation before your AEs take the call",
+    "The rehash formula that increases show rates"
   ],
-  cta: "Download the Playbook",
+  cta: "Download the Cold Call Framework",
   successTitle: "Check your inbox!",
   successSubtitle: "We've sent the B2B Outbound Playbook to your email. It's time to build your pipeline."
 };
@@ -121,8 +121,8 @@ const LeadMagnetWall: React.FC<LeadMagnetWallProps> = ({ onExit }) => {
               {!submitted ? (
                 <form onSubmit={handleSubmit} className="space-y-8">
                   <div className="text-center mb-8">
-                    <h3 className="text-2xl font-black text-[#0d2b23] mb-2">Access the resource</h3>
-                    <p className="text-sm text-[#61756f] font-medium">Enter your details below to receive the download link.</p>
+                    <h3 className="text-2xl font-black text-[#0d2b23] mb-2">Unlock the Script Framework</h3>
+                    <p className="text-sm text-[#61756f] font-medium">Enter your details to access the 1,000+ meeting script.</p>
                   </div>
                   
                   <div className="space-y-4">
