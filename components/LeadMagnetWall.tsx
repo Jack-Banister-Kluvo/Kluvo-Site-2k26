@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 
 interface LeadMagnetWallProps {
   onExit: () => void;
+  onSuccess?: () => void;
 }
 
 // Config Object
@@ -23,7 +24,7 @@ const config = {
   successSubtitle: "We've sent the B2B Outbound Playbook to your email. It's time to build your pipeline."
 };
 
-const LeadMagnetWall: React.FC<LeadMagnetWallProps> = ({ onExit }) => {
+const LeadMagnetWall: React.FC<LeadMagnetWallProps> = ({ onExit, onSuccess }) => {
   const [email, setEmail] = useState('');
   const [name, setName] = useState('');
   const [submitted, setSubmitted] = useState(false);
@@ -32,12 +33,16 @@ const LeadMagnetWall: React.FC<LeadMagnetWallProps> = ({ onExit }) => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!email) return;
-    
+
     setIsLoading(true);
     // Simulate API call
     setTimeout(() => {
       setIsLoading(false);
-      setSubmitted(true);
+      if (onSuccess) {
+        onSuccess();
+      } else {
+        setSubmitted(true);
+      }
     }, 1500);
   };
 
@@ -45,7 +50,7 @@ const LeadMagnetWall: React.FC<LeadMagnetWallProps> = ({ onExit }) => {
     <div className="min-h-screen bg-[#fcfcfc] flex flex-col items-center justify-center relative overflow-hidden">
       {/* Texture & Grain */}
       <div className="grain-overlay opacity-[0.02] pointer-events-none" />
-      
+
       {/* Background Aura */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full pointer-events-none z-0">
         <div className="absolute top-[5%] left-[15%] w-[70%] h-[70%] bg-[#2e4841]/5 blur-[200px] animate-liquid" />
@@ -62,7 +67,7 @@ const LeadMagnetWall: React.FC<LeadMagnetWallProps> = ({ onExit }) => {
           </div>
           <span className="text-2xl font-black tracking-tighter text-[#0d2b23] lowercase">kluvo</span>
         </button>
-        <button 
+        <button
           onClick={onExit}
           className="text-[10px] font-black uppercase tracking-[0.3em] text-[#61756f] hover:text-[#0d2b23] transition-colors"
         >
@@ -72,7 +77,7 @@ const LeadMagnetWall: React.FC<LeadMagnetWallProps> = ({ onExit }) => {
 
       <div className="max-w-6xl w-full mx-auto px-6 relative z-10 py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          
+
           {/* Left Side: Copy & Preview */}
           <div className="space-y-10 animate-in fade-in slide-in-from-left-4 duration-1000">
             <div>
@@ -102,12 +107,12 @@ const LeadMagnetWall: React.FC<LeadMagnetWallProps> = ({ onExit }) => {
 
             <div className="p-8 bg-white border border-slate-100 rounded-[32px] shadow-sm flex items-center gap-6">
               <div className="flex -space-x-4">
-                {[1,2,3].map(i => (
+                {[1, 2, 3].map(i => (
                   <img key={i} src={`https://i.pravatar.cc/100?u=${i}`} className="w-12 h-12 rounded-full border-4 border-white object-cover" alt={`User ${i}`} />
                 ))}
               </div>
               <p className="text-xs font-bold text-[#61756f] uppercase tracking-widest leading-relaxed">
-                Join 2,400+ sales leaders who <br/>already downloaded this.
+                Join 2,400+ sales leaders who <br />already downloaded this.
               </p>
             </div>
           </div>
@@ -116,7 +121,7 @@ const LeadMagnetWall: React.FC<LeadMagnetWallProps> = ({ onExit }) => {
           <div className="relative animate-in fade-in slide-in-from-right-4 duration-1000" style={{ animationDelay: '0.2s' }}>
             {/* Visual Preview Behind Wall */}
             <div className="absolute -top-12 -right-12 w-64 h-80 bg-[#0d2b23]/5 rounded-[40px] -rotate-6 blur-2xl -z-10" />
-            
+
             <div className="bg-white/80 backdrop-blur-xl border border-white rounded-[48px] p-10 md:p-14 shadow-[0_40px_100px_rgba(13,43,35,0.08)]">
               {!submitted ? (
                 <form onSubmit={handleSubmit} className="space-y-8">
@@ -124,12 +129,12 @@ const LeadMagnetWall: React.FC<LeadMagnetWallProps> = ({ onExit }) => {
                     <h3 className="text-2xl font-black text-[#0d2b23] mb-2">Unlock the Script Framework</h3>
                     <p className="text-sm text-[#61756f] font-medium">Enter your details to access the 1,000+ meeting script.</p>
                   </div>
-                  
+
                   <div className="space-y-4">
                     <div>
                       <label className="text-[10px] font-black uppercase tracking-widest text-[#9daaa6] mb-2 block ml-1">Full Name</label>
-                      <input 
-                        type="text" 
+                      <input
+                        type="text"
                         required
                         value={name}
                         onChange={(e) => setName(e.target.value)}
@@ -139,8 +144,8 @@ const LeadMagnetWall: React.FC<LeadMagnetWallProps> = ({ onExit }) => {
                     </div>
                     <div>
                       <label className="text-[10px] font-black uppercase tracking-widest text-[#9daaa6] mb-2 block ml-1">Work Email</label>
-                      <input 
-                        type="email" 
+                      <input
+                        type="email"
                         required
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
@@ -150,7 +155,7 @@ const LeadMagnetWall: React.FC<LeadMagnetWallProps> = ({ onExit }) => {
                     </div>
                   </div>
 
-                  <button 
+                  <button
                     type="submit"
                     disabled={isLoading}
                     className="glint-effect w-full bg-[#0d2b23] hover:bg-[#2e4841] text-white py-5 rounded-2xl text-lg font-black transition-all shadow-xl shadow-[#0d2b23]/20 disabled:bg-slate-300 active:scale-95 flex items-center justify-center"
@@ -177,7 +182,7 @@ const LeadMagnetWall: React.FC<LeadMagnetWallProps> = ({ onExit }) => {
                   <p className="text-[#61756f] font-medium leading-relaxed mb-10">
                     {config.successSubtitle}
                   </p>
-                  <button 
+                  <button
                     onClick={() => setSubmitted(false)}
                     className="text-[10px] font-black uppercase tracking-widest text-[#0d2b23] border-b-2 border-[#0d2b23] pb-1 hover:text-[#2e4841] hover:border-[#2e4841] transition-all"
                   >
@@ -190,7 +195,7 @@ const LeadMagnetWall: React.FC<LeadMagnetWallProps> = ({ onExit }) => {
 
         </div>
       </div>
-      
+
       {/* Footer Quote / Trust Bar */}
       <div className="absolute bottom-12 w-full text-center px-6">
         <p className="text-[10px] font-black text-[#9daaa6] uppercase tracking-[0.4em]">

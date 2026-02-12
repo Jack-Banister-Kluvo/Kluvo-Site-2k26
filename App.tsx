@@ -16,12 +16,13 @@ import ResearchControl from './components/ResearchControl';
 import CaseStudies from './components/CaseStudies';
 import About from './components/About';
 import LeadMagnetWall from './components/LeadMagnetWall';
+import WorkshopPage from './components/WorkshopPage';
 import { SpeedInsights } from '@vercel/speed-insights/react';
 import { Analytics } from '@vercel/analytics/react';
 
 const App: React.FC = () => {
   const [showAssistant, setShowAssistant] = useState(false);
-  const [view, setView] = useState<'home' | 'pricing' | 'research' | 'admin' | 'case-studies' | 'about' | 'resource'>('home');
+  const [view, setView] = useState<'home' | 'pricing' | 'research' | 'admin' | 'case-studies' | 'about' | 'resource' | 'workshop'>('home');
   const [isDark, setIsDark] = useState(false);
 
   const toggleDark = () => {
@@ -103,10 +104,33 @@ const App: React.FC = () => {
 
         {view === 'resource' && (
           <div className="animate-in zoom-in-95 duration-500 fixed inset-0 z-50 bg-[#fcfcfc]">
-            <LeadMagnetWall onExit={() => {
-              setView('home');
-              window.history.pushState({}, '', '/');
-            }} />
+            <LeadMagnetWall
+              onExit={() => {
+                setView('home');
+                window.history.pushState({}, '', '/');
+              }}
+              onSuccess={() => {
+                setView('workshop');
+                window.scrollTo(0, 0);
+              }}
+            />
+          </div>
+        )}
+
+        {view === 'workshop' && (
+          <div className="animate-in fade-in duration-500 fixed inset-0 z-50 bg-[#fcfcfc] overflow-y-auto">
+            <WorkshopPage
+              onExit={() => setView('home')}
+              onCtaClick={() => {
+                // Determine CTA behavior - for now, maybe open the calendar or just scroll safely?
+                // The workshop page has a "Secure Your Slot" button.
+                // It might need to open the booking modal.
+                const btn = document.querySelector('[data-cal-link="sales-team/sales-discovery"]');
+                if (btn && btn instanceof HTMLElement) {
+                  btn.click();
+                }
+              }}
+            />
           </div>
         )}
 
