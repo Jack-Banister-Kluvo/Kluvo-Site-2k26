@@ -57,9 +57,7 @@ const Hero: React.FC<HeroProps> = ({ onCtaClick, isDark, toggleDark }) => {
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-10 opacity-0 animate-reveal" style={{ animationDelay: '0.9s' }}>
             <button
-              data-cal-link="sales-team/sales-discovery"
-              data-cal-namespace="sales-discovery"
-              data-cal-config='{"layout":"month_view","theme":"light"}'
+              onClick={onCtaClick}
               className="glint-effect w-full md:w-auto bg-[#0d2b23] hover:bg-[#2e4841] text-white px-12 py-5 rounded-2xl text-lg font-black transition-all shadow-2xl shadow-[#0d2b23]/20 active:scale-95 hover:-translate-y-1 z-20"
             >
               Get a quote
