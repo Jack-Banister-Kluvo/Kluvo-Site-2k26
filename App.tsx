@@ -9,7 +9,6 @@ import ValueProps from './components/ValueProps';
 import OmnichannelFunnel from './components/OmnichannelFunnel';
 import Footer from './components/Footer';
 import LeadAssistant from './components/LeadAssistant';
-import CalendarModal from './components/CalendarModal';
 import EnterpriseSection from './components/EnterpriseSection';
 import TechStack from './components/TechStack';
 import Research from './components/Research';
@@ -22,7 +21,6 @@ import { Analytics } from '@vercel/analytics/react';
 
 const App: React.FC = () => {
   const [showAssistant, setShowAssistant] = useState(false);
-  const [showCalendar, setShowCalendar] = useState(false);
   const [view, setView] = useState<'home' | 'pricing' | 'research' | 'admin' | 'case-studies' | 'about' | 'resource'>('home');
   const [isDark, setIsDark] = useState(false);
 
@@ -49,7 +47,7 @@ const App: React.FC = () => {
   return (
     <div className="relative min-h-screen overflow-x-hidden selection:bg-[#9daaa6]/30 selection:text-[#0d2b23]">
       {view !== 'admin' && (
-        <Navbar onCtaClick={() => setShowCalendar(true)} setView={setView} currentView={view} />
+        <Navbar onCtaClick={() => { }} setView={setView} currentView={view} />
       )}
 
       <main className={view !== 'admin' ? "pt-20" : ""}>
@@ -65,15 +63,15 @@ const App: React.FC = () => {
             <section id="process" className="py-24 bg-[#fcfcfc]">
               <Timeline />
             </section>
-            <ValueProps onCtaClick={() => setShowCalendar(true)} />
+            <ValueProps onCtaClick={() => { }} />
           </>
         )}
 
         {view === 'pricing' && (
           <div className="animate-in fade-in duration-500">
             <section id="pricing" className="py-24 bg-white">
-              <Pricing onCtaClick={() => setShowCalendar(true)} />
-              <EnterpriseSection onCtaClick={() => setShowCalendar(true)} />
+              <Pricing onCtaClick={() => { }} />
+              <EnterpriseSection onCtaClick={() => { }} />
               <TechStack />
             </section>
           </div>
@@ -81,7 +79,7 @@ const App: React.FC = () => {
 
         {view === 'research' && (
           <div className="animate-in fade-in slide-in-from-bottom-4 duration-700">
-            <Research onCtaClick={() => setShowCalendar(true)} />
+            <Research onCtaClick={() => { }} />
           </div>
         )}
 
@@ -119,7 +117,9 @@ const App: React.FC = () => {
                 Our clients close <span className="text-[#9daaa6]">25% more deals</span><br />with their dream accounts
               </h2>
               <button
-                onClick={() => setShowCalendar(true)}
+                data-cal-link="sales-team/sales-discovery"
+                data-cal-namespace="sales-discovery"
+                data-cal-config='{"layout":"month_view","theme":"light"}'
                 className="bg-white text-[#0d2b23] px-10 py-5 rounded-2xl text-xl font-black transition-all hover:scale-105 active:scale-95 shadow-2xl shadow-black/40"
               >
                 Book a call with Kluvo experts
@@ -138,10 +138,6 @@ const App: React.FC = () => {
             <LeadAssistant onClose={() => setShowAssistant(false)} />
           </div>
         </div>
-      )}
-
-      {showCalendar && (
-        <CalendarModal onClose={() => setShowCalendar(false)} />
       )}
       <SpeedInsights />
       <Analytics />

@@ -84,11 +84,11 @@ const ValueProps: React.FC<ValuePropsProps> = ({ onCtaClick }) => {
         {/* Main Content Showcase */}
         <div className="relative h-[700px] md:h-[600px] bg-white rounded-[48px] border border-slate-100 shadow-[0_40px_120px_rgba(0,0,0,0.04)] overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-12 h-full items-stretch">
-            
+
             {/* Content Side */}
             <div className="lg:col-span-6 p-10 lg:p-24 flex flex-col justify-center relative z-20">
               {VALUE_PROPS.map((prop, i) => (
-                <div 
+                <div
                   key={prop.id}
                   className={`
                     absolute inset-0 p-10 lg:p-24 flex flex-col justify-center transition-all duration-700
@@ -115,8 +115,10 @@ const ValueProps: React.FC<ValuePropsProps> = ({ onCtaClick }) => {
                     </p>
 
                     <div className="pt-8">
-                      <button 
-                        onClick={onCtaClick}
+                      <button
+                        data-cal-link="sales-team/sales-discovery"
+                        data-cal-namespace="sales-discovery"
+                        data-cal-config='{"layout":"month_view","theme":"light"}'
                         className="group flex items-center gap-6 text-[#0d2b23] font-black text-[14px] uppercase tracking-[0.5em] hover:text-orange-500 transition-colors"
                       >
                         Learn our process
@@ -135,16 +137,16 @@ const ValueProps: React.FC<ValuePropsProps> = ({ onCtaClick }) => {
             {/* Visual Side */}
             <div className="lg:col-span-6 bg-[#fcfcfc] relative overflow-hidden h-[300px] lg:h-full border-t lg:border-t-0 lg:border-l border-slate-100">
               {VALUE_PROPS.map((prop, i) => (
-                <div 
+                <div
                   key={prop.id}
                   className={`
                     absolute inset-0 transition-all duration-1000 ease-out
                     ${activeTab === i ? 'opacity-100 scale-100' : 'opacity-0 scale-110'}
                   `}
                 >
-                  <img 
-                    src={prop.image} 
-                    alt="" 
+                  <img
+                    src={prop.image}
+                    alt=""
                     className="w-full h-full object-cover grayscale-[0.05] hover:grayscale-0 transition-all duration-1000"
                   />
                   <div className="absolute inset-0 bg-gradient-to-r from-white/10 via-transparent to-transparent opacity-25" />

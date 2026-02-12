@@ -28,8 +28,10 @@ const EnterpriseSection: React.FC<EnterpriseSectionProps> = ({ onCtaClick }) => 
             <p className="text-xl text-[#9daaa6] font-medium leading-relaxed mb-10">
               Tailored for teams that need bespoke growth strategies and want to shape every detail of their outreach.
             </p>
-            <button 
-              onClick={onCtaClick}
+            <button
+              data-cal-link="sales-team/sales-discovery"
+              data-cal-namespace="sales-discovery"
+              data-cal-config='{"layout":"month_view","theme":"light"}'
               className="bg-white text-[#0d2b23] px-10 py-5 rounded-2xl text-xl font-black hover:bg-[#9daaa6] transition-colors"
             >
               Talk to Enterprise Sales

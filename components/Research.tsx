@@ -200,7 +200,9 @@ const Research: React.FC<ResearchProps> = ({ onCtaClick }) => {
                   <h3 className="text-2xl font-black mb-4">Ready to scale?</h3>
                   <p className="text-[#9daaa6] mb-8 font-medium">Get a custom strategy audit for your outbound sales engine.</p>
                   <button
-                    onClick={onCtaClick}
+                    data-cal-link="sales-team/sales-discovery"
+                    data-cal-namespace="sales-discovery"
+                    data-cal-config='{"layout":"month_view","theme":"light"}'
                     className="w-full bg-white text-[#0d2b23] py-4 rounded-xl font-black transition-all hover:scale-105 active:scale-95"
                   >
                     Book Discovery Call

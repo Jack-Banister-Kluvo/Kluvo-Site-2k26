@@ -34,66 +34,66 @@ const PRICING_PLANS = [
 ];
 
 const FEATURE_ROWS = [
-  { 
-    key: 'email', 
-    label: 'Cold email outreach', 
+  {
+    key: 'email',
+    label: 'Cold email outreach',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+        <rect width="20" height="16" x="2" y="4" rx="2" /><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
       </svg>
     )
   },
-  { 
-    key: 'linkedin', 
-    label: 'LinkedIn social selling', 
+  {
+    key: 'linkedin',
+    label: 'LinkedIn social selling',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/>
+        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect width="4" height="12" x="2" y="9" /><circle cx="4" cy="4" r="2" />
       </svg>
     )
   },
-  { 
-    key: 'calling', 
-    label: 'Intent-based cold calling', 
+  {
+    key: 'calling',
+    label: 'Intent-based cold calling',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
       </svg>
     )
   },
-  { 
-    key: 'voicemails', 
-    label: 'Direct-to-voicemail Drops', 
+  {
+    key: 'voicemails',
+    label: 'Direct-to-voicemail Drops',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <circle cx="6" cy="12" r="4"/><circle cx="18" cy="12" r="4"/><line x1="6" y1="16" x2="18" y2="16"/>
+        <circle cx="6" cy="12" r="4" /><circle cx="18" cy="12" r="4" /><line x1="6" y1="16" x2="18" y2="16" />
       </svg>
     )
   },
-  { 
-    key: 'messenger', 
-    label: 'Multi-platform Messenger', 
+  {
+    key: 'messenger',
+    label: 'Multi-platform Messenger',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
       </svg>
     )
   },
-  { 
-    key: 'abm', 
-    label: 'Targeted ABM Campaigns', 
+  {
+    key: 'abm',
+    label: 'Targeted ABM Campaigns',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/>
+        <circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="6" /><circle cx="12" cy="12" r="2" />
       </svg>
     )
   },
-  { 
-    key: 'ads', 
-    label: 'Lead-Gen Paid Ads', 
+  {
+    key: 'ads',
+    label: 'Lead-Gen Paid Ads',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+        <line x1="12" y1="1" x2="12" y2="23" /><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
       </svg>
     )
   },
@@ -155,28 +155,26 @@ const Pricing: React.FC<PricingProps> = ({ onCtaClick }) => {
       {/* Pricing Cards */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-32">
         {PRICING_PLANS.map((plan) => (
-          <div 
+          <div
             key={plan.name}
-            className={`relative p-8 rounded-[32px] border transition-all duration-500 flex flex-col hover:shadow-xl ${
-              plan.highlight 
-                ? 'bg-[#0d2b23] border-[#2e4841] text-white shadow-2xl shadow-[#0d2b23]/30 z-10' 
+            className={`relative p-8 rounded-[32px] border transition-all duration-500 flex flex-col hover:shadow-xl ${plan.highlight
+                ? 'bg-[#0d2b23] border-[#2e4841] text-white shadow-2xl shadow-[#0d2b23]/30 z-10'
                 : 'bg-white border-slate-100 text-[#0d2b23] shadow-sm'
-            }`}
+              }`}
           >
             {plan.badge && (
               <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#2e4841] text-white text-[9px] font-black uppercase tracking-widest px-4 py-1.5 rounded-full border-2 border-white z-20 whitespace-nowrap">
                 {plan.badge}
               </div>
             )}
-            
+
             <div className="mb-8 text-center">
               <span className={`text-[9px] font-black uppercase tracking-[0.2em] mb-3 block opacity-50`}>
                 Annual Target
               </span>
               <div className="mb-6 h-16 md:h-20 flex flex-col justify-center">
-                <span className={`font-black tracking-tighter leading-none block break-words ${
-                  plan.appointments.length > 5 ? 'text-3xl md:text-4xl' : 'text-5xl md:text-6xl'
-                }`}>
+                <span className={`font-black tracking-tighter leading-none block break-words ${plan.appointments.length > 5 ? 'text-3xl md:text-4xl' : 'text-5xl md:text-6xl'
+                  }`}>
                   {plan.appointments}
                 </span>
                 <span className={`text-[9px] font-black uppercase tracking-[0.2em] mt-2 block opacity-40`}>
@@ -198,13 +196,14 @@ const Pricing: React.FC<PricingProps> = ({ onCtaClick }) => {
               ))}
             </div>
 
-            <button 
-              onClick={onCtaClick}
-              className={`w-full py-3.5 rounded-xl text-[12px] font-black uppercase tracking-widest transition-all ${
-              plan.highlight 
-                ? 'bg-white text-[#0d2b23] hover:bg-[#9daaa6]' 
-                : 'bg-[#0d2b23] text-white hover:bg-[#2e4841]'
-            }`}>
+            <button
+              data-cal-link="sales-team/sales-discovery"
+              data-cal-namespace="sales-discovery"
+              data-cal-config='{"layout":"month_view","theme":"light"}'
+              className={`w-full py-3.5 rounded-xl text-[12px] font-black uppercase tracking-widest transition-all ${plan.highlight
+                  ? 'bg-white text-[#0d2b23] hover:bg-[#9daaa6]'
+                  : 'bg-[#0d2b23] text-white hover:bg-[#2e4841]'
+                }`}>
               {plan.cta}
             </button>
           </div>
@@ -216,7 +215,7 @@ const Pricing: React.FC<PricingProps> = ({ onCtaClick }) => {
         <div className="text-center mb-12">
           <h3 className="text-2xl font-black text-[#0d2b23]">Feature Matrix</h3>
         </div>
-        
+
         <div className="overflow-x-auto rounded-[24px] border border-slate-100 shadow-sm">
           <table className="w-full text-left border-collapse bg-white">
             <thead>

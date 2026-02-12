@@ -19,7 +19,7 @@ const Navbar: React.FC<NavbarProps> = ({ onCtaClick, setView, currentView }) => 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled || currentView !== 'home' ? 'bg-white/95 backdrop-blur-md shadow-sm py-3' : 'bg-transparent py-5'}`}>
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-        
+
         {/* Left Side: Logo and Navigation Links */}
         <div className="flex items-center gap-10">
           <button onClick={() => setView('home')} className="flex items-center gap-3 group">
@@ -33,25 +33,25 @@ const Navbar: React.FC<NavbarProps> = ({ onCtaClick, setView, currentView }) => 
           </button>
 
           <div className="hidden lg:flex items-center gap-8 border-l border-slate-100 pl-10">
-            <button 
+            <button
               onClick={() => setView('case-studies')}
               className={`text-sm uppercase tracking-widest font-bold transition-colors ${currentView === 'case-studies' ? 'text-[#0d2b23] border-b-2 border-[#0d2b23]' : 'text-[#61756f] hover:text-[#0d2b23]'}`}
             >
               Case Studies
             </button>
-            <button 
+            <button
               onClick={() => setView('pricing')}
               className={`text-sm uppercase tracking-widest font-bold transition-colors ${currentView === 'pricing' ? 'text-[#0d2b23] border-b-2 border-[#0d2b23]' : 'text-[#61756f] hover:text-[#0d2b23]'}`}
             >
               Pricing
             </button>
-            <button 
+            <button
               onClick={() => setView('about')}
               className={`text-sm uppercase tracking-widest font-bold transition-colors ${currentView === 'about' ? 'text-[#0d2b23] border-b-2 border-[#0d2b23]' : 'text-[#61756f] hover:text-[#0d2b23]'}`}
             >
               About
             </button>
-            <button 
+            <button
               onClick={() => setView('research')}
               className={`text-sm uppercase tracking-widest font-bold transition-colors ${currentView === 'research' ? 'text-[#0d2b23] border-b-2 border-[#0d2b23]' : 'text-[#61756f] hover:text-[#0d2b23]'}`}
             >
@@ -62,8 +62,10 @@ const Navbar: React.FC<NavbarProps> = ({ onCtaClick, setView, currentView }) => 
 
         {/* Right Side: CTA */}
         <div className="flex items-center gap-4">
-          <button 
-            onClick={onCtaClick}
+          <button
+            data-cal-link="sales-team/sales-discovery"
+            data-cal-namespace="sales-discovery"
+            data-cal-config='{"layout":"month_view","theme":"light"}'
             className="bg-[#0d2b23] hover:bg-[#2e4841] text-white px-7 py-3 rounded-xl font-bold transition-all active:scale-95 shadow-xl shadow-[#0d2b23]/20"
           >
             Book a call
