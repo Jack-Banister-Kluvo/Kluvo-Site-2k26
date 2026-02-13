@@ -30,20 +30,38 @@ const LeadMagnetWall: React.FC<LeadMagnetWallProps> = ({ onExit, onSuccess }) =>
   const [submitted, setSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!email) return;
 
     setIsLoading(true);
-    // Simulate API call
-    setTimeout(() => {
+
+    try {
+      await fetch('/api/webhook/form-submission', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          source: 'Lead Magnet Wall',
+          timestamp: new Date().toISOString()
+        }),
+      });
+
+      // Even if the webhook fails, we might want to show success or handle error
+      // For now, we'll assume success to not block the user flow
+    } catch (error) {
+      console.error('Webhook submission error:', error);
+    } finally {
       setIsLoading(false);
       if (onSuccess) {
         onSuccess();
       } else {
         setSubmitted(true);
       }
-    }, 1500);
+    }
   };
 
   return (
