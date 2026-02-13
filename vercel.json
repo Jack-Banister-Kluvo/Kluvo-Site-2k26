@@ -1,11 +1,7 @@
 {
     "rewrites": [
         {
-            "source": "/api/webhook/form-submission",
-            "destination": "http://154.26.132.111:5678/webhook/form-submission"
-        },
-        {
-            "source": "/(.*)",
+            "source": "/((?!api/).*)",
             "destination": "/index.html"
         }
     ]
