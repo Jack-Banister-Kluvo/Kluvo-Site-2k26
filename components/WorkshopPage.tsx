@@ -47,7 +47,7 @@ const WorkshopPage: React.FC<WorkshopPageProps> = ({ onExit, onCtaClick }) => {
           <div className="relative w-full max-w-4xl mx-auto aspect-video rounded-[32px] md:rounded-[48px] overflow-hidden shadow-[0_40px_100px_rgba(13,43,35,0.12)] border border-slate-200 bg-white group mb-12">
             <iframe
               className="w-full h-full"
-              src="https://www.youtube.com/embed/vdHuNpBH0dw"
+              src="https://www.youtube.com/embed/SggSPioDN7Q"
               title="Cold Call Script Video"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
