@@ -38,6 +38,8 @@ const App: React.FC = () => {
     // Check for /resource route on initial load
     if (window.location.pathname === '/resource') {
       setView('resource');
+    } else if (window.location.pathname === '/workbook') {
+      setView('workshop');
     }
   }, []);
 
@@ -111,6 +113,7 @@ const App: React.FC = () => {
               }}
               onSuccess={() => {
                 setView('workshop');
+                window.history.pushState({}, '', '/workbook');
                 window.scrollTo(0, 0);
               }}
             />
@@ -120,7 +123,10 @@ const App: React.FC = () => {
         {view === 'workshop' && (
           <div className="animate-in fade-in duration-500 fixed inset-0 z-50 bg-[#fcfcfc] overflow-y-auto">
             <WorkshopPage
-              onExit={() => setView('home')}
+              onExit={() => {
+                setView('home');
+                window.history.pushState({}, '', '/');
+              }}
               onCtaClick={() => {
                 // Determine CTA behavior - for now, maybe open the calendar or just scroll safely?
                 // The workshop page has a "Secure Your Slot" button.
