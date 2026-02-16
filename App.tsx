@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -8,7 +7,7 @@ import Timeline from './components/Timeline';
 import ValueProps from './components/ValueProps';
 import OmnichannelFunnel from './components/OmnichannelFunnel';
 import Footer from './components/Footer';
-import LeadAssistant from './components/LeadAssistant';
+
 import EnterpriseSection from './components/EnterpriseSection';
 import TechStack from './components/TechStack';
 import Research from './components/Research';
@@ -21,7 +20,7 @@ import { SpeedInsights } from '@vercel/speed-insights/react';
 import { Analytics } from '@vercel/analytics/react';
 
 const App: React.FC = () => {
-  const [showAssistant, setShowAssistant] = useState(false);
+
   const [view, setView] = useState<'home' | 'pricing' | 'research' | 'admin' | 'case-studies' | 'about' | 'resource' | 'workshop'>('home');
   const [isDark, setIsDark] = useState(false);
 
@@ -161,14 +160,7 @@ const App: React.FC = () => {
 
       {view !== 'admin' && <Footer setView={setView} />}
 
-      {showAssistant && (
-        <div className="fixed inset-0 z-[60] flex items-center justify-end">
-          <div className="absolute inset-0 bg-[#0d2b23]/40 backdrop-blur-sm" onClick={() => setShowAssistant(false)} />
-          <div className="relative h-full w-full max-w-lg bg-white shadow-2xl animate-in slide-in-from-right duration-300">
-            <LeadAssistant onClose={() => setShowAssistant(false)} />
-          </div>
-        </div>
-      )}
+
       <SpeedInsights />
       <Analytics />
     </div>
