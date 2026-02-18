@@ -22,6 +22,7 @@ import { Analytics } from '@vercel/analytics/react';
 const App: React.FC = () => {
 
   const [view, setView] = useState<'home' | 'pricing' | 'research' | 'admin' | 'case-studies' | 'about' | 'resource' | 'workshop'>('home');
+  const [researchSlug, setResearchSlug] = useState<string | null>(null);
   const [isDark, setIsDark] = useState(false);
 
   const toggleDark = () => {
@@ -33,29 +34,73 @@ const App: React.FC = () => {
     }
   };
 
-  useEffect(() => {
-    // Check for /resource route on initial load
-    if (window.location.pathname === '/resource') {
+  const handleRouteChange = () => {
+    const path = window.location.pathname;
+    if (path === '/resource') {
       setView('resource');
-    } else if (window.location.pathname === '/workbook') {
+      setResearchSlug(null);
+    } else if (path === '/workbook') {
       setView('workshop');
+      setResearchSlug(null);
+    } else if (path.startsWith('/research/')) {
+      const slug = path.replace('/research/', '');
+      setView('research');
+      setResearchSlug(slug);
+    } else if (path === '/research') {
+      setView('research');
+      setResearchSlug(null);
+    } else if (path === '/pricing') {
+      setView('pricing');
+      setResearchSlug(null);
+    } else if (path === '/case-studies') {
+      setView('case-studies');
+      setResearchSlug(null);
+    } else if (path === '/about') {
+      setView('about');
+      setResearchSlug(null);
+    } else if (path === '/') {
+      setView('home');
+      setResearchSlug(null);
     }
+  };
+
+  useEffect(() => {
+    handleRouteChange();
+    window.addEventListener('popstate', handleRouteChange);
+    return () => window.removeEventListener('popstate', handleRouteChange);
   }, []);
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [view]);
+  }, [view, researchSlug]);
+
+  // Wrap setView to also push URL state for nav links
+  const navigateTo = (newView: typeof view) => {
+    const paths: Record<string, string> = {
+      home: '/',
+      pricing: '/pricing',
+      research: '/research',
+      'case-studies': '/case-studies',
+      about: '/about',
+    };
+    const path = paths[newView];
+    if (path) {
+      window.history.pushState({}, '', path);
+    }
+    setView(newView);
+    setResearchSlug(null);
+  };
 
   return (
     <div className="relative min-h-screen overflow-x-hidden selection:bg-[#9daaa6]/30 selection:text-[#0d2b23]">
       {view !== 'admin' && (
-        <Navbar onCtaClick={() => { }} setView={setView} currentView={view} />
+        <Navbar onCtaClick={() => { }} setView={navigateTo} currentView={view} />
       )}
 
       <main className={view !== 'admin' ? "pt-20" : ""}>
         {view === 'home' && (
           <>
-            <Hero onCtaClick={() => setView('pricing')} isDark={isDark} toggleDark={toggleDark} />
+            <Hero onCtaClick={() => navigateTo('pricing')} isDark={isDark} toggleDark={toggleDark} />
             <div className="bg-[#fcfcfc]">
               <Challenges />
             </div>
@@ -81,7 +126,7 @@ const App: React.FC = () => {
 
         {view === 'research' && (
           <div className="animate-in fade-in slide-in-from-bottom-4 duration-700">
-            <Research onCtaClick={() => { }} />
+            <Research onCtaClick={() => { }} selectedSlug={researchSlug} />
           </div>
         )}
 
@@ -99,7 +144,7 @@ const App: React.FC = () => {
 
         {view === 'admin' && (
           <div className="animate-in zoom-in-95 duration-500">
-            <ResearchControl onExit={() => setView('home')} />
+            <ResearchControl onExit={() => navigateTo('home')} />
           </div>
         )}
 
@@ -127,9 +172,6 @@ const App: React.FC = () => {
                 window.history.pushState({}, '', '/');
               }}
               onCtaClick={() => {
-                // Determine CTA behavior - for now, maybe open the calendar or just scroll safely?
-                // The workshop page has a "Secure Your Slot" button.
-                // It might need to open the booking modal.
                 const btn = document.querySelector('[data-cal-link="sales-team/sales-discovery"]');
                 if (btn && btn instanceof HTMLElement) {
                   btn.click();
@@ -158,7 +200,7 @@ const App: React.FC = () => {
         )}
       </main>
 
-      {view !== 'admin' && <Footer setView={setView} />}
+      {view !== 'admin' && <Footer setView={navigateTo} />}
 
 
       <SpeedInsights />
