@@ -9,6 +9,8 @@ interface ResearchItem {
   date: string;
   readTime: string;
   pdfUrl: string;
+  heroImage?: string;
+  blogContent?: string;
 }
 
 interface ResearchProps {
@@ -16,6 +18,134 @@ interface ResearchProps {
 }
 
 const RESEARCH_DATA: ResearchItem[] = [
+  {
+    id: '10',
+    slug: 'controlled-outbound-buyer-market',
+    title: 'Controlled Outbound in an Uncontrolled Buyer Market',
+    description: 'The year 2025 marks a definitive tipping point in B2B procurement. Millennials and Gen Z now command 71–73% of buying influence, and the traditional sales playbook is an obsolete liability. This report decodes the generational shift, the self-guided buyer journey, and the strategic roadmap for winning the 2025 B2B buyer.',
+    date: 'Feb 2026',
+    readTime: '12 min read',
+    pdfUrl: '',
+    heroImage: `${import.meta.env.BASE_URL}research/controlled-outbound-buyer-market.png`,
+    blogContent: `The year 2025 marks a definitive tipping point in B2B procurement. We are witnessing a demographic coup as the "generational guard" shifts, rendering traditional sales playbooks **obsolete liabilities**. These frameworks were built for an analog-first workforce that no longer holds the keys to the budget. Today's decision-makers are digital natives who have imported high-speed, high-transparency consumer expectations into the enterprise. For the modern CMO or VP of Sales, the disconnect isn't merely a marketing gap; it is a fundamental failure to align with the new architects of organizational spend.
+
+### Generational Breakdown of the 2025 B2B Workforce
+
+| Generation | Approximate % of Buying Influence | Core Buying Identity |
+| :---- | :---- | :---- |
+| **Millennials** | 73% | Trust-Anchored & Experience-Driven |
+| **Gen Z** | 9% - 27% (Rising) | Hyper-Connected & Authenticity-Seeking |
+| **Gen X** | 30% | Outcome-Focused & Skeptical |
+| **Baby Boomers** | 6% | Relationship & Reputation-Driven |
+
+*Note: Millennials and Gen Z combined now command 71–73% of B2B buying influence.*
+
+This demographic dominance has birthed the **"Rebel Buyer."** This cohort is strategically **allergic to being sold to**. They do not view themselves as "leads" in a CRM; they are independent researchers on a mission to solve problems without vendor interference. The Rebel Buyer is defined by three disruptive traits:
+
+- **Radical Self-Education:** They utilize "Dark Social"—private Slack communities, Reddit, and peer networks—as their primary validation engine to bypass early-stage sales intervention.
+- **Value-Alignment:** Procurement is no longer just about features; they prioritize a vendor's purpose, sustainability, and DEI initiatives as core selection criteria.
+- **Transparency-Demand:** They have zero tolerance for "gatekeeping." If pricing, ROI evidence, or product specs are hidden behind a "Contact Us" form, they will strike the vendor from the shortlist instantly.
+
+As power consolidates within this group, the purchase journey has moved entirely into the digital landscape, long before a salesperson is ever granted an audience.
+
+## Anatomy of the Modern Purchase Journey: 70% Done Before Hello
+
+The modern B2B journey is defined by a fierce preference for a "Rep-Free" experience. When 75% of buyers state they would prefer to navigate the entire cycle without a sales representative, the strategic danger of premature sales intervention cannot be overstated. Engaging a digital-native buyer too early is viewed as an intrusion, often leading to immediate disqualification.
+
+### The Self-Guided Purchase Journey: Prescriptive Directives
+
+1. **Independent Research:** Buyers identify problems and vet solutions via search and social media.
+   - **Directive:** Repurpose 40% of your SDR budget into high-intent content assets. Your website must now qualify the buyer; it is no longer a brochure, but your primary automated SDR.
+2. **Social Validation & "Dark Social":** Buyers consult peer networks (Slack, LinkedIn) to verify vendor claims.
+   - **Directive:** Invest in community marketing and brand evangelism. If your solution isn't being discussed positively in non-indexed social circles, you are effectively invisible.
+3. **Self-Guided Evaluation:** Buyers consume exactly **13 pieces of content** (8 vendor-created, 5 third-party) before engagement.
+   - **Directive:** Your content architecture must provide enough technical depth to satisfy a 200+ day research cycle. If you lack third-party validation (expert opinions, independent reviews), you will fail the 5-piece external trust requirement.
+
+> **The average B2B customer journey has expanded to 211 days. Buyers are now 70% to 80% through this journey before they ever engage with a seller.**
+
+As the journey becomes more self-led, the internal path to a signature becomes significantly more crowded.
+
+## The Complexity Crisis: Multi-Stakeholder Committees and Stall Cycles
+
+Individual decision-makers have been replaced by "Consensus-Building" committees designed to mitigate economic risk. This expansion creates a "Friction of Consensus," where a Gen Z researcher's demand for speed and vertical video clashes with a Boomer's demand for a 50-page ROI analysis.
+
+### Stakeholder Profile Matrix
+
+| Stakeholder | Influence | Primary "Gatekeeper" Role / Deal Breakers |
+| :---- | :---- | :---- |
+| **Managers** | 47% | **The Evaluator:** Blocks deals if the solution creates high friction or steep learning curves for the team. |
+| **VPs / Executives** | 52% | **The Strategist:** Focuses on long-term impact and strategic alignment. Blocks deals lacking vision. |
+| **CFO** | 79% (IT Deals) | **The Economic Gatekeeper:** 93% of buyers require a formal business case. Blocks if ROI is not demonstrated within 6 months. |
+| **Legal** | 61% (Block Rate) | **The Compliance Officer:** Blocks or slows 61% of cases due to security, compliance, or contract terms. |
+
+With committees often exceeding 10 stakeholders (and 21% of deals involving 10+), **86% of B2B purchases stall**. To counter this, sales teams must move from "the pitch" to "stakeholder enablement."
+
+**Stall Mitigation Checklist:**
+
+- **Business Case Frameworks:** Arm your champion with data-driven templates to satisfy the 93% CFO requirement.
+- **Executive Briefs:** Distill 50-page decks into high-signal one-pagers for VPs.
+- **Proof-of-Concept (PoC) Trials:** Use pilots to de-risk the decision for skeptical technical stakeholders.
+
+In a 12-month average buying cycle, patience is a strategic asset. Success requires providing hyper-personalized trust signals to every unique persona on the committee.
+
+## The Generational Playbook: Tailoring Engagement by Cohort
+
+Segmenting by job title is insufficient. Organizations must account for "Moments of Honesty"—the generational triggers that either build or destroy trust.
+
+### Engagement Preferences by Generation
+
+| Generation | Preferred Channel | Content Depth | Key Trust Signal | Cadence Tolerance |
+| :---- | :---- | :---- | :---- | :---- |
+| **Gen Z** | Social / Video | Skimmable (90s) | Digital Speed | High / Interactive |
+| **Millennials** | Email / Social | Deep / Educational | Peer Verification | Moderate / Value-led |
+| **Gen X** | Email | Concrete / Metric-led | Case Studies / ROI | Low / High Signal |
+| **Boomers** | Phone / Email | Professional / Full | Reputation / Stability | Monthly (Very Low) |
+
+#### Millennials: Fluff-Free Substance
+
+Millennials are the most influential buying group today and are "allergic to fluff." They reward expertise over slogans. To win, you must provide the "internal case" ammunition they need to look smart. If your marketing lacks technical substance, they will tune out immediately.
+
+#### Gen Z: The "Tik-Tokification" of B2B
+
+Gen Z expects B2C-level digital responsiveness. They favor 60–90 second vertical videos that deliver value instantly. For this cohort, technology is the doorway; a clunky mobile experience or a 24-hour response delay is a disqualifying event.
+
+The universal constant across these cohorts is a non-negotiable demand for transparency and peer-verified proof.
+
+## The New Currency of B2B: Trust, Transparency, and Social Proof
+
+We are in a "Brand Crisis" where **81% of buyers** are dissatisfied with their providers. Trust is now the ultimate competitive differentiator.
+
+### The Hierarchy of Trust
+
+1. **Peer Reviews & Social Proof:** 2.5x more trusted than vendor content.
+2. **Case Studies:** Essential for the 93% business case requirement.
+3. **Analyst Reports:** Trust has declined by 60% since 2022; buyers prefer "unfiltered" data.
+4. **Vendor Claims:** The least influential factor in the final decision.
+
+### AI's Impact on Research: Authority Search Optimization (ASO)
+
+AI is shortening the shortlist faster than ever. As buyers utilize AI Overviews for deep research, **90% of buyers click on the sources cited** in those overviews. To survive, your brand must have an established footprint of authority and trust across the web, or AI-driven tools will exclude you before the manual search even begins.
+
+## Strategic Roadmap: Winning the 2025 Buyer
+
+The winners of 2025 will be those who facilitate a frictionless, consultative, and omnichannel experience.
+
+### 2025 Growth Checklist for B2B Leaders
+
+- **Audit for Velocity:** Optimize website and mobile speed; 97% of buyers cite speed as a key evaluation factor.
+- **Ungate High-Value Assets:** Replace lead-gen forms with value-first resources to reduce friction during the 70% self-guided phase.
+- **Deploy Intent-Driven Outreach:** Use signals to engage buyers when they are "warming up" on third-party sites, rather than relying on blind cold outreach.
+
+### Evolution: From Pitchman to Transparent Advisor
+
+Sales teams must evolve their tactical approach based on cohort-specific needs:
+
+1. **Proof-First Orchestration (Gen X):** Lead with your clearest metric-driven case study to earn Gen X's limited attention.
+2. **Tik-Tokified Technical Overviews (Gen Z):** Deliver 90-second vertical video summaries of technical specs to meet Gen Z's demand for rapid, digital-first value.
+3. **Establish Trust Portals (Universal):** Provide frictionless access to pricing, security certifications, and ROI calculators.
+
+In the 2025 market, **Clarity beats Chaos.** Understanding the "whole human" behind the job title—their generational fears and digital habits—is the only way to unlock the new B2B code.`,
+  },
   {
     id: '1',
     slug: 'outbound-paradox',
@@ -108,6 +238,216 @@ export const getAllResearchSlugs = (): string[] => {
   return RESEARCH_DATA.map(item => item.slug);
 };
 
+// Simple markdown-to-JSX renderer for blog content
+const BlogContent: React.FC<{ content: string }> = ({ content }) => {
+  const lines = content.split('\n');
+  const elements: React.ReactNode[] = [];
+  let i = 0;
+  let key = 0;
+
+  const parseInline = (text: string): React.ReactNode[] => {
+    const parts: React.ReactNode[] = [];
+    let remaining = text;
+    let partKey = 0;
+
+    while (remaining.length > 0) {
+      // Bold
+      const boldMatch = remaining.match(/\*\*(.+?)\*\*/);
+      if (boldMatch && boldMatch.index !== undefined) {
+        if (boldMatch.index > 0) {
+          parts.push(remaining.slice(0, boldMatch.index));
+        }
+        parts.push(<strong key={partKey++} className="text-[#0d2b23] font-bold">{boldMatch[1]}</strong>);
+        remaining = remaining.slice(boldMatch.index + boldMatch[0].length);
+        continue;
+      }
+      // Italic
+      const italicMatch = remaining.match(/\*(.+?)\*/);
+      if (italicMatch && italicMatch.index !== undefined) {
+        if (italicMatch.index > 0) {
+          parts.push(remaining.slice(0, italicMatch.index));
+        }
+        parts.push(<em key={partKey++} className="text-[#61756f]">{italicMatch[1]}</em>);
+        remaining = remaining.slice(italicMatch.index + italicMatch[0].length);
+        continue;
+      }
+      parts.push(remaining);
+      break;
+    }
+    return parts;
+  };
+
+  while (i < lines.length) {
+    const line = lines[i];
+
+    // Skip empty lines
+    if (line.trim() === '') {
+      i++;
+      continue;
+    }
+
+    // H2
+    if (line.startsWith('## ')) {
+      elements.push(
+        <h2 key={key++} className="text-3xl font-black text-[#0d2b23] tracking-tight mt-16 mb-6 pt-8 border-t border-slate-100">
+          {parseInline(line.slice(3))}
+        </h2>
+      );
+      i++;
+      continue;
+    }
+
+    // H4
+    if (line.startsWith('#### ')) {
+      elements.push(
+        <h4 key={key++} className="text-xl font-black text-[#0d2b23] tracking-tight mt-8 mb-3">
+          {parseInline(line.slice(5))}
+        </h4>
+      );
+      i++;
+      continue;
+    }
+
+    // H3
+    if (line.startsWith('### ')) {
+      elements.push(
+        <h3 key={key++} className="text-2xl font-black text-[#0d2b23] tracking-tight mt-10 mb-4">
+          {parseInline(line.slice(4))}
+        </h3>
+      );
+      i++;
+      continue;
+    }
+
+    // Blockquote
+    if (line.startsWith('> ')) {
+      const quoteLines: string[] = [];
+      while (i < lines.length && lines[i].startsWith('> ')) {
+        quoteLines.push(lines[i].slice(2));
+        i++;
+      }
+      elements.push(
+        <blockquote key={key++} className="border-l-4 border-[#2e4841] bg-[#f0f4f2] rounded-r-2xl px-8 py-6 my-8 text-[#0d2b23] font-bold text-lg leading-relaxed">
+          <p>{parseInline(quoteLines.join(' '))}</p>
+        </blockquote>
+      );
+      continue;
+    }
+
+    // Table
+    if (line.includes('|') && line.trim().startsWith('|')) {
+      const tableLines: string[] = [];
+      while (i < lines.length && lines[i].includes('|') && lines[i].trim().startsWith('|')) {
+        tableLines.push(lines[i]);
+        i++;
+      }
+      const parseRow = (row: string) =>
+        row.split('|').slice(1, -1).map(cell => cell.trim());
+
+      const headers = parseRow(tableLines[0]);
+      const bodyRows = tableLines.slice(2).map(parseRow);
+
+      elements.push(
+        <div key={key++} className="overflow-x-auto rounded-2xl border border-slate-200 my-8">
+          <table className="w-full border-collapse text-sm">
+            <thead>
+              <tr>
+                {headers.map((h, hi) => (
+                  <th key={hi} className="bg-[#0d2b23] text-white font-bold px-5 py-3.5 text-left text-xs uppercase tracking-wider">
+                    {parseInline(h)}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {bodyRows.map((row, ri) => (
+                <tr key={ri} className={ri % 2 === 1 ? 'bg-[#f8faf9]' : 'bg-white'}>
+                  {row.map((cell, ci) => (
+                    <td key={ci} className="border-b border-slate-100 px-5 py-3.5 text-[#3d4f4a] font-medium">
+                      {parseInline(cell)}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      );
+      continue;
+    }
+
+    // Ordered list
+    if (/^\d+\.\s/.test(line)) {
+      const items: React.ReactNode[] = [];
+      while (i < lines.length && (/^\d+\.\s/.test(lines[i]) || lines[i].startsWith('   '))) {
+        if (/^\d+\.\s/.test(lines[i])) {
+          items.push(
+            <li key={items.length} className="text-[#3d4f4a] font-medium leading-[1.8] mb-2">
+              {parseInline(lines[i].replace(/^\d+\.\s/, ''))}
+            </li>
+          );
+        } else if (lines[i].trim().startsWith('- ')) {
+          items.push(
+            <li key={items.length} className="ml-6 list-disc text-[#3d4f4a] font-medium leading-[1.8] mb-1">
+              {parseInline(lines[i].trim().slice(2))}
+            </li>
+          );
+        }
+        i++;
+      }
+      elements.push(
+        <ol key={key++} className="list-decimal pl-6 my-6 space-y-1">
+          {items}
+        </ol>
+      );
+      continue;
+    }
+
+    // Unordered list
+    if (line.startsWith('- ')) {
+      const items: React.ReactNode[] = [];
+      while (i < lines.length && lines[i].startsWith('- ')) {
+        items.push(
+          <li key={items.length} className="text-[#3d4f4a] font-medium leading-[1.8] mb-2">
+            {parseInline(lines[i].slice(2))}
+          </li>
+        );
+        i++;
+      }
+      elements.push(
+        <ul key={key++} className="list-disc pl-6 my-6 space-y-1">
+          {items}
+        </ul>
+      );
+      continue;
+    }
+
+    // Regular paragraph
+    const paraLines: string[] = [];
+    while (
+      i < lines.length &&
+      lines[i].trim() !== '' &&
+      !lines[i].startsWith('#') &&
+      !lines[i].startsWith('- ') &&
+      !lines[i].startsWith('> ') &&
+      !/^\d+\.\s/.test(lines[i]) &&
+      !(lines[i].includes('|') && lines[i].trim().startsWith('|'))
+    ) {
+      paraLines.push(lines[i]);
+      i++;
+    }
+    if (paraLines.length > 0) {
+      elements.push(
+        <p key={key++} className="text-[#3d4f4a] text-lg leading-[1.8] font-medium my-6">
+          {parseInline(paraLines.join(' '))}
+        </p>
+      );
+    }
+  }
+
+  return <>{elements}</>;
+};
+
 const Research: React.FC<ResearchProps & { selectedSlug?: string | null }> = ({ onCtaClick, selectedSlug }) => {
   const [scrollProgress, setScrollProgress] = useState(0);
 
@@ -154,7 +494,7 @@ const Research: React.FC<ResearchProps & { selectedSlug?: string | null }> = ({ 
               <div className="mb-12">
                 <div className="flex items-center gap-4 mb-8">
                   <span className="bg-[#fcfcfc] border border-slate-100 text-[#2e4841] text-[10px] font-black uppercase tracking-[0.2em] px-4 py-2 rounded-full">
-                    White Paper
+                    {selectedArticle.blogContent ? 'Research Article' : 'White Paper'}
                   </span>
                   <span className="text-[#9daaa6] text-[10px] font-black uppercase tracking-[0.2em]">
                     {selectedArticle.date} • Kluvo Research
@@ -168,39 +508,58 @@ const Research: React.FC<ResearchProps & { selectedSlug?: string | null }> = ({ 
                   {selectedArticle.description}
                 </p>
 
-                {/* PDF Embed */}
-                <div className="rounded-[32px] overflow-hidden border border-slate-100 bg-[#fcfcfc]">
-                  <iframe
-                    src={selectedArticle.pdfUrl}
-                    className="w-full border-0"
-                    style={{ height: '80vh' }}
-                    title={selectedArticle.title}
-                  />
-                </div>
+                {selectedArticle.blogContent ? (
+                  <>
+                    {selectedArticle.heroImage && (
+                      <div className="rounded-[32px] overflow-hidden border border-slate-100 mb-12">
+                        <img
+                          src={selectedArticle.heroImage}
+                          alt={selectedArticle.title}
+                          className="w-full h-auto"
+                        />
+                      </div>
+                    )}
+                    <div className="max-w-none">
+                      <BlogContent content={selectedArticle.blogContent} />
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    {/* PDF Embed */}
+                    <div className="rounded-[32px] overflow-hidden border border-slate-100 bg-[#fcfcfc]">
+                      <iframe
+                        src={selectedArticle.pdfUrl}
+                        className="w-full border-0"
+                        style={{ height: '80vh' }}
+                        title={selectedArticle.title}
+                      />
+                    </div>
 
-                <div className="mt-8 flex flex-wrap gap-4">
-                  <a
-                    href={selectedArticle.pdfUrl}
-                    download
-                    className="inline-flex items-center gap-3 bg-[#0d2b23] text-white px-8 py-4 rounded-xl font-bold transition-all hover:bg-[#2e4841] active:scale-95 shadow-xl shadow-[#0d2b23]/20"
-                  >
-                    <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                      <path d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                    </svg>
-                    Download PDF
-                  </a>
-                  <a
-                    href={selectedArticle.pdfUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-3 bg-white text-[#0d2b23] border border-slate-200 px-8 py-4 rounded-xl font-bold transition-all hover:border-[#2e4841] active:scale-95"
-                  >
-                    <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                      <path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                    </svg>
-                    Open in New Tab
-                  </a>
-                </div>
+                    <div className="mt-8 flex flex-wrap gap-4">
+                      <a
+                        href={selectedArticle.pdfUrl}
+                        download
+                        className="inline-flex items-center gap-3 bg-[#0d2b23] text-white px-8 py-4 rounded-xl font-bold transition-all hover:bg-[#2e4841] active:scale-95 shadow-xl shadow-[#0d2b23]/20"
+                      >
+                        <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                          <path d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                        Download PDF
+                      </a>
+                      <a
+                        href={selectedArticle.pdfUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-3 bg-white text-[#0d2b23] border border-slate-200 px-8 py-4 rounded-xl font-bold transition-all hover:border-[#2e4841] active:scale-95"
+                      >
+                        <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                          <path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                        Open in New Tab
+                      </a>
+                    </div>
+                  </>
+                )}
               </div>
             </div>
 
