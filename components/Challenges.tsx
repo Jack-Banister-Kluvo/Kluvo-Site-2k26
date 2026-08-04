@@ -9,8 +9,8 @@ const CHALLENGES = [
         <path d="m19 9-5 5-4-4-3 3" />
       </svg>
     ),
-    title: 'Revenue stagnation',
-    desc: "Your revenue boost is lagging 2–3 times behind projections, and you're struggling to find enough qualified opportunities."
+    title: 'Meetings that were never going to close',
+    desc: "The calendar looks healthy and the forecast doesn't move. The meetings got booked, but the prospect was never in a position to buy."
   },
   {
     icon: (
@@ -19,8 +19,8 @@ const CHALLENGES = [
         <polyline points="12 6 12 12 16 14" />
       </svg>
     ),
-    title: 'Slow deal closure',
-    desc: "Meeting sales quotas takes an unacceptably long time frame of 6–12 months. Lead quality is the bottleneck."
+    title: 'Expensive closers doing cheap work',
+    desc: "Senior salespeople on £90-100k spending their week sitting in discovery calls that a proper qualification conversation would have filtered out."
   },
   {
     icon: (
@@ -31,8 +31,8 @@ const CHALLENGES = [
         <path d="M18 3s-2 3-10 3-10-3-10-3" />
       </svg>
     ),
-    title: 'Disconnected sales & marketing',
-    desc: "Marketing pushes leads that sales can’t close, while sales feedback gets lost in the void."
+    title: 'Agencies that book for a metric',
+    desc: "When the contract rewards appointment count, everything gets booked. Timing objections get talked past instead of surfaced, and your team pays for it."
   },
   {
     icon: (
@@ -41,8 +41,8 @@ const CHALLENGES = [
         <circle cx="12" cy="12" r="3" />
       </svg>
     ),
-    title: 'Internal bottlenecks',
-    desc: "Your team is overburdened with routine tasks, missing sales KPIs and failing to innovate."
+    title: 'The risk of another SDR hire',
+    desc: "Salary, tools, ramp time and a manager to coach them - committed up front, months before you find out whether the person can actually do the job."
   },
   {
     icon: (
@@ -52,8 +52,8 @@ const CHALLENGES = [
         <circle cx="12" cy="12" r="2" />
       </svg>
     ),
-    title: 'Inconsistent lead quality',
-    desc: "Despite trying new tools, you're struggling to convert cold outreach into qualified sales appointments."
+    title: 'Lists that match a job title, nothing more',
+    desc: "Outreach built on a job-title filter reaches people who fit the profile on paper and have no reason to take the call this quarter."
   },
   {
     icon: (
@@ -63,8 +63,8 @@ const CHALLENGES = [
         <line x1="12" y1="17" x2="12.01" y2="17" />
       </svg>
     ),
-    title: 'Bad past experience',
-    desc: "Previous agencies left you skeptical. You need a partner that actually delivers on ROI promises."
+    title: 'Burned by the last agency',
+    desc: "You were sold volume, you got volume, and none of it converted. Reasonable to be sceptical of the next agency saying the same thing louder."
   }
 ];
 
@@ -73,10 +73,10 @@ const Challenges: React.FC = () => {
     <section className="py-24 max-w-7xl mx-auto px-6">
       <div className="text-center mb-16">
         <h2 className="text-4xl md:text-5xl font-black text-[#0d2b23] mb-6">
-          Challenges you can entrust to us
+          The problem isn't the number of meetings
         </h2>
         <p className="text-[#61756f] text-lg max-w-2xl mx-auto font-medium">
-          Most of our clients had pipeline generation issues that seemed unbeatable, but we proved otherwise with Kluvo methodology.
+          Almost every client arrives having already tried volume. These are the things they tell us on the first call.
         </p>
       </div>
 

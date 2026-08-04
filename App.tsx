@@ -5,10 +5,10 @@ import Challenges from './components/Challenges';
 import Pricing from './components/Pricing';
 import Timeline from './components/Timeline';
 import ValueProps from './components/ValueProps';
-import OmnichannelFunnel from './components/OmnichannelFunnel';
+import QualificationFunnel from './components/QualificationFunnel';
 import Footer from './components/Footer';
 
-import EnterpriseSection from './components/EnterpriseSection';
+import DeRiskedSection from './components/DeRiskedSection';
 import TechStack from './components/TechStack';
 import Research from './components/Research';
 import ResearchControl from './components/ResearchControl';
@@ -105,7 +105,7 @@ const App: React.FC = () => {
               <Challenges />
             </div>
             <section className="py-20 bg-[#fcfcfc]">
-              <OmnichannelFunnel />
+              <QualificationFunnel />
             </section>
             <section id="process" className="py-24 bg-[#fcfcfc]">
               <Timeline />
@@ -118,7 +118,7 @@ const App: React.FC = () => {
           <div className="animate-in fade-in duration-500">
             <section id="pricing" className="py-24 bg-white">
               <Pricing onCtaClick={() => { }} />
-              <EnterpriseSection onCtaClick={() => { }} />
+              <DeRiskedSection onCtaClick={() => { }} />
               <TechStack />
             </section>
           </div>
@@ -185,15 +185,18 @@ const App: React.FC = () => {
           <section className="py-24 bg-[#0d2b23] text-white text-center">
             <div className="max-w-4xl mx-auto px-6">
               <h2 className="text-4xl md:text-5xl font-black mb-8 leading-tight">
-                Our clients close <span className="text-[#9daaa6]">25% more deals</span><br />with their dream accounts
+                Fewer meetings.<br /><span className="text-[#9daaa6]">The ones that were worth sitting in.</span>
               </h2>
+              <p className="text-[#9daaa6] text-lg font-medium leading-relaxed mb-10 max-w-2xl mx-auto">
+                £4,000 a month, two dedicated SDRs, and ten working days of onboarding we don't charge for. Tell us your ICP and we'll tell you honestly what we think we can guarantee.
+              </p>
               <button
                 data-cal-link="sales-team/sales-discovery"
                 data-cal-namespace="sales-discovery"
                 data-cal-config='{"layout":"month_view","theme":"light"}'
                 className="bg-white text-[#0d2b23] px-10 py-5 rounded-2xl text-xl font-black transition-all hover:scale-105 active:scale-95 shadow-2xl shadow-black/40"
               >
-                Book a call with Kluvo experts
+                Book a call with Kluvo
               </button>
             </div>
           </section>

@@ -12,27 +12,27 @@ const TechStack: React.FC = () => {
         </svg>
       )
     },
-    { 
-      name: 'ZoomInfo', 
-      desc: 'Premium B2B contact data and intent signals', 
+    {
+      name: 'Apollo',
+      desc: 'Contact data and a second line on every account',
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <circle cx="12" cy="12" r="10"/><path d="M12 2a7 7 0 0 1 7 7c0 2.5-1.3 4.7-3.3 6l3.3 5H5l3.3-5C6.3 13.7 5 11.5 5 9a7 7 0 0 1 7-7z"/>
         </svg>
       )
     },
-    { 
-      name: 'HubSpot', 
-      desc: 'CRM and marketing automation partner', 
+    {
+      name: 'BuiltWith',
+      desc: 'Technology signals that show who is worth a call',
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <rect width="16" height="20" x="4" y="2" rx="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M8 10h.01"/><path d="M16 10h.01"/><path d="M8 14h.01"/><path d="M16 14h.01"/>
         </svg>
       )
     },
-    { 
-      name: 'Clay', 
-      desc: 'Sales intelligence and engagement', 
+    {
+      name: 'Clay',
+      desc: 'Multi-line enrichment, suppressed against your CRM',
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/>
@@ -50,9 +50,9 @@ const TechStack: React.FC = () => {
         <div className="absolute top-0 left-0 w-64 h-64 bg-[#2e4841]/5 blur-[80px] -ml-32 -mt-32" />
         
         <div className="relative z-10 text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-black text-[#0d2b23] mb-6">Top-tier tools at no extra cost</h2>
+          <h2 className="text-4xl md:text-5xl font-black text-[#0d2b23] mb-6">The stack sits inside the retainer</h2>
           <p className="text-[#61756f] text-lg max-w-2xl mx-auto font-medium">
-            Save up to $10,000 annually on premium lead generation and marketing tools included in our retainer.
+            We run several enrichment sources against every account rather than one, because a single line on a contact is how you end up calling people who match a job title and nothing else. You are not billed separately for any of it.
           </p>
         </div>
 

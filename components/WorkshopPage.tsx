@@ -40,7 +40,7 @@ const WorkshopPage: React.FC<WorkshopPageProps> = ({ onExit, onCtaClick }) => {
 
           {/* Minimalist Headline */}
           <h1 className="text-4xl md:text-7xl font-black leading-[1] tracking-tighter mb-12 max-w-4xl mx-auto uppercase">
-            10k Call tested Cold Call Script
+            The cold call script, walked through
           </h1>
 
           {/* Video Container - The Centerpiece */}
@@ -57,7 +57,7 @@ const WorkshopPage: React.FC<WorkshopPageProps> = ({ onExit, onCtaClick }) => {
           {/* Simple CTA Focus */}
           <div className="max-w-xl mx-auto text-center space-y-8">
             <p className="text-lg md:text-xl text-[#61756f] leading-relaxed font-bold">
-              This is our cold call script that has been used in over 10,000 calls to book us hundreds of booked appointments.
+              This is the script our SDRs actually run, refined over more than 10,000 calls. Most of what it does is help you find out quickly that someone isn't worth booking.
             </p>
 
             <button
@@ -73,7 +73,7 @@ const WorkshopPage: React.FC<WorkshopPageProps> = ({ onExit, onCtaClick }) => {
       {/* Minimal Footer */}
       <div className="h-20 flex items-center justify-center">
         <p className="text-[10px] font-black text-[#9daaa6] uppercase tracking-[0.4em]">
-          Internal Training • Strictly Confidential
+          Kluvo • Phone-first outbound SDR agency
         </p>
       </div>
     </div>

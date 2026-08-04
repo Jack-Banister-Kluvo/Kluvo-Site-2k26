@@ -22,7 +22,7 @@ const Footer: React.FC<FooterProps> = ({ setView }) => {
               <span className="text-2xl font-black text-[#0d2b23] lowercase tracking-tighter">kluvo</span>
             </div>
             <p className="text-[#61756f] font-medium mb-8 leading-relaxed max-w-xs text-sm">
-              B2B Lead Generation Agency helping companies generate $12m+ in revenue through strategic outbound.
+              Phone-first outbound SDR agency. Two dedicated SDRs, intent-based lists, and a guaranteed number of qualified-and-sat meetings each month.
             </p>
             <div className="space-y-4">
               <a href="mailto:Support@kluvo.co.uk" className="block text-[#0d2b23] hover:text-[#2e4841] font-bold transition-colors underline decoration-[#9daaa6] underline-offset-4">support@kluvo.co.uk</a>
@@ -60,7 +60,7 @@ const Footer: React.FC<FooterProps> = ({ setView }) => {
               ))}
             </div>
             <p className="mt-8 text-[11px] text-[#9daaa6] font-medium leading-relaxed max-w-[200px]">
-              Stay updated with our latest research and B2B growth blueprints on LinkedIn and Instagram.
+              We publish our research and what we are learning from the phones on LinkedIn and Instagram.
             </p>
           </div>
         </div>

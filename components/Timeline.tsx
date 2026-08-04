@@ -18,78 +18,78 @@ interface TimelineStep {
 const STEPS: TimelineStep[] = [
   {
     id: 0,
-    phase: 'Setup and strategy development',
-    days: 'Days 1–5',
-    summary: 'Building the foundation of your outbound ecosystem.',
+    phase: 'Absorbing what already works',
+    days: 'Days 1-3',
+    summary: 'Learning your angles before we write a single one of our own.',
     subSteps: [
       {
-        title: 'Welcome and initial setup',
-        description: 'Immediately after signing, we trigger our high-touch onboarding sequence to get your campaign moving.',
+        title: 'The 90-minute onboarding call',
+        description: 'The ten working days start here. You pay the first invoice, we issue a booking link, and this call is where the clock begins.',
         bullets: [
-          'You receive a welcome email introducing your dedicated account manager (AM).',
-          'We confirm key details, including contract specifics and primary campaign goals.',
-          'Access to your reporting charts is provisioned.'
+          'You meet your account manager (strategy) and your day-to-day manager (execution and QA).',
+          'We agree the ICP, the disqualifiers, and what "qualified and sat" means for your business.',
+          'We set the guaranteed monthly number against that ICP - honestly, not optimistically.'
         ]
       },
       {
-        title: 'Technical Infrastructure',
-        description: 'We handle the heavy lifting of domain safety and deliverability.',
+        title: 'We morph into you',
+        description: 'We do not arrive with a clever new angle. We take the ones your team has already proven and scale them.',
         bullets: [
-          'Secondary domain registration to protect your primary workspace.',
-          'DNS configuration (SPF, DKIM, DMARC) for maximum inbox placement.',
-          'Initial mailbox "warm-up" protocols initiated.'
+          'Your closers walk us through the objections they actually hear and how they handle them.',
+          'We pull the hooks from your won deals, not from a template library.',
+          'SDRs are reskinned in your brand so prospects experience one company, not an agency.'
         ]
       }
     ]
   },
   {
     id: 1,
-    phase: 'Content and research',
-    days: 'Days 6–9',
-    summary: 'Deep-diving into your ICP to find your future customers.',
+    phase: 'List building and infrastructure',
+    days: 'Days 4-7',
+    summary: 'Finding people with a reason to take the call this quarter.',
     subSteps: [
       {
-        title: 'Strategy and domain rollout',
-        description: 'Our strategy team dissects your product to find the hooks that actually resonate.',
+        title: 'Intent-based list building',
+        description: 'Multi-line enrichment rather than a job-title filter, so the list reflects buying intent.',
         bullets: [
-          'Your AM interviews your top sales leaders to extract "tribal knowledge".',
-          'Our research team reviews your Ideal Customer Profile (ICP) and historical wins.',
-          'We finalize the target list of 500+ dream accounts for the pilot phase.'
+          'Enrichment across Clay, Apollo, BuiltWith and others to build multiple lines on each account.',
+          'Suppressed against your CRM so we never touch a live opportunity or existing customer.',
+          'Segmented so reporting later tells you which segment is actually responding.'
         ]
       },
       {
-        title: 'Data Enrichment',
-        description: 'Precision targeting using our premium toolstack (Clay, HubSpot, etc.).',
+        title: 'Technical setup',
+        description: 'The unglamorous work that stops the campaign breaking in week three.',
         bullets: [
-          'Manual verification of decision-maker contact details.',
-          'Intent-signal mapping to identify prospects currently in a "buying window".',
-          'Segmentation by persona and pain-point categories.'
+          'Secondary domain registration to protect your primary workspace.',
+          'DNS configuration (SPF, DKIM, DMARC) for inbox placement.',
+          'Dialler, numbers and call recording configured for QA from day one.'
         ]
       }
     ]
   },
   {
     id: 2,
-    phase: 'Final steps and launch',
-    days: 'Days 10–14',
-    summary: 'Closing the loop and going live with your first sequences.',
+    phase: 'Calibration and go-live',
+    days: 'Days 8-10',
+    summary: 'Agreeing the bar for a meeting before anyone starts booking.',
     subSteps: [
       {
-        title: 'Internal strategy session',
-        description: 'The final alignment before we pull the trigger on your outbound engine.',
+        title: 'Calibrating the qualification bar',
+        description: 'We agree what gets pushed away, so nobody is surprised by a low booking count in week one.',
         bullets: [
-          'Development of multi-threaded messaging scripts for Email, LinkedIn, and Voice.',
-          'A/B testing variations for subject lines and value-prop hooks.',
-          'Approval of the 30-day "Launch Roadmap" and KPIs.'
+          'Scripts built around your proven angles, including the objections we will deliberately test on the call.',
+          'Agreement on what gets flagged as a future lead rather than forced into your calendar.',
+          'Your two dedicated SDRs are named, and both have already been proven on Kluvo\'s own outbound.'
         ]
       },
       {
-        title: 'Campaign Activation',
-        description: 'Your outbound engine begins humming.',
+        title: 'Live activity begins',
+        description: 'The first invoice buys live SDR activity. It does not buy the ten days above - those are unpaid.',
         bullets: [
-          'First sequence of personalized emails deployed.',
-          'LinkedIn social-selling automation begins.',
-          'SDRs initiate cold-calling sequences on high-intent leads.'
+          'Phone-led activity starts, with email and LinkedIn built around it.',
+          'Call recordings reviewed daily by your day-to-day manager in the opening weeks.',
+          'Weekly segment-level reporting from go-live, so you see which parts of the market respond.'
         ]
       }
     ]
@@ -103,11 +103,11 @@ const Timeline: React.FC = () => {
     <div className="max-w-7xl mx-auto px-6">
       <div className="text-center mb-16">
         <h2 className="text-4xl md:text-6xl font-black text-[#0d2b23] mb-4">
-          We’ll launch your appointment<br />
-          setting campaign in <span className="text-[#2e4841]">14 days</span>
+          Ten working days of onboarding<br />
+          that we <span className="text-[#2e4841]">don't charge you for</span>
         </h2>
         <p className="text-[#61756f] font-medium text-lg max-w-2xl mx-auto">
-          Click through the phases below to see exactly how we build your growth engine from scratch.
+          The clock starts at your 90-minute onboarding call. Your first invoice buys live SDR activity, not the ramp-up. Around three to four hours of your time is needed in month one, nearly all of it here.
         </p>
       </div>
 

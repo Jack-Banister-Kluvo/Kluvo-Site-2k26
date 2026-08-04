@@ -57,7 +57,7 @@ const ResearchControl: React.FC<ResearchControlProps> = ({ onExit }) => {
                 </thead>
                 <tbody className="divide-y divide-slate-50">
                   {[
-                    { title: "The Omnichannel Blueprint", status: "Published", views: "2.1k" },
+                    { title: "The Qualification Blueprint", status: "Published", views: "2.1k" },
                     { title: "B2B Sales Trends 2026", status: "Published", views: "1.8k" },
                     { title: "Cold Calling Mastery", status: "Draft", views: "-" }
                   ].map((row, i) => (

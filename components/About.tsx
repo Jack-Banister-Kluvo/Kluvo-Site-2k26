@@ -18,8 +18,8 @@ const TEAM = [
 
 const VALUES = [
   {
-    title: "Radical Transparency",
-    desc: "We don't hide behind 'black box' methodologies. You get a live dashboard of every email sent, every call recorded, and every lead researched.",
+    title: "Say the awkward thing",
+    desc: "On the first call we tell prospects we don't do lots differently to anyone else. It costs us the occasional deal and it saves everyone six months of finding out the hard way.",
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -28,8 +28,8 @@ const VALUES = [
     )
   },
   {
-    title: "Velocity as standard",
-    desc: "Most agencies take 3 months to ramp up. We launch in 14 days and aim for your first booked discovery call by day 30.",
+    title: "Never book for a metric",
+    desc: "If a prospect has real pain but won't act this quarter, they get flagged as a future lead rather than pushed into a calendar to make our monthly report look better.",
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -37,8 +37,8 @@ const VALUES = [
     )
   },
   {
-    title: "Human-Led, AI-Enhanced",
-    desc: "AI identifies the signal; humans craft the narrative. We believe the most effective B2B outreach is deeply personal and empathetic.",
+    title: "Pick up the phone",
+    desc: "Data finds the signal, but you cannot hear hesitation in an email. The phone is where you learn whether someone is actually in a position to buy, which is why most of our activity lives there.",
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
@@ -70,7 +70,7 @@ const About: React.FC = () => {
           </h1>
 
           <p className="max-w-2xl mx-auto text-lg md:text-xl text-[#61756f] font-medium leading-relaxed animate-reveal" style={{ animationDelay: '0.5s' }}>
-            We started Kluvo with a simple realization: B2B companies don’t need more leads, they need more <span className="text-[#0d2b23] font-bold">meaningful conversations</span>. We built the agency we wished we could hire.
+            We started Kluvo because the outbound industry is paid to book meetings, not to be <span className="text-[#0d2b23] font-bold">right about them</span>. So we built the agency we would have wanted to hire: one that qualifies prospects out as hard as it qualifies them in.
           </p>
         </div>
       </section>
@@ -114,7 +114,7 @@ const About: React.FC = () => {
 
               <div className="absolute bottom-10 left-10 right-10 p-8 bg-white/10 backdrop-blur-md rounded-3xl border border-white/20 text-white z-10">
                 <p className="text-lg font-medium italic">"We treat your pipeline as if it were our own. No isolated KPIs, only business outcomes."</p>
-                <p className="mt-4 font-black text-sm uppercase tracking-widest">— Jack Banister, Founder</p>
+                <p className="mt-4 font-black text-sm uppercase tracking-widest">- Jack Banister, Founder</p>
               </div>
             </div>
           </div>
@@ -122,23 +122,23 @@ const About: React.FC = () => {
           <div className="space-y-12">
             <div className="space-y-6">
               <span className="text-orange-500 font-black uppercase tracking-[0.3em] text-[10px]">Our Philosophy</span>
-              <h2 className="text-5xl font-black text-[#0d2b23] tracking-tighter leading-tight">We bridge the gap between product and person.</h2>
+              <h2 className="text-5xl font-black text-[#0d2b23] tracking-tighter leading-tight">The expensive part of outbound isn't the outbound.</h2>
               <p className="text-xl text-[#61756f] leading-relaxed font-medium">
-                The modern B2B buyer is overwhelmed. They don't want to be 'sold' to; they want to be understood. At Kluvo, we focus on the intersection of data-driven intent and empathetic human outreach.
+                It is the hour a closer on £90-100k spends on a call that was never going to go anywhere, and the three follow-ups after it. Do that often enough and the cost of a badly qualified meeting overtakes what you are paying an agency to book it.
               </p>
               <p className="text-xl text-[#61756f] leading-relaxed font-medium">
-                We don't just find emails; we find the reasons why those people should talk to you. Our methodology is built on years of identifying the subtle signals that precede a major software purchase.
+                So we test prospects properly before they reach your calendar. We push back on the call, we surface the timing objection rather than talking past it, and we accept a smaller number at the end of the month as the price of that.
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="p-8 bg-white border border-slate-100 rounded-[32px] shadow-sm">
-                <h4 className="font-black text-[#0d2b23] mb-4">The Result</h4>
-                <p className="text-[#61756f] font-medium leading-relaxed">Shorter sales cycles, higher average contract values, and a predictable revenue engine.</p>
+                <h4 className="font-black text-[#0d2b23] mb-4">The Trade-off</h4>
+                <p className="text-[#61756f] font-medium leading-relaxed">Fewer meetings than a volume agency would report. A far higher proportion of them worth your closer's time.</p>
               </div>
               <div className="p-8 bg-white border border-slate-100 rounded-[32px] shadow-sm">
                 <h4 className="font-black text-[#0d2b23] mb-4">The Standard</h4>
-                <p className="text-[#61756f] font-medium leading-relaxed">Dedicated SDRs who actually know your industry. We are not a call center.</p>
+                <p className="text-[#61756f] font-medium leading-relaxed">Two dedicated SDRs per account, both proven on our own outbound first. We are not a call centre.</p>
               </div>
             </div>
           </div>

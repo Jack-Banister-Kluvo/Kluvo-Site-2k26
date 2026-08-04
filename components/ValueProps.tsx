@@ -8,35 +8,35 @@ interface ValuePropsProps {
 const VALUE_PROPS = [
   {
     id: 0,
-    title: "Tailored omnichannel strategies",
+    title: "We qualify out, not just in",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200",
-    desc: "Unlike other agencies’ cookie-cutter approaches, we craft personalized go-to-market plans that align with your unique business objectives.",
-    tag: "STRATEGY",
-    metric: "4.2x ROI"
+    desc: "On the call we deliberately push back - the partner objection, the budget, the timeline - because a prospect who folds under that was never going to close. A meeting only counts if it took place and the account fits your ICP.",
+    tag: "QUALIFICATION",
+    metric: "Qualified and sat"
   },
   {
     id: 1,
-    title: "World-class talent",
+    title: "We don't book for a metric",
     image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1200",
-    desc: "Rest assured, you’ll get dedicated specialists with narrow industry knowledge and relevant certifications who operate as an extension of your team.",
-    tag: "EXPERTISE",
-    metric: "98% Ret."
+    desc: "Someone with real pain who isn't going to act this quarter gets flagged as a future lead, not jammed into your calendar to make our number look better. You will see fewer bookings from us than from a volume agency. That is the point.",
+    tag: "TIMING",
+    metric: "Flagged, not booked"
   },
   {
     id: 2,
-    title: "First results within a month",
+    title: "We morph into you",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1200",
-    desc: "We set up and launch your campaign in the first 14 days. By day 30, you’ll start seeing the first appointments appearing in your calendar.",
-    tag: "VELOCITY",
-    metric: "30 Days"
+    desc: "We don't turn up with clever new ideas about your market. We take the angles your team has already proven, reskin our SDRs in your brand, and scale what works rather than replacing it.",
+    tag: "FIT",
+    metric: "Your angles"
   },
   {
     id: 3,
-    title: "B2B-focused expertise",
+    title: "The risk sits with us",
     image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200",
-    desc: "Our deep understanding of the B2B landscape empowers us to deliver targeted, result-oriented outbound solutions that actually move the needle.",
-    tag: "IMPACT",
-    metric: "50+ Indust."
+    desc: "Ten working days of onboarding you are not charged for. A guaranteed number of qualified-and-sat meetings, and we keep working at no cost until it is hit. Every SDR is proven on our own outbound before they touch your campaign.",
+    tag: "DE-RISKED",
+    metric: "10 days unpaid"
   }
 ];
 
@@ -53,10 +53,10 @@ const ValueProps: React.FC<ValuePropsProps> = ({ onCtaClick }) => {
         {/* Section Header - Balanced Font Sizes */}
         <div className="text-center mb-12 space-y-3">
           <span className="text-[11px] font-black uppercase tracking-[0.5em] text-orange-500 block">
-            The Selection Criteria
+            What we actually do differently
           </span>
           <h2 className="text-4xl md:text-6xl lg:text-[80px] font-black text-[#0d2b23] leading-[0.9] tracking-tighter">
-            What sets <span className="text-slate-300 italic">us apart</span>
+            Four things, <span className="text-slate-300 italic">plainly put</span>
           </h2>
         </div>
 
@@ -101,8 +101,8 @@ const ValueProps: React.FC<ValuePropsProps> = ({ onCtaClick }) => {
                         <span className="text-2xl font-black text-[#0d2b23]">0{i + 1}</span>
                       </div>
                       <div className="h-px flex-1 bg-slate-100" />
-                      <div className="px-6 py-1.5 bg-orange-50 border border-orange-100 rounded-full">
-                        <span className="text-[12px] font-black text-orange-600 uppercase tracking-widest">{prop.metric}</span>
+                      <div className="px-5 py-1.5 bg-orange-50 border border-orange-100 rounded-full flex-shrink-0">
+                        <span className="text-[11px] font-black text-orange-600 uppercase tracking-[0.15em] whitespace-nowrap">{prop.metric}</span>
                       </div>
                     </div>
 

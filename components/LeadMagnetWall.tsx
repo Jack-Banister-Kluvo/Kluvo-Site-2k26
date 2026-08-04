@@ -10,18 +10,18 @@ interface LeadMagnetWallProps {
 // Config Object
 const config = {
   tag: "Free Resource",
-  title: "The Outbound Script That Booked 1,000+ Qualified B2B Meetings",
-  subtitle: "The exact cold call framework our SDR team uses to consistently book qualified meetings for SaaS & IT companies.",
+  title: "The cold call script we use to qualify people out",
+  subtitle: "The framework our SDRs run on live calls for IT, software and services clients - including the objections we deliberately test for, and the point where we walk away.",
   image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&q=80&w=1200",
   features: [
-    "The exact opener behind 1,000+ booked meetings",
-    "Pain amplification that gets prospects to qualify themselves",
-    "Objection neutralisation before your AEs take the call",
-    "The rehash formula that increases show rates"
+    "The opener, and why it names the reason for the call in the first line",
+    "How to test the timing objection instead of talking past it",
+    "The partner objection, and what a genuine answer sounds like",
+    "Where to disqualify, and how to say it without burning the relationship"
   ],
-  cta: "Download the Cold Call Framework",
-  successTitle: "Check your inbox!",
-  successSubtitle: "We've sent the B2B Outbound Playbook to your email. It's time to build your pipeline."
+  cta: "Get the cold call script",
+  successTitle: "Check your inbox",
+  successSubtitle: "The script is on its way. If it hasn't landed in a few minutes, it is worth checking your spam folder."
 };
 
 const LeadMagnetWall: React.FC<LeadMagnetWallProps> = ({ onExit, onSuccess }) => {
@@ -123,14 +123,9 @@ const LeadMagnetWall: React.FC<LeadMagnetWallProps> = ({ onExit, onSuccess }) =>
               ))}
             </div>
 
-            <div className="p-8 bg-white border border-slate-100 rounded-[32px] shadow-sm flex items-center gap-6">
-              <div className="flex -space-x-4">
-                {[1, 2, 3].map(i => (
-                  <img key={i} src={`https://i.pravatar.cc/100?u=${i}`} className="w-12 h-12 rounded-full border-4 border-white object-cover" alt={`User ${i}`} />
-                ))}
-              </div>
-              <p className="text-xs font-bold text-[#61756f] uppercase tracking-widest leading-relaxed">
-                Join 2,400+ sales leaders who <br />already downloaded this.
+            <div className="p-8 bg-white border border-slate-100 rounded-[32px] shadow-sm">
+              <p className="text-sm font-medium text-[#61756f] leading-relaxed">
+                This is the script itself, not a summary of one. It is what our SDRs are actually working from, which is also why it reads bluntly in places.
               </p>
             </div>
           </div>
@@ -144,8 +139,8 @@ const LeadMagnetWall: React.FC<LeadMagnetWallProps> = ({ onExit, onSuccess }) =>
               {!submitted ? (
                 <form onSubmit={handleSubmit} className="space-y-8">
                   <div className="text-center mb-8">
-                    <h3 className="text-2xl font-black text-[#0d2b23] mb-2">Unlock the Script Framework</h3>
-                    <p className="text-sm text-[#61756f] font-medium">Enter your details to access the 1,000+ meeting script.</p>
+                    <h3 className="text-2xl font-black text-[#0d2b23] mb-2">Get the script</h3>
+                    <p className="text-sm text-[#61756f] font-medium">Enter your details and we'll send it over.</p>
                   </div>
 
                   <div className="space-y-4">
@@ -217,7 +212,7 @@ const LeadMagnetWall: React.FC<LeadMagnetWallProps> = ({ onExit, onSuccess }) =>
       {/* Footer Quote / Trust Bar */}
       <div className="absolute bottom-12 w-full text-center px-6">
         <p className="text-[10px] font-black text-[#9daaa6] uppercase tracking-[0.4em]">
-          TRUSTED BY LEADERS AT <span className="text-[#0d2b23] ml-2">HUBSPOT • SALESFORCE • ZOOMINFO • APOLLO</span>
+          KLUVO <span className="text-[#0d2b23] ml-2">PHONE-FIRST OUTBOUND SDR AGENCY</span>
         </p>
       </div>
     </div>
