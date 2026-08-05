@@ -10,7 +10,7 @@ interface LeadMagnetWallProps {
 // Config Object
 const config = {
   tag: "Free Resource",
-  title: "The cold call script we use to qualify people out",
+  title: "The cold call script our SDRs run",
   subtitle: "The framework our SDRs run on live calls for IT, software and services clients - including the objections we deliberately test for, and the point where we walk away.",
   image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&q=80&w=1200",
   features: [
@@ -212,7 +212,7 @@ const LeadMagnetWall: React.FC<LeadMagnetWallProps> = ({ onExit, onSuccess }) =>
       {/* Footer Quote / Trust Bar */}
       <div className="absolute bottom-12 w-full text-center px-6">
         <p className="text-[10px] font-black text-[#9daaa6] uppercase tracking-[0.4em]">
-          KLUVO <span className="text-[#0d2b23] ml-2">PHONE-FIRST OUTBOUND SDR AGENCY</span>
+          KLUVO <span className="text-[#0d2b23] ml-2">B2B PIPELINE GENERATION</span>
         </p>
       </div>
     </div>

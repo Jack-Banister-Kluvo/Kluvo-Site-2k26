@@ -104,8 +104,8 @@ const FAQS = [
     a: "Ten working days after your 90-minute onboarding call. You are not charged for those ten days - the first invoice buys live SDR activity, not the ramp-up."
   },
   {
-    q: "Why is your guaranteed number lower than other agencies quote?",
-    a: "Because ours only counts meetings that actually took place and fit your ICP. We qualify prospects out on the call as hard as we qualify them in, which loses us bookings on purpose. A bigger number from an agency that counts everything booked is not the same measurement."
+    q: "How does your guaranteed number compare with other agencies?",
+    a: "It is measured differently, so the figures are not directly comparable. Ours only counts meetings that actually took place and fit your ICP, and we qualify prospects out on the call as hard as we qualify them in. That means we book fewer meetings than an agency counting everything booked - but a larger share of them are worth attending."
   },
   {
     q: "What happens if you miss the number?",

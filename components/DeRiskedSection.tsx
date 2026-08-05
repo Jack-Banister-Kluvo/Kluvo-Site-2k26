@@ -28,7 +28,7 @@ const DeRiskedSection: React.FC<DeRiskedSectionProps> = ({ onCtaClick }) => {
               De-risked delivery
             </span>
             <h2 className="text-4xl md:text-5xl font-black mb-8 leading-tight tracking-tighter">
-              Where the risk actually sits
+              How we de-risk the engagement
             </h2>
             <p className="text-xl text-[#9daaa6] font-medium leading-relaxed mb-10">
               Most of what an agency asks you to take on faith, we have moved onto our side of the table.

@@ -32,7 +32,7 @@ const STEPS: TimelineStep[] = [
         ]
       },
       {
-        title: 'We morph into you',
+        title: 'We build on what works',
         description: 'We do not arrive with a clever new angle. We take the ones your team has already proven and scale them.',
         bullets: [
           'Your closers walk us through the objections they actually hear and how they handle them.',
@@ -76,7 +76,7 @@ const STEPS: TimelineStep[] = [
     subSteps: [
       {
         title: 'Calibrating the qualification bar',
-        description: 'We agree what gets pushed away, so nobody is surprised by a low booking count in week one.',
+        description: 'We agree the qualification bar, so nobody is surprised by a low booking count in week one.',
         bullets: [
           'Scripts built around your proven angles, including the objections we will deliberately test on the call.',
           'Agreement on what gets flagged as a future lead rather than forced into your calendar.',

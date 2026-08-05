@@ -73,10 +73,10 @@ const Challenges: React.FC = () => {
     <section className="py-24 max-w-7xl mx-auto px-6">
       <div className="text-center mb-16">
         <h2 className="text-4xl md:text-5xl font-black text-[#0d2b23] mb-6">
-          The problem isn't the number of meetings
+          The problems clients bring us
         </h2>
         <p className="text-[#61756f] text-lg max-w-2xl mx-auto font-medium">
-          Almost every client arrives having already tried volume. These are the things they tell us on the first call.
+          Most clients come to us having already tried a volume-led approach.
         </p>
       </div>
 

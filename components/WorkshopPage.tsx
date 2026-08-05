@@ -73,7 +73,7 @@ const WorkshopPage: React.FC<WorkshopPageProps> = ({ onExit, onCtaClick }) => {
       {/* Minimal Footer */}
       <div className="h-20 flex items-center justify-center">
         <p className="text-[10px] font-black text-[#9daaa6] uppercase tracking-[0.4em]">
-          Kluvo • Phone-first outbound SDR agency
+          Kluvo • B2B pipeline generation
         </p>
       </div>
     </div>

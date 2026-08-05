@@ -42,9 +42,9 @@ const AGENCY_STEPS: FunnelStep[] = [
   {
     id: 2,
     title: 'We qualify out',
-    desc: 'This is the step other agencies skip. We push back on the call - test the partner objection, test the timing, test whether there is real budget - because a prospect who folds under that was never going to buy.',
-    stat: 'Deliberately pushed away',
-    subStat: 'THE STEP THAT COSTS US MEETINGS',
+    desc: 'We test the partner objection, the timing, and whether there is real budget behind the interest. A prospect who does not hold up under that was never going to buy, and finding out here costs us a booking rather than costing your closer an hour.',
+    stat: 'Tested on the call',
+    subStat: 'TIMING, BUDGET AND FIT',
     label: 'FILTER',
     width: 360,
     height: 130,
@@ -198,13 +198,13 @@ const QualificationFunnel: React.FC = () => {
       <div className="relative z-10">
         <div className="max-w-3xl mx-auto text-center mb-24">
           <span className="text-[#2e4841] font-black uppercase tracking-[0.4em] text-[10px] mb-6 block">
-            HOW THE FILTER WORKS
+            HOW WE QUALIFY
           </span>
           <h2 className="text-4xl md:text-7xl font-black mb-8 leading-[1.1] tracking-tighter">
-            Most of this funnel is <span className="text-orange-500">us saying no.</span>
+            We qualify hard <span className="text-orange-500">before booking.</span>
           </h2>
           <p className="text-xl text-[#9daaa6] font-medium leading-relaxed max-w-2xl mx-auto">
-            Every agency shows you a funnel that narrows. The difference is where the narrowing happens, and whether anyone is doing it on purpose.
+            Four stages between an intent-based list and a meeting in your calendar. The qualification happens at our end, on the call, before anything reaches your closers.
           </p>
         </div>
 

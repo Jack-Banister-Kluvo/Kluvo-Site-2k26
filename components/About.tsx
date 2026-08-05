@@ -18,8 +18,8 @@ const TEAM = [
 
 const VALUES = [
   {
-    title: "Say the awkward thing",
-    desc: "On the first call we tell prospects we don't do lots differently to anyone else. It costs us the occasional deal and it saves everyone six months of finding out the hard way.",
+    title: "Honest about fit",
+    desc: "We would rather tell a prospect early that we are not the right fit than win the work and disappoint them six months later.",
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -122,7 +122,7 @@ const About: React.FC = () => {
           <div className="space-y-12">
             <div className="space-y-6">
               <span className="text-orange-500 font-black uppercase tracking-[0.3em] text-[10px]">Our Philosophy</span>
-              <h2 className="text-5xl font-black text-[#0d2b23] tracking-tighter leading-tight">The expensive part of outbound isn't the outbound.</h2>
+              <h2 className="text-5xl font-black text-[#0d2b23] tracking-tighter leading-tight">Why qualification matters more than volume</h2>
               <p className="text-xl text-[#61756f] leading-relaxed font-medium">
                 It is the hour a closer on £90-100k spends on a call that was never going to go anywhere, and the three follow-ups after it. Do that often enough and the cost of a badly qualified meeting overtakes what you are paying an agency to book it.
               </p>
@@ -134,7 +134,7 @@ const About: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="p-8 bg-white border border-slate-100 rounded-[32px] shadow-sm">
                 <h4 className="font-black text-[#0d2b23] mb-4">The Trade-off</h4>
-                <p className="text-[#61756f] font-medium leading-relaxed">Fewer meetings than a volume agency would report. A far higher proportion of them worth your closer's time.</p>
+                <p className="text-[#61756f] font-medium leading-relaxed">A far higher proportion of meetings worth your closer's time, at a lower monthly count than a volume agency would report.</p>
               </div>
               <div className="p-8 bg-white border border-slate-100 rounded-[32px] shadow-sm">
                 <h4 className="font-black text-[#0d2b23] mb-4">The Standard</h4>

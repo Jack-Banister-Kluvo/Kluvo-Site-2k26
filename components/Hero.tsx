@@ -36,23 +36,23 @@ const Hero: React.FC<HeroProps> = ({ onCtaClick, isDark, toggleDark }) => {
           <div className="inline-block mb-6 opacity-0 animate-reveal" style={{ animationDelay: '0.1s' }}>
             <h2 className="text-[#61756f] font-bold tracking-[0.3em] text-xs md:text-sm mb-2 uppercase flex items-center gap-3 justify-center">
               <span className="w-8 h-[1px] bg-[#9daaa6]/40" />
-              PHONE-FIRST OUTBOUND SDR AGENCY
+              B2B PIPELINE GENERATION
               <span className="w-8 h-[1px] bg-[#9daaa6]/40" />
             </h2>
           </div>
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-[#0d2b23] leading-[1.1] tracking-tight mb-8 drop-shadow-sm">
-            <div className="opacity-0 animate-reveal" style={{ animationDelay: '0.3s' }}>We book you fewer</div>
+            <div className="opacity-0 animate-reveal" style={{ animationDelay: '0.3s' }}>Quality meetings,</div>
             <div className="opacity-0 animate-reveal" style={{ animationDelay: '0.5s' }}>
               <span className="text-[#2e4841] relative inline-block">
-                meetings on purpose
+                not a full calendar
                 <span className="absolute -bottom-2 left-0 w-full h-1 bg-[#2e4841]/10 rounded-full" />
               </span>
             </div>
           </h1>
 
           <p className="max-w-2xl mx-auto text-lg md:text-xl text-[#61756f] mb-12 leading-relaxed font-medium px-4 opacity-0 animate-reveal" style={{ animationDelay: '0.7s' }}>
-            We qualify prospects out as hard as we qualify them in, so your closers on £90-100k aren't sat in meetings that were never going to land. Two dedicated SDRs, a guaranteed number of qualified-and-sat meetings a month.
+            Your senior salespeople should be in meetings that can actually close. We qualify prospects out as hard as we qualify them in, and guarantee a set number of qualified-and-sat meetings each month.
           </p>
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-10 opacity-0 animate-reveal" style={{ animationDelay: '0.9s' }}>

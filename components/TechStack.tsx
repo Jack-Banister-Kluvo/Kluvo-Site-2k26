@@ -50,7 +50,7 @@ const TechStack: React.FC = () => {
         <div className="absolute top-0 left-0 w-64 h-64 bg-[#2e4841]/5 blur-[80px] -ml-32 -mt-32" />
         
         <div className="relative z-10 text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-black text-[#0d2b23] mb-6">The stack sits inside the retainer</h2>
+          <h2 className="text-4xl md:text-5xl font-black text-[#0d2b23] mb-6">Tools and data included in the retainer</h2>
           <p className="text-[#61756f] text-lg max-w-2xl mx-auto font-medium">
             We run several enrichment sources against every account rather than one, because a single line on a contact is how you end up calling people who match a job title and nothing else. You are not billed separately for any of it.
           </p>

@@ -10,7 +10,7 @@ const VALUE_PROPS = [
     id: 0,
     title: "We qualify out, not just in",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200",
-    desc: "On the call we deliberately push back - the partner objection, the budget, the timeline - because a prospect who folds under that was never going to close. A meeting only counts if it took place and the account fits your ICP.",
+    desc: "On the call we test the partner objection, the budget and the timeline, because a prospect who does not hold up under that was never going to close. A meeting only counts if it took place and the account fits your ICP.",
     tag: "QUALIFICATION",
     metric: "Qualified and sat"
   },
@@ -24,7 +24,7 @@ const VALUE_PROPS = [
   },
   {
     id: 2,
-    title: "We morph into you",
+    title: "We build on what works",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1200",
     desc: "We don't turn up with clever new ideas about your market. We take the angles your team has already proven, reskin our SDRs in your brand, and scale what works rather than replacing it.",
     tag: "FIT",
@@ -53,10 +53,10 @@ const ValueProps: React.FC<ValuePropsProps> = ({ onCtaClick }) => {
         {/* Section Header - Balanced Font Sizes */}
         <div className="text-center mb-12 space-y-3">
           <span className="text-[11px] font-black uppercase tracking-[0.5em] text-orange-500 block">
-            What we actually do differently
+            Our approach
           </span>
           <h2 className="text-4xl md:text-6xl lg:text-[80px] font-black text-[#0d2b23] leading-[0.9] tracking-tighter">
-            Four things, <span className="text-slate-300 italic">plainly put</span>
+            What we <span className="text-slate-300 italic">do differently</span>
           </h2>
         </div>
 
