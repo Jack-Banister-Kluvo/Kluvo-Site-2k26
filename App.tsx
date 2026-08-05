@@ -185,10 +185,10 @@ const App: React.FC = () => {
           <section className="py-24 bg-[#0d2b23] text-white text-center">
             <div className="max-w-4xl mx-auto px-6">
               <h2 className="text-4xl md:text-5xl font-black mb-8 leading-tight">
-                A guaranteed number of<br /><span className="text-[#9daaa6]">qualified meetings each month</span>
+                Meetings worth<br /><span className="text-[#9daaa6]">your team's time</span>
               </h2>
               <p className="text-[#9daaa6] text-lg font-medium leading-relaxed mb-10 max-w-2xl mx-auto">
-                £4,000 a month, two dedicated SDRs, and ten working days of onboarding we don't charge for. Tell us your ICP and we'll tell you honestly what we think we can guarantee.
+                £4,000 a month, two dedicated SDRs, and ten working days of onboarding we don't charge for. Tell us about your ICP and we'll tell you honestly whether we are the right fit for it.
               </p>
               <button
                 data-cal-link="sales-team/sales-discovery"

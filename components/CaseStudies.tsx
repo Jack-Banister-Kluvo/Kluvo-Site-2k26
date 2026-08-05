@@ -99,8 +99,8 @@ const CASE_STUDIES: CaseStudy[] = [
 
 const PREDICTABLE_TABS = [
   { id: 0, title: "We build on what works", content: { title: "We scale your proven angles rather than imposing our own.", desc: "Your team already knows which angles land and which objections come up on every call. We sit with your closers, take what is already working, and put two dedicated SDRs behind it. The SDRs work in your brand, so a prospect experiences one company rather than an agency calling on your behalf.", extra: "We integrate into your CRM, calendars and reporting so nothing happens in a corner your team cannot see.", footer: "The result is a campaign your team recognises, run at a volume they could not reach internally." } },
-  { id: 1, title: "Qualified out, not just in", content: { title: "We qualify hard before we book.", desc: "On the call we test the partner objection, the timing, and whether there is real budget behind the interest. A prospect who does not hold up under that was never going to close, and finding out then costs us a booking instead of costing your closer an hour.", extra: "A meeting only counts when it took place and the account fits your ICP. Booked-but-never-sat is not a meeting.", footer: "Senior salespeople are expensive. Keeping weak meetings off their calendar is the cheapest thing we can do." } },
-  { id: 2, title: "Timing honesty", content: { title: "We don't book someone just to hit a number.", desc: "Plenty of prospects have real pain and no intention of acting this quarter. A volume agency books them anyway, because the contract rewards appointments. We flag them as future leads, feed them back to you with the context, and revisit when the trigger actually arrives.", extra: "It means some months look quieter than a competitor's report would. It also means what does land is worth your time.", footer: "Most CROs recognise this immediately. It is the part of the pitch that builds the trust." } },
+  { id: 1, title: "Intentional qualification", content: { title: "We qualify hard before we book.", desc: "On the call we test the partner objection, the timing, and whether there is real budget behind the interest. A prospect who holds up under that is worth your closer's hour, and finding out at our end is the whole point of the exercise.", extra: "A meeting counts when it took place and the account fits your ICP. That is the standard we report against.", footer: "Senior salespeople are expensive. Making sure their calendar earns its keep is the cheapest thing we can do." } },
+  { id: 2, title: "Timing honesty", content: { title: "Timing is tested before anything is booked.", desc: "Plenty of prospects have real pain and no intention of acting this quarter. We surface that on the call rather than talking past it, flag them as future leads, feed them back to you with the context, and revisit when the trigger actually arrives.", extra: "It means what reaches your calendar is genuinely current, and the rest is still in the pipeline for when the timing changes.", footer: "Most CROs recognise this immediately. It is the part of the pitch that builds the trust." } },
   { id: 3, title: "Phone-first", content: { title: "The phone does the heavy lifting.", desc: "You cannot hear hesitation in an email. Around 80% of our activity in a phone-led account is on the dialler, because a real conversation is the only place where you can test whether someone is genuinely in a position to buy. Email and LinkedIn are built around that, not the other way round.", extra: "On account-based work the balance shifts - personalised email and LinkedIn timed around specific triggers, with the phone still doing the qualifying.", footer: "Channels are a means of getting to a conversation. They are not the strategy." } },
   { id: 4, title: "Two layers of management", content: { title: "Someone on strategy, someone on the calls.", desc: "You get an account manager owning the direction of the campaign, and a day-to-day manager running execution, coaching and QA on the SDRs. Call recordings get reviewed rather than filed. When a segment stops responding, someone notices in week two rather than at the quarterly review.", extra: "Weekly reporting is segment-level, so you can see which parts of the market are actually responding rather than a single total.", footer: "Managing SDRs properly is most of the job. It is not something we leave to you." } },
   { id: 5, title: "One offering, two modes", content: { title: "The same team, flexed to your market.", desc: "We do not sell packages. There is one offering, and during onboarding we diagnose how it should run based on the size and shape of your addressable market. A wide market suits phone-led coverage. A defined set of accounts suits signal-led, monitored, account-based work.", extra: "Most clients land between the two - often around 200 target accounts, run as a blend of dialling lists and account monitoring.", footer: "You are not choosing a tier. You are telling us about your market and we are telling you how we would work it." } }
@@ -141,7 +141,7 @@ const CHALLENGES_SOLVED = [
     id: 3,
     title: "Not enough real conversations",
     problem: "We know our sales team can close, but their calendars aren’t full. There simply aren’t enough qualified conversations happening each week.",
-    solution: "We rebuild the top of the funnel around the phone, with email and LinkedIn supporting it, so first contact is consistent. What lands in the calendar is a smaller number than a volume agency would report, because anything that fails the timing or budget test gets flagged as a future lead instead.",
+    solution: "We rebuild the top of the funnel around the phone, with email and LinkedIn supporting it, so first contact is consistent. What lands in the calendar has already been tested on fit, timing and budget, and anything not yet ready is flagged as a future lead and revisited.",
     quoteAuthor: "James",
     quoteRole: "Growth Lead",
     solutionAuthor: "Joseph Kennedy",
@@ -266,7 +266,7 @@ const CaseStudies: React.FC = () => {
               </div>
               <div className="p-10 bg-white border border-slate-100 rounded-[40px]">
                 <h4 className="font-black text-[#0d2b23] mb-4">Strategic Focus</h4>
-                <p className="text-[#61756f] text-sm leading-relaxed font-medium">We replaced a volume-led approach with intent-based targeting and hard qualification on the call, so fewer meetings reached the closers and more of them were worth having.</p>
+                <p className="text-[#61756f] text-sm leading-relaxed font-medium">We replaced a volume-led approach with intent-based targeting and hard qualification on the call, so the meetings that reached the closers were ones worth having.</p>
               </div>
             </div>
             <div className="lg:col-span-8 space-y-16">
@@ -416,12 +416,12 @@ const CaseStudies: React.FC = () => {
               Most of the gap between agencies isn't effort, it's measurement. Two reports can both say "12 meetings" and mean completely different things. This is the definition we work to, agreed with you during onboarding.
             </p>
             <div className="space-y-6">
-              <p className="text-[#0d2b23] font-bold text-lg mb-8">The guarantee, mechanically:</p>
+              <p className="text-[#0d2b23] font-bold text-lg mb-8">How the definition is set:</p>
               {[
-                "A set monthly number, agreed against your ICP before we start",
-                "Honest ranges by market - roughly 6-12 at the software end, 3-6 for consultancy-type ICPs",
-                "If we fall short, we keep working at no extra cost until it is hit",
-                "No number is inflated to win the deal. We would rather agree one we can hit"
+                "Agreed against your ICP during onboarding, before any activity starts",
+                "Segment-level reporting each week, so you can see it being applied",
+                "A monthly commitment sits behind it, sized honestly to your market",
+                "We would rather agree a number we can stand behind than one that wins the deal"
               ].map((bullet, i) => (
                 <div key={i} className="flex items-start gap-4 group">
                   <div className="text-[#2e4841] font-black group-hover:translate-x-1 transition-transform mt-0.5">→</div>

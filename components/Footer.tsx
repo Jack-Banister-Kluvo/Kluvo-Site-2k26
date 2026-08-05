@@ -22,7 +22,7 @@ const Footer: React.FC<FooterProps> = ({ setView }) => {
               <span className="text-2xl font-black text-[#0d2b23] lowercase tracking-tighter">kluvo</span>
             </div>
             <p className="text-[#61756f] font-medium mb-8 leading-relaxed max-w-xs text-sm">
-              B2B pipeline generation. We build top-of-funnel pipeline through phone-first outbound - two dedicated SDRs, intent-based lists, and a guaranteed number of qualified-and-sat meetings each month.
+              B2B pipeline generation. We build top-of-funnel pipeline through phone-first outbound - two dedicated SDRs, intent-based lists, and meetings qualified against your ICP.
             </p>
             <div className="space-y-4">
               <a href="mailto:Support@kluvo.co.uk" className="block text-[#0d2b23] hover:text-[#2e4841] font-bold transition-colors underline decoration-[#9daaa6] underline-offset-4">support@kluvo.co.uk</a>

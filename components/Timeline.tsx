@@ -28,7 +28,7 @@ const STEPS: TimelineStep[] = [
         bullets: [
           'You meet your account manager (strategy) and your day-to-day manager (execution and QA).',
           'We agree the ICP, the disqualifiers, and what "qualified and sat" means for your business.',
-          'We set the guaranteed monthly number against that ICP - honestly, not optimistically.'
+          'We size the monthly commitment against that ICP, based on what the market will actually support.'
         ]
       },
       {

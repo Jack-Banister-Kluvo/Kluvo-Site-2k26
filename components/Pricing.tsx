@@ -104,8 +104,8 @@ const FAQS = [
     a: "Ten working days after your 90-minute onboarding call. You are not charged for those ten days - the first invoice buys live SDR activity, not the ramp-up."
   },
   {
-    q: "How does your guaranteed number compare with other agencies?",
-    a: "It is measured differently, so the figures are not directly comparable. Ours only counts meetings that actually took place and fit your ICP, and we qualify prospects out on the call as hard as we qualify them in. That means we book fewer meetings than an agency counting everything booked - but a larger share of them are worth attending."
+    q: "How does your monthly number compare with other agencies?",
+    a: "It is measured differently, so the figures are not directly comparable. Ours only counts meetings that actually took place and fit your ICP, and every prospect is tested on fit, timing and budget during the call. What we report is what your closers can actually work with."
   },
   {
     q: "What happens if you miss the number?",
@@ -139,7 +139,7 @@ const Pricing: React.FC<PricingProps> = ({ onCtaClick }) => {
           One offering. <span className="text-[#2e4841] italic">One price.</span>
         </h2>
         <p className="text-[#61756f] text-lg max-w-2xl mx-auto leading-relaxed font-medium">
-          No tiers that differ only by how many meetings we're willing to promise. One team, one retainer, and a guaranteed number agreed honestly against your ICP.
+          One team, one retainer, and a scope agreed against your ICP during onboarding. The same offering flexes to your market rather than splitting into packages.
         </p>
       </div>
 
@@ -196,26 +196,26 @@ const Pricing: React.FC<PricingProps> = ({ onCtaClick }) => {
         </div>
       </div>
 
-      {/* The Guarantee */}
+      {/* Monthly commitment */}
       <div className="mb-32">
         <div className="text-center mb-12 max-w-2xl mx-auto">
           <span className="text-[9px] font-black uppercase tracking-[0.4em] text-orange-500 block mb-4">
-            The guarantee
+            Monthly commitment
           </span>
-          <h3 className="text-3xl md:text-4xl font-black text-[#0d2b23] mb-6 tracking-tighter">
-            A set number of qualified-and-sat meetings every month
+          <h3 className="text-2xl md:text-3xl font-black text-[#0d2b23] mb-6 tracking-tighter">
+            What we commit to each month
           </h3>
-          <p className="text-[#61756f] text-lg font-medium leading-relaxed">
-            Agreed with you during onboarding and set against your ICP. A meeting only counts if it took place and the account fits. If we fall short, we keep working at no extra cost until the number is hit.
+          <p className="text-[#61756f] text-base font-medium leading-relaxed">
+            A set number of qualified-and-sat meetings, agreed with you during onboarding and sized against your ICP. A meeting only counts if it took place and the account fits. If we fall short, we keep working at no extra cost until the number is met.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-8">
           {GUARANTEE_RANGES.map((r) => (
-            <div key={r.who} className="bg-white border border-slate-100 rounded-[32px] p-10 shadow-sm text-center">
+            <div key={r.who} className="bg-white border border-slate-100 rounded-[32px] p-8 shadow-sm text-center">
               <div className="flex items-baseline justify-center gap-2 mb-4">
-                <span className="text-5xl md:text-6xl font-black text-[#0d2b23] tracking-tighter">{r.range}</span>
-                <span className="text-sm font-black text-[#9daaa6] uppercase tracking-widest">/ month</span>
+                <span className="text-3xl md:text-4xl font-black text-[#0d2b23] tracking-tighter">{r.range}</span>
+                <span className="text-xs font-black text-[#9daaa6] uppercase tracking-widest">/ month</span>
               </div>
               <p className="text-[10px] font-black uppercase tracking-[0.2em] text-[#2e4841] mb-4">{r.who}</p>
               <p className="text-[#61756f] text-sm font-medium leading-relaxed">{r.detail}</p>
@@ -224,7 +224,7 @@ const Pricing: React.FC<PricingProps> = ({ onCtaClick }) => {
         </div>
 
         <p className="text-center text-[#9daaa6] text-sm font-bold max-w-2xl mx-auto leading-relaxed">
-          These are honest ranges, not a ceiling to sell against. We would rather agree a number we can hit than one that reads better on a proposal.
+          These are honest ranges, sized to the market rather than to the proposal. We would rather agree a number we can stand behind.
         </p>
       </div>
 

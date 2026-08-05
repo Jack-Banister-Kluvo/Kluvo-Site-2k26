@@ -28,8 +28,8 @@ const VALUES = [
     )
   },
   {
-    title: "Never book for a metric",
-    desc: "If a prospect has real pain but won't act this quarter, they get flagged as a future lead rather than pushed into a calendar to make our monthly report look better.",
+    title: "Timing honesty",
+    desc: "If a prospect has real pain but isn't ready to act this quarter, they are flagged as a future lead and revisited when the trigger arrives, with the context passed back to your team.",
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -122,19 +122,19 @@ const About: React.FC = () => {
           <div className="space-y-12">
             <div className="space-y-6">
               <span className="text-orange-500 font-black uppercase tracking-[0.3em] text-[10px]">Our Philosophy</span>
-              <h2 className="text-5xl font-black text-[#0d2b23] tracking-tighter leading-tight">Why qualification matters more than volume</h2>
+              <h2 className="text-5xl font-black text-[#0d2b23] tracking-tighter leading-tight">The cost of a badly qualified meeting</h2>
               <p className="text-xl text-[#61756f] leading-relaxed font-medium">
                 It is the hour a closer on £90-100k spends on a call that was never going to go anywhere, and the three follow-ups after it. Do that often enough and the cost of a badly qualified meeting overtakes what you are paying an agency to book it.
               </p>
               <p className="text-xl text-[#61756f] leading-relaxed font-medium">
-                So we test prospects properly before they reach your calendar. We push back on the call, we surface the timing objection rather than talking past it, and we accept a smaller number at the end of the month as the price of that.
+                So we test prospects properly before they reach your calendar. We surface the timing objection rather than talking past it, we check there is real budget behind the interest, and we only put forward the ones that hold up.
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="p-8 bg-white border border-slate-100 rounded-[32px] shadow-sm">
-                <h4 className="font-black text-[#0d2b23] mb-4">The Trade-off</h4>
-                <p className="text-[#61756f] font-medium leading-relaxed">A far higher proportion of meetings worth your closer's time, at a lower monthly count than a volume agency would report.</p>
+                <h4 className="font-black text-[#0d2b23] mb-4">The Outcome</h4>
+                <p className="text-[#61756f] font-medium leading-relaxed">Meetings your closers can work with, because fit, timing and budget were all tested before anything reached the calendar.</p>
               </div>
               <div className="p-8 bg-white border border-slate-100 rounded-[32px] shadow-sm">
                 <h4 className="font-black text-[#0d2b23] mb-4">The Standard</h4>

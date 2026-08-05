@@ -42,17 +42,17 @@ const Hero: React.FC<HeroProps> = ({ onCtaClick, isDark, toggleDark }) => {
           </div>
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-[#0d2b23] leading-[1.1] tracking-tight mb-8 drop-shadow-sm">
-            <div className="opacity-0 animate-reveal" style={{ animationDelay: '0.3s' }}>Quality meetings,</div>
+            <div className="opacity-0 animate-reveal" style={{ animationDelay: '0.3s' }}>Quality meetings</div>
             <div className="opacity-0 animate-reveal" style={{ animationDelay: '0.5s' }}>
               <span className="text-[#2e4841] relative inline-block">
-                not a full calendar
+                that convert
                 <span className="absolute -bottom-2 left-0 w-full h-1 bg-[#2e4841]/10 rounded-full" />
               </span>
             </div>
           </h1>
 
           <p className="max-w-2xl mx-auto text-lg md:text-xl text-[#61756f] mb-12 leading-relaxed font-medium px-4 opacity-0 animate-reveal" style={{ animationDelay: '0.7s' }}>
-            Your senior salespeople should be in meetings that can actually close. We qualify prospects out as hard as we qualify them in, and guarantee a set number of qualified-and-sat meetings each month.
+            We build top-of-funnel pipeline for B2B companies through phone-first outbound. Every meeting is qualified against your ICP and tested on the call, so your senior salespeople spend their time on opportunities worth having.
           </p>
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-10 opacity-0 animate-reveal" style={{ animationDelay: '0.9s' }}>
@@ -60,7 +60,7 @@ const Hero: React.FC<HeroProps> = ({ onCtaClick, isDark, toggleDark }) => {
               onClick={onCtaClick}
               className="glint-effect w-full md:w-auto bg-[#0d2b23] hover:bg-[#2e4841] text-white px-12 py-5 rounded-2xl text-lg font-black transition-all shadow-2xl shadow-[#0d2b23]/20 active:scale-95 hover:-translate-y-1 z-20"
             >
-              See how the guarantee works
+              See how it works
             </button>
           </div>
         </div>

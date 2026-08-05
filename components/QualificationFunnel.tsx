@@ -22,7 +22,7 @@ const AGENCY_STEPS: FunnelStep[] = [
     title: 'Intent-based list building',
     desc: 'Multi-line enrichment across Clay, Apollo, BuiltWith and others, suppressed against your CRM. We look for people showing buying intent, not people matching a job title.',
     stat: 'Built on signals',
-    subStat: 'NOT ON JOB TITLES',
+    subStat: 'REAL BUYING INTENT',
     label: 'LIST',
     width: 480,
     height: 130,
@@ -54,8 +54,8 @@ const AGENCY_STEPS: FunnelStep[] = [
     id: 3,
     title: 'Qualified and sat',
     desc: 'A meeting only counts when it actually took place and the account fits your ICP. Anyone with real pain who will not act now is flagged as a future lead rather than pushed into your calendar.',
-    stat: 'Your guaranteed number',
-    subStat: 'QUALIFIED AND SAT, NOT BOOKED',
+    stat: 'Qualified and sat',
+    subStat: 'AGREED AGAINST YOUR ICP',
     label: 'MEETINGS',
     width: 300,
     height: 130,
@@ -267,7 +267,7 @@ const QualificationFunnel: React.FC = () => {
               <div className="mt-16 text-center w-full max-w-md">
                 <div className="p-6 bg-white/5 border border-white/5 rounded-[24px] backdrop-blur-sm">
                   <p className="text-[10px] font-bold text-[#61756f] uppercase tracking-widest leading-relaxed">
-                    THE GUARANTEED NUMBER IS AGREED PER ACCOUNT AND SET AGAINST YOUR ICP. WE KEEP WORKING AT NO COST UNTIL IT IS HIT.
+                    WHAT COUNTS AS A QUALIFIED MEETING IS AGREED WITH YOU DURING ONBOARDING, BEFORE ANY ACTIVITY STARTS. FULL TERMS ARE ON THE PRICING PAGE.
                   </p>
                 </div>
               </div>

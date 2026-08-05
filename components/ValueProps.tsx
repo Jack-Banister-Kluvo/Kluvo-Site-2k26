@@ -8,7 +8,7 @@ interface ValuePropsProps {
 const VALUE_PROPS = [
   {
     id: 0,
-    title: "We qualify out, not just in",
+    title: "Intentional qualification",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200",
     desc: "On the call we test the partner objection, the budget and the timeline, because a prospect who does not hold up under that was never going to close. A meeting only counts if it took place and the account fits your ICP.",
     tag: "QUALIFICATION",
@@ -16,11 +16,11 @@ const VALUE_PROPS = [
   },
   {
     id: 1,
-    title: "We don't book for a metric",
+    title: "Timing honesty",
     image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1200",
-    desc: "Someone with real pain who isn't going to act this quarter gets flagged as a future lead, not jammed into your calendar to make our number look better. You will see fewer bookings from us than from a volume agency. That is the point.",
+    desc: "Someone with real pain who isn't ready to act this quarter is flagged as a future lead, fed back to you with the context, and revisited when the trigger arrives. It means what reaches your calendar is genuinely current.",
     tag: "TIMING",
-    metric: "Flagged, not booked"
+    metric: "Timing tested"
   },
   {
     id: 2,
@@ -34,7 +34,7 @@ const VALUE_PROPS = [
     id: 3,
     title: "The risk sits with us",
     image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200",
-    desc: "Ten working days of onboarding you are not charged for. A guaranteed number of qualified-and-sat meetings, and we keep working at no cost until it is hit. Every SDR is proven on our own outbound before they touch your campaign.",
+    desc: "Ten working days of onboarding you are not charged for, and every SDR proven on our own outbound before they touch your campaign. There is a monthly meeting commitment sitting behind that too, agreed against your ICP during onboarding.",
     tag: "DE-RISKED",
     metric: "10 days unpaid"
   }

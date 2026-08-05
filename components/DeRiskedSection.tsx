@@ -8,8 +8,8 @@ interface DeRiskedSectionProps {
 const DeRiskedSection: React.FC<DeRiskedSectionProps> = ({ onCtaClick }) => {
   const mechanics = [
     'Ten working days of onboarding you are never charged for',
-    'We keep working at no cost until the guaranteed number is hit',
     'Every SDR proven on Kluvo\'s own outbound before they touch your campaign',
+    'A monthly commitment agreed against your ICP, with work continuing until it is met',
     'Two SDRs dedicated to your account, not shared across a roster',
     'Your list suppressed against your CRM, so no live opportunity gets touched',
     'Around three to four hours of your time in month one, front-loaded into onboarding'
