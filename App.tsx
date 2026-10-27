@@ -13,6 +13,7 @@ import TechStack from './components/TechStack';
 import Research from './components/Research';
 import ResearchControl from './components/ResearchControl';
 import CaseStudies from './components/CaseStudies';
+import CaseStudyPage, { hasCaseStudy } from './components/caseStudies/CaseStudyPage';
 import About from './components/About';
 import LeadMagnetWall from './components/LeadMagnetWall';
 import WorkshopPage from './components/WorkshopPage';
@@ -23,6 +24,7 @@ const App: React.FC = () => {
 
   const [view, setView] = useState<'home' | 'pricing' | 'research' | 'admin' | 'case-studies' | 'about' | 'resource' | 'workshop'>('home');
   const [researchSlug, setResearchSlug] = useState<string | null>(null);
+  const [caseSlug, setCaseSlug] = useState<string | null>(null);
   const [isDark, setIsDark] = useState(false);
 
   const toggleDark = () => {
@@ -36,6 +38,7 @@ const App: React.FC = () => {
 
   const handleRouteChange = () => {
     const path = window.location.pathname;
+    setCaseSlug(null);
     if (path === '/resource') {
       setView('resource');
       setResearchSlug(null);
@@ -52,6 +55,11 @@ const App: React.FC = () => {
     } else if (path === '/pricing') {
       setView('pricing');
       setResearchSlug(null);
+    } else if (path.startsWith('/case-studies/')) {
+      const slug = path.replace('/case-studies/', '').replace(/\/+$/, '');
+      setView('case-studies');
+      setResearchSlug(null);
+      setCaseSlug(hasCaseStudy(slug) ? slug : null);
     } else if (path === '/case-studies') {
       setView('case-studies');
       setResearchSlug(null);
@@ -72,7 +80,7 @@ const App: React.FC = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [view, researchSlug]);
+  }, [view, researchSlug, caseSlug]);
 
   // Wrap setView to also push URL state for nav links
   const navigateTo = (newView: typeof view) => {
@@ -89,6 +97,7 @@ const App: React.FC = () => {
     }
     setView(newView);
     setResearchSlug(null);
+    setCaseSlug(null);
   };
 
   return (
@@ -132,7 +141,7 @@ const App: React.FC = () => {
 
         {view === 'case-studies' && (
           <div className="animate-in fade-in duration-700">
-            <CaseStudies />
+            {caseSlug ? <CaseStudyPage slug={caseSlug} /> : <CaseStudies />}
           </div>
         )}
 

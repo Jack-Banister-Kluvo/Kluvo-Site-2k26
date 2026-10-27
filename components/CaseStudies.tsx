@@ -1,101 +1,6 @@
 
-import React, { useState, useEffect } from 'react';
-
-interface CaseStudy {
-  id: string;
-  company: string;
-  logo: string;
-  results: string;
-  challenge: string;
-  fullStory: {
-    heroTitle: string;
-    overview: string;
-    challengeDetail: string;
-    solutionDetail: string;
-    impactDetail: string;
-    stats: { label: string; val: string }[];
-  };
-}
-
-const CASE_STUDIES: CaseStudy[] = [
-
-  {
-    id: "big-red-jelly",
-    company: "Big Red Jelly",
-    logo: `${import.meta.env.BASE_URL}brj-logo.png`,
-    results: "Sustained increase in qualified meetings feeding into 100% in-house closers.",
-    challenge: "Pipeline volume - experienced closers, but not enough qualified meetings to sustain growth.",
-    fullStory: {
-      heroTitle: "Decoupling prospecting from closing to drive sustainable agency growth.",
-      overview: "Big Red Jelly already had an established sales process and capable account executives. Their issue wasn’t closing - it was volume at the top of the funnel.",
-      challengeDetail: "Experienced closers were being pressured to prospect, reducing their effectiveness in actual sales conversations. Lead sourcing lacked precision and buying signal alignment.",
-      solutionDetail: "Introduced a dedicated SDR layer whose sole responsibility was booking qualified appointments. Prioritised relevance by identifying companies actively hiring for marketing roles.",
-      impactDetail: "The model proved repeatable enough that Big Red Jelly later internalised the function using the specific framework and scripts we implemented.",
-      stats: [
-        { label: "Strategy Layer", val: "SDR" },
-        { label: "Handover Rate", val: "100%" },
-        { label: "Optimisation", val: "6 Wks" }
-      ]
-    }
-  },
-  {
-    id: "lumi",
-    company: "Lumi",
-    logo: `${import.meta.env.BASE_URL}lumi-logo.png`,
-    results: "Outbound performance across 2 global regions with 0 internal hiring friction.",
-    challenge: "Scaling top-of-funnel generation across markets without being limited by internal hiring speed.",
-    fullStory: {
-      heroTitle: "Powering global expansion through localised outbound engines.",
-      overview: "Lumi operates in a competitive SaaS environment where outbound consistency is critical. Early UK success created pressure to expand internationally, but internal hiring was a constraint.",
-      challengeDetail: "Scaling top-of-funnel across new markets was limited by internal recruitment speeds and a lack of specific regional outreach expertise.",
-      solutionDetail: "Built a structured multichannel motion. Once the UK motion stabilised, we expanded into the GCC region, adapted outreach for regional norms, and deployed native Arabic-speaking resources.",
-      impactDetail: "The result was a repeatable outbound engine that could flex by geography without Lumi needing to rebuild the function internally for every new market entry.",
-      stats: [
-        { label: "Target Regions", val: "2" },
-        { label: "Approach", val: "Localised" },
-        { label: "Reporting", val: "Unified" }
-      ]
-    }
-  },
-  {
-    id: "outbound-solutions",
-    company: "Outbound Solutions",
-    logo: `${import.meta.env.BASE_URL}outbound-solutions-logo.png`,
-    results: "100s of positive email replies converted into booked discovery calls weekly.",
-    challenge: "High reply volume was being under-monetised due to slow or inconsistent follow-up.",
-    fullStory: {
-      heroTitle: "Solving the 'last-mile' problem of high-volume email outreach.",
-      overview: "Outbound Solutions generates high volumes of positive replies through email campaigns. The bottleneck sat at the final step: converting interest into booked meetings.",
-      challengeDetail: "Speed-to-lead was the primary failure point. Interest was high, but inconsistent follow-up meant discovery calls weren't being booked while the lead was still hot.",
-      solutionDetail: "Implemented a dedicated 'Last-Mile' calling team trained specifically to qualify positive replies rapidly. Speed-to-lead became the core KPI for the operation.",
-      impactDetail: "Created a reliable, stable reply-to-call operation, so no positive reply was left to go cold.",
-      stats: [
-        { label: "Weekly Replies", val: "100s" },
-        { label: "Core KPI", val: "Speed" },
-        { label: "Stability", val: "100%" }
-      ]
-    }
-  },
-  {
-    id: "silverlight-research",
-    company: "Silverlight Research",
-    logo: `${import.meta.env.BASE_URL}silverlight-logo.png`,
-    results: "Consistent output from a team of 6 managed agents for 18 months.",
-    challenge: "Limited internal capacity to manage a growing outbound- and admin-heavy operation.",
-    fullStory: {
-      heroTitle: "Eliminating management bottlenecks in high-volume research operations.",
-      overview: "Silverlight Research’s model relies heavily on outbound activity. As volumes grew, internal managers became stretched, and that became the ceiling on output.",
-      challengeDetail: "The management burden of a growing outbound team was distracting leadership from core strategic goals, creating an administrative bottleneck.",
-      solutionDetail: "Supplied and fully managed a flexible team of agents. Took over recruitment, onboarding, training, and day-to-day operational oversight for the entire outbound function.",
-      impactDetail: "Removed the management bottleneck while keeping output stable and adaptable. The partnership has run for 18+ months with consistent delivery results.",
-      stats: [
-        { label: "Peak Team Size", val: "6" },
-        { label: "Partnership", val: "18+ Mo" },
-        { label: "Management", val: "100%" }
-      ]
-    }
-  }
-];
+import React, { useState } from 'react';
+import Hub from './caseStudies/Hub';
 
 const PREDICTABLE_TABS = [
   { id: 0, title: "We build on what works", content: { title: "We scale your proven angles rather than imposing our own.", desc: "Your team already knows which angles land and which objections come up on every call. We sit with your closers, take what is already working, and put two dedicated SDRs behind it. The SDRs work in your brand, so a prospect experiences one company rather than an agency calling on your behalf.", extra: "We integrate into your CRM, calendars and reporting so nothing happens in a corner your team cannot see.", footer: "The result is a campaign your team recognises, run at a volume they could not reach internally." } },
@@ -200,107 +105,10 @@ const TECH_PARTNERS = [
 const CaseStudies: React.FC = () => {
   const [activePredictableTab, setActivePredictableTab] = useState(0);
   const [activeChallengeId, setActiveChallengeId] = useState(0);
-  const [selectedCaseId, setSelectedCaseId] = useState<string | null>(null);
-
-  const selectedCase = CASE_STUDIES.find(c => c.id === selectedCaseId);
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [selectedCaseId]);
-
-  if (selectedCaseId && selectedCase) {
-    return (
-      <div className="bg-[#fcfcfc] min-h-screen animate-in fade-in duration-700">
-        {/* Detail Hero */}
-        <section className="pt-32 pb-20 px-6">
-          <div className="max-w-7xl mx-auto">
-            <button
-              onClick={() => setSelectedCaseId(null)}
-              className="group flex items-center gap-3 text-[#9daaa6] hover:text-[#0d2b23] font-black text-xs uppercase tracking-widest mb-16 transition-colors"
-            >
-              <div className="w-10 h-10 rounded-full border border-slate-100 flex items-center justify-center group-hover:-translate-x-1 transition-transform">
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
-                  <path d="M15 19l-7-7 7-7" />
-                </svg>
-              </div>
-              Back to results
-            </button>
-
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-end">
-              <div className="lg:col-span-8">
-                <img src={selectedCase.logo} alt={selectedCase.company} className="h-20 object-contain mb-12" />
-                <h1 className="text-5xl md:text-8xl font-black text-[#0d2b23] leading-[0.9] tracking-tighter mb-8">
-                  {selectedCase.fullStory.heroTitle}
-                </h1>
-              </div>
-              <div className="lg:col-span-4 pb-2">
-                <div className="bg-white border border-slate-100 p-8 rounded-[40px] shadow-sm">
-                  <p className="text-[#61756f] text-lg font-medium leading-relaxed italic">
-                    "{selectedCase.results}"
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Big Numbers */}
-        <section className="py-12 px-6">
-          <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-            {selectedCase.fullStory.stats.map((stat, i) => (
-              <div key={i} className="bg-[#0d2b23] p-12 rounded-[48px] text-white">
-                <span className="text-[10px] font-black uppercase tracking-[0.4em] opacity-40 block mb-4">{stat.label}</span>
-                <p className="text-6xl font-black tracking-tighter">{stat.val}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Narrative */}
-        <section className="py-24 px-6">
-          <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-20">
-            <div className="lg:col-span-4 space-y-12">
-              <div>
-                <span className="text-[10px] font-black uppercase tracking-[0.4em] text-orange-500 block mb-6">01. Overview</span>
-                <p className="text-xl text-[#61756f] font-medium leading-relaxed">{selectedCase.fullStory.overview}</p>
-              </div>
-              <div className="p-10 bg-white border border-slate-100 rounded-[40px]">
-                <h4 className="font-black text-[#0d2b23] mb-4">Strategic Focus</h4>
-                <p className="text-[#61756f] text-sm leading-relaxed font-medium">We replaced a volume-led approach with intent-based targeting and hard qualification on the call, so the meetings that reached the closers were ones worth having.</p>
-              </div>
-            </div>
-            <div className="lg:col-span-8 space-y-16">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <div className="space-y-6">
-                  <h3 className="text-2xl font-black text-[#0d2b23]">The Challenge</h3>
-                  <p className="text-[#61756f] font-medium leading-relaxed">{selectedCase.fullStory.challengeDetail}</p>
-                </div>
-                <div className="space-y-6">
-                  <h3 className="text-2xl font-black text-[#0d2b23]">The Solution</h3>
-                  <p className="text-[#61756f] font-medium leading-relaxed">{selectedCase.fullStory.solutionDetail}</p>
-                </div>
-              </div>
-              <div className="bg-[#fcfcfc] border border-slate-200 border-dashed p-16 rounded-[56px]">
-                <h3 className="text-3xl font-black text-[#0d2b23] mb-8">Long-term Impact</h3>
-                <p className="text-2xl text-[#0d2b23] font-medium leading-relaxed mb-10">
-                  {selectedCase.fullStory.impactDetail}
-                </p>
-                <button
-                  onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })}
-                  className="bg-[#0d2b23] text-white px-10 py-5 rounded-2xl font-black transition-all hover:scale-105 active:scale-95 shadow-2xl shadow-[#0d2b23]/20"
-                >
-                  Talk through your ICP
-                </button>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-    );
-  }
-
   return (
     <div className="bg-[#fcfcfc] min-h-screen">
+      <Hub />
+
       {/* 1. Predictable Pipeline Section */}
       <section className="py-24 max-w-7xl mx-auto px-6">
         <div className="text-center mb-16 max-w-3xl mx-auto">
@@ -347,60 +155,6 @@ const CaseStudies: React.FC = () => {
                 )}
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 2. Case Study Table */}
-      <section className="py-24 max-w-7xl mx-auto px-6">
-        <div className="bg-white rounded-[48px] border border-slate-100 shadow-sm overflow-hidden">
-          <table className="w-full text-left border-collapse">
-            <thead className="bg-[#282828] text-white">
-              <tr>
-                <th className="p-8 font-black text-xs uppercase tracking-[0.2em] w-1/4">Company</th>
-                <th className="p-8 font-black text-xs uppercase tracking-[0.2em] w-1/4">Campaign impact</th>
-                <th className="p-8 font-black text-xs uppercase tracking-[0.2em] w-1/4">Key challenge resolved</th>
-                <th className="p-8 w-1/4"></th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-slate-100">
-              {CASE_STUDIES.map((study, idx) => (
-                <tr key={idx} className="group hover:bg-[#fcfcfc] transition-colors">
-                  <td className="p-8 text-center">
-                    <img
-                      src={study.logo}
-                      alt={study.company}
-                      className="h-8 w-auto object-contain grayscale group-hover:grayscale-0 transition-all duration-500 opacity-80 group-hover:opacity-100 mx-auto"
-                    />
-                  </td>
-                  <td className="p-8">
-                    <p className="font-bold text-[#0d2b23] text-sm leading-relaxed">
-                      {study.results.split(' ').map((word, i) =>
-                        ['100', '56', '203', '3', '125', '155', '80', '51', '$50K', '$8K', '6', '8', '17', '7', '2', '18', '4', '100%'].includes(word.replace(/[^0-9$K%]/g, ''))
-                          ? <span key={i} className="font-black text-[#0d2b23]">{word} </span>
-                          : word + ' '
-                      )}
-                    </p>
-                  </td>
-                  <td className="p-8">
-                    <p className="text-[#61756f] text-sm leading-relaxed font-medium">
-                      {study.challenge}
-                    </p>
-                  </td>
-                  <td className="p-8 text-right">
-                    <button
-                      onClick={() => setSelectedCaseId(study.id)}
-                      className="text-[#2e4841] font-bold text-sm hover:underline decoration-2 underline-offset-4"
-                    >
-                      Read the case study
-                    </button>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-          <div className="p-10 text-center border-t border-slate-100 bg-[#fcfcfc]">
-            <p className="text-[#61756f] font-black text-sm">Plus ongoing work across IT, software and services clients</p>
           </div>
         </div>
       </section>
@@ -596,13 +350,6 @@ const CaseStudies: React.FC = () => {
                 role: "Managing director",
                 industry: "Public Sector Access",
                 image: `${import.meta.env.BASE_URL}ciaran-hastie.png`
-              },
-              {
-                quote: "Absolute pleasure working with the lads. It was refreshing to chat to others on the same page as me, and there’s definitely potential for exciting projects together.",
-                author: "Ben Guttridge",
-                role: "Managing director",
-                industry: "Auxo Digital",
-                image: `${import.meta.env.BASE_URL}ben-guttridge.png`
               },
               {
                 quote: "Hands on and transparent throughout, with constant communication and a genuinely collaborative approach.",
