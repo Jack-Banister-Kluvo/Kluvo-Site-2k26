@@ -90,7 +90,7 @@ export const Hero: React.FC<HeroProps> = ({ study, eyebrow, callout, chips, stat
         </div>
       </aside>
     </div>
-    <CaseImage image={study.image} alt={study.name} seed={study.slug} className="mt-12 md:mt-16 aspect-[16/9] md:aspect-[21/8]" />
+    <CaseImage image={study.image} alt={study.imageAlt ?? study.name} position={study.imagePosition} eager seed={study.slug} className="mt-12 md:mt-16 aspect-[16/9] md:aspect-[21/8]" />
   </header>
 );
 

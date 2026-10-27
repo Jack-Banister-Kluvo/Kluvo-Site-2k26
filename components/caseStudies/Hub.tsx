@@ -23,7 +23,7 @@ const CaseCard: React.FC<{ study: CaseStudyMeta }> = ({ study }) => {
   return (
     <article className="group bg-white rounded-[32px] border border-slate-100 shadow-sm hover:shadow-xl hover:shadow-black/5 transition-shadow p-4 md:p-5 flex flex-col">
       <a href={href} onClick={go} tabIndex={-1} aria-hidden="true">
-        <CaseImage image={study.image} alt={study.badge} badge={study.badge} seed={study.slug} className="aspect-[16/9]" />
+        <CaseImage image={study.imageSmall ?? study.image} alt={study.imageAlt ?? study.badge} position={study.imagePosition} badge={study.badge} seed={study.slug} className="aspect-[16/9]" />
       </a>
       <div className="px-2 md:px-4 pt-6 pb-3 flex flex-col flex-1">
         <div className="flex flex-wrap gap-2 mb-5">

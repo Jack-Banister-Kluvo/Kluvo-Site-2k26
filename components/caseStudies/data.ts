@@ -1,8 +1,9 @@
 // Single source of truth for the case studies hub and routing.
-// To add a photo later: drop the file in /public/case-studies/ and set `image`
-// on the matching entry below (e.g. image: '/case-studies/intelligent-ai.jpg').
-// It is used on both the hub card and the detail page hero. Leave it unset to
-// show the brand placeholder.
+// To add a photo: put a WebP in /public/case-studies/ and set `image` (plus
+// `imageAlt`) on the matching entry below. It is used on both the hub card and
+// the detail page hero. Leave it unset to show the brand placeholder.
+// Optional: `imageSmall` (an ~800px-wide copy used on the hub cards) and
+// `imagePosition` (CSS object-position, to keep faces in frame when cropped).
 
 export type CaseStudyKind = 'client' | 'industry';
 
@@ -31,6 +32,12 @@ export interface CaseStudyMeta {
   metaDescription: string;
   /** Optional image path. If unset, the brand placeholder is shown. */
   image?: string;
+  /** Short, plain description of the image for screen readers. */
+  imageAlt?: string;
+  /** Optional smaller copy (~800px wide) for the hub card. Falls back to `image`. */
+  imageSmall?: string;
+  /** CSS object-position for cropping, e.g. 'center 30%'. Defaults to 'center'. */
+  imagePosition?: string;
 }
 
 export const FILTERS = [
@@ -58,6 +65,10 @@ export const CASE_STUDIES: CaseStudyMeta[] = [
     title: 'Intelligent AI case study | Kluvo',
     metaDescription:
       "Intelligent AI wanted meetings. The calls told them which market to build in. The brokers who felt the pain most weren't the ones with the budget.",
+    image: '/case-studies/intelligent-ai.webp',
+    imageSmall: '/case-studies/intelligent-ai-800.webp',
+    imageAlt: 'Three colleagues talking around a meeting table with charts and a laptop',
+    imagePosition: 'center 40%',
   },
   {
     slug: 'eventr',
@@ -74,6 +85,10 @@ export const CASE_STUDIES: CaseStudyMeta[] = [
     title: 'eventr case study | Kluvo',
     metaDescription:
       "We run eventr's outbound on three lanes at once: cold prospects, warm contacts from trade shows, and existing customers ready to grow.",
+    image: '/case-studies/eventr.webp',
+    imageSmall: '/case-studies/eventr-800.webp',
+    imageAlt: 'Three people with name badges chatting over coffee at a business event',
+    imagePosition: 'center 30%',
   },
   {
     slug: 'servicenow-itsm-specialist',
@@ -90,6 +105,9 @@ export const CASE_STUDIES: CaseStudyMeta[] = [
     title: 'ServiceNow & ITSM specialist case study | Kluvo',
     metaDescription:
       'Most prospects already had a platform. So we stopped selling them a new one. Once the pitch moved from “replace it” to “get more from what you already pay for”, conversations went further.',
+    image: '/case-studies/servicenow-itsm-specialist.webp',
+    imageAlt: 'Laptop on a desk showing the ServiceNow logo',
+    imagePosition: '35% center',
   },
   {
     slug: 'auxo-digital',
@@ -106,6 +124,9 @@ export const CASE_STUDIES: CaseStudyMeta[] = [
     title: 'Auxo Digital case study | Kluvo',
     metaDescription:
       'Kluvo took over the whole top of the funnel for Auxo Digital, from hiring the callers to booking audits. The founder only steps in when there\'s a decision-maker ready to talk.',
+    image: '/case-studies/auxo-digital.webp',
+    imageAlt: 'Smiling man in a hard hat and hi-vis vest checking his phone outside a building site',
+    imagePosition: '40% 30%',
   },
 
   // Industry pages
@@ -124,6 +145,9 @@ export const CASE_STUDIES: CaseStudyMeta[] = [
     title: 'HR tech & recruitment software | Kluvo',
     metaDescription:
       'Selling hiring software means earning trust before anyone looks at features. We open on the problems UK HR and talent leaders actually talk about, and deal with trust and auditability early.',
+    image: '/case-studies/hr-tech-recruitment-software.webp',
+    imageAlt: 'Candidate handing over her CV in a job interview',
+    imagePosition: 'center 35%',
   },
   {
     slug: 'managed-it-cyber-security',
@@ -140,6 +164,9 @@ export const CASE_STUDIES: CaseStudyMeta[] = [
     title: 'Managed IT & cyber security (MSPs) | Kluvo',
     metaDescription:
       'Managed IT is sold on a contract clock. We research each prospect before the call, find out when their contract ends, and book the meeting for when they can actually switch.',
+    image: '/case-studies/managed-it-cyber-security.webp',
+    imageAlt: 'Two colleagues reviewing a tablet in an IT operations room full of screens',
+    imagePosition: 'center 30%',
   },
   {
     slug: 'managed-print-office-technology',
@@ -156,6 +183,10 @@ export const CASE_STUDIES: CaseStudyMeta[] = [
     title: 'Managed print & office technology | Kluvo',
     metaDescription:
       'Managed print is bought on renewal cycles. We run discovery calling that captures the renewal date, incumbent, device estate and decision-maker on every call.',
+    image: '/case-studies/managed-print-office-technology.webp',
+    imageSmall: '/case-studies/managed-print-office-technology-800.webp',
+    imageAlt: 'Two colleagues chatting at an office photocopier',
+    imagePosition: 'center 30%',
   },
   {
     slug: 'crm-hubspot-consultancy',
@@ -172,6 +203,9 @@ export const CASE_STUDIES: CaseStudyMeta[] = [
     title: 'CRM & HubSpot consultancy | Kluvo',
     metaDescription:
       'CRM projects start with a trigger: a migration, an acquisition, a new region. We look for those triggers and hand every meeting over with a map of who\'s involved.',
+    image: '/case-studies/crm-hubspot-consultancy.webp',
+    imageAlt: 'Two colleagues discussing work over a laptop in a bright office',
+    imagePosition: 'center 30%',
   },
   {
     slug: 'commercial-solar-renewables',
@@ -188,6 +222,10 @@ export const CASE_STUDIES: CaseStudyMeta[] = [
     title: 'Commercial solar & renewables | Kluvo',
     metaDescription:
       "Solar projects are big, slow decisions. We don't book a meeting unless timing, authority, need and site fit all line up, and every meeting comes with a brief.",
+    image: '/case-studies/commercial-solar-renewables.webp',
+    imageSmall: '/case-studies/commercial-solar-renewables-800.webp',
+    imageAlt: 'Installers in hard hats carrying a solar panel across a solar farm',
+    imagePosition: 'center 40%',
   },
   {
     slug: 'public-sector-bid-intelligence',
@@ -204,6 +242,10 @@ export const CASE_STUDIES: CaseStudyMeta[] = [
     title: 'Public sector bid intelligence | Kluvo',
     metaDescription:
       'For public sector suppliers, we run the research and reporting function behind the bid team: finding opportunities early, checking every date against the public record.',
+    image: '/case-studies/public-sector-bid-intelligence.webp',
+    imageSmall: '/case-studies/public-sector-bid-intelligence-800.webp',
+    imageAlt: 'Empty railway station platform at sunset',
+    imagePosition: 'center 60%',
   },
 ];
 
