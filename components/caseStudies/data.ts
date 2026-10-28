@@ -5,6 +5,16 @@
 // Optional: `imageSmall` (an ~800px-wide copy used on the hub cards) and
 // `imagePosition` (CSS object-position, to keep faces in frame when cropped).
 
+/**
+ * Client names. While false, client stories use generic descriptions
+ * (e.g. "AI insurtech platform") and hide identifying details. Set to true
+ * once the clients approve being named: names, slugs, titles and page copy
+ * all switch back, and the other slug keeps redirecting to the active one.
+ */
+export const SHOW_CLIENT_NAMES = false;
+// Use it as an inline `SHOW_CLIENT_NAMES ? real : generic` check: the build then
+// drops whichever side is unused, so hidden names never ship to the browser.
+
 export type CaseStudyKind = 'client' | 'industry';
 
 export interface CaseStat {
@@ -13,7 +23,17 @@ export interface CaseStat {
 }
 
 export interface CaseStudyMeta {
+  /** Stable internal key (not shown in URLs). Defaults to `slug`. */
+  id?: string;
+  /** Active URL slug. */
   slug: string;
+  /**
+   * Slugs that redirect to `slug` (the named and generic versions), stored as
+   * slugKey() hashes so hidden client names don't appear in the built site.
+   */
+  aliasKeys?: string[];
+  /** The client's real name. Kept here in the source; left out of the build while names are hidden. */
+  realName?: string;
   kind: CaseStudyKind;
   /** Client name, or industry name for industry pages. Shown in the white badge on the image. */
   badge: string;
@@ -51,42 +71,46 @@ export const FILTERS = [
 export const CASE_STUDIES: CaseStudyMeta[] = [
   // Client stories
   {
-    slug: 'intelligent-ai',
+    id: 'ai-insurtech',
+    realName: SHOW_CLIENT_NAMES ? 'Intelligent AI' : undefined,
+    slug: (SHOW_CLIENT_NAMES ? 'intelligent-ai' : 'ai-insurtech-platform'),
+    aliasKeys: ['38oulj', '163mz7'], // named and generic slugs; generic: /case-studies/ai-insurtech-platform
     kind: 'client',
-    badge: 'Intelligent AI',
-    name: 'Intelligent AI',
+    badge: (SHOW_CLIENT_NAMES ? 'Intelligent AI' : 'AI insurtech platform'),
+    name: (SHOW_CLIENT_NAMES ? 'Intelligent AI' : 'AI insurtech platform'),
     tags: ['Insurtech'],
     filter: 'Software & SaaS',
-    headline: 'Intelligent AI wanted meetings. The calls told them which market to build in.',
+    headline: (SHOW_CLIENT_NAMES ? 'Intelligent AI wanted meetings. The calls told them which market to build in.' : 'The AI insurtech platform wanted meetings. The calls told them which market to build in.'),
     stats: [
       { value: '10+', label: 'Qualified, sat meetings in month one' },
       { value: '3', label: 'Broker segments tested side by side' },
     ],
-    title: 'Intelligent AI case study | Kluvo',
-    metaDescription:
-      "Intelligent AI wanted meetings. The calls told them which market to build in. The brokers who felt the pain most weren't the ones with the budget.",
-    image: '/case-studies/intelligent-ai.webp',
-    imageSmall: '/case-studies/intelligent-ai-800.webp',
+    title: (SHOW_CLIENT_NAMES ? 'Intelligent AI case study | Kluvo' : 'AI insurtech platform case study | Kluvo'),
+    metaDescription: (SHOW_CLIENT_NAMES ? "Intelligent AI wanted meetings. The calls told them which market to build in. The brokers who felt the pain most weren't the ones with the budget." : "The AI insurtech platform wanted meetings. The calls told them which market to build in. The brokers who felt the pain most weren't the ones with the budget."),
+    image: '/case-studies/ai-insurtech-platform.webp',
+    imageSmall: '/case-studies/ai-insurtech-platform-800.webp',
     imageAlt: 'Three colleagues talking around a meeting table with charts and a laptop',
     imagePosition: 'center 40%',
   },
   {
-    slug: 'eventr',
+    id: 'event-tech',
+    realName: SHOW_CLIENT_NAMES ? 'eventr' : undefined,
+    slug: (SHOW_CLIENT_NAMES ? 'eventr' : 'event-tech-platform'),
+    aliasKeys: ['5i8y6v', 'bxz0oa'], // named and generic slugs; generic: /case-studies/event-tech-platform
     kind: 'client',
-    badge: 'eventr',
-    name: 'eventr',
+    badge: (SHOW_CLIENT_NAMES ? 'eventr' : 'Event tech platform'),
+    name: (SHOW_CLIENT_NAMES ? 'eventr' : 'Event tech platform'),
     tags: ['Travel & events software'],
     filter: 'Software & SaaS',
-    headline: "Trade-show contacts go cold fast. We make sure eventr's don't.",
+    headline: (SHOW_CLIENT_NAMES ? "Trade-show contacts go cold fast. We make sure eventr's don't." : "Trade-show contacts go cold fast. We make sure the event tech platform's don't."),
     stats: [
       { value: '3', label: 'Outreach lanes running in parallel' },
       { value: 'Days', label: 'From show floor to follow-up call' },
     ],
-    title: 'eventr case study | Kluvo',
-    metaDescription:
-      "We run eventr's outbound on three lanes at once: cold prospects, warm contacts from trade shows, and existing customers ready to grow.",
-    image: '/case-studies/eventr.webp',
-    imageSmall: '/case-studies/eventr-800.webp',
+    title: (SHOW_CLIENT_NAMES ? 'eventr case study | Kluvo' : 'Event tech platform case study | Kluvo'),
+    metaDescription: (SHOW_CLIENT_NAMES ? "We run eventr's outbound on three lanes at once: cold prospects, warm contacts from trade shows, and existing customers ready to grow." : "We run the event tech platform's outbound on three lanes at once: cold prospects, warm contacts from trade shows, and existing customers ready to grow."),
+    image: '/case-studies/event-tech-platform.webp',
+    imageSmall: '/case-studies/event-tech-platform-800.webp',
     imageAlt: 'Three people with name badges chatting over coffee at a business event',
     imagePosition: 'center 30%',
   },
@@ -110,10 +134,13 @@ export const CASE_STUDIES: CaseStudyMeta[] = [
     imagePosition: '35% center',
   },
   {
-    slug: 'auxo-digital',
+    id: 'growth-agency',
+    realName: SHOW_CLIENT_NAMES ? 'Auxo Digital' : undefined,
+    slug: (SHOW_CLIENT_NAMES ? 'auxo-digital' : 'digital-growth-agency'),
+    aliasKeys: ['1xx2843', '85kj63'], // named and generic slugs; generic: /case-studies/digital-growth-agency
     kind: 'client',
-    badge: 'Auxo Digital',
-    name: 'Auxo Digital',
+    badge: (SHOW_CLIENT_NAMES ? 'Auxo Digital' : 'Digital growth agency'),
+    name: (SHOW_CLIENT_NAMES ? 'Auxo Digital' : 'Digital growth agency'),
     tags: ['Marketing agency'],
     filter: 'Marketing agencies',
     headline: "The founder was the sales team. Now they're not.",
@@ -121,10 +148,9 @@ export const CASE_STUDIES: CaseStudyMeta[] = [
       { value: '2', label: 'Clients signed from opportunities Kluvo created' },
       { value: '£40k', label: 'Average lifetime value per client' },
     ],
-    title: 'Auxo Digital case study | Kluvo',
-    metaDescription:
-      'Kluvo took over the whole top of the funnel for Auxo Digital, from hiring the callers to booking audits. The founder only steps in when there\'s a decision-maker ready to talk.',
-    image: '/case-studies/auxo-digital.webp',
+    title: (SHOW_CLIENT_NAMES ? 'Auxo Digital case study | Kluvo' : 'Digital growth agency case study | Kluvo'),
+    metaDescription: (SHOW_CLIENT_NAMES ? 'Kluvo took over the whole top of the funnel for Auxo Digital, from hiring the callers to booking audits. The founder only steps in when there\'s a decision-maker ready to talk.' : 'Kluvo took over the whole top of the funnel for the digital growth agency, from hiring the callers to booking audits. The founder only steps in when there\'s a decision-maker ready to talk.'),
+    image: '/case-studies/digital-growth-agency.webp',
     imageAlt: 'Smiling man in a hard hat and hi-vis vest checking his phone outside a building site',
     imagePosition: '40% 30%',
   },
@@ -251,5 +277,13 @@ export const CASE_STUDIES: CaseStudyMeta[] = [
 
 export const caseStudyPath = (slug: string) => `/case-studies/${slug}`;
 
+/** Short, stable hash of a slug (FNV-1a, base 36), used for `aliasKeys`. */
+export const slugKey = (slug: string) => {
+  let h = 0x811c9dc5;
+  for (const ch of slug) h = Math.imul(h ^ ch.charCodeAt(0), 0x01000193) >>> 0;
+  return h.toString(36);
+};
+
+/** Finds a study by its active slug or any alias (old or alternate slugs). */
 export const findCaseStudy = (slug: string | null) =>
-  CASE_STUDIES.find((c) => c.slug === slug);
+  slug ? CASE_STUDIES.find((c) => c.slug === slug || c.aliasKeys?.includes(slugKey(slug))) : undefined;

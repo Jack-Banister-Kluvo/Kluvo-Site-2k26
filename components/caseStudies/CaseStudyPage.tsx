@@ -12,11 +12,12 @@ import CrmHubspot from './pages/CrmHubspot';
 import CommercialSolar from './pages/CommercialSolar';
 import PublicSector from './pages/PublicSector';
 
+// Keyed by each study's stable id (not its URL slug, which can change).
 const PAGES: Record<string, React.FC<{ study: CaseStudyMeta }>> = {
-  'intelligent-ai': IntelligentAI,
-  eventr: Eventr,
+  'ai-insurtech': IntelligentAI,
+  'event-tech': Eventr,
   'servicenow-itsm-specialist': ServiceNow,
-  'auxo-digital': AuxoDigital,
+  'growth-agency': AuxoDigital,
   'hr-tech-recruitment-software': HRTech,
   'managed-it-cyber-security': ManagedIT,
   'managed-print-office-technology': ManagedPrint,
@@ -27,7 +28,7 @@ const PAGES: Record<string, React.FC<{ study: CaseStudyMeta }>> = {
 
 const Detail: React.FC<{ study: CaseStudyMeta }> = ({ study }) => {
   usePageMeta(study.title, study.metaDescription);
-  const Page = PAGES[study.slug];
+  const Page = PAGES[study.id ?? study.slug];
   return (
     <article className="bg-[#fcfcfc] min-h-screen">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -40,10 +41,14 @@ const Detail: React.FC<{ study: CaseStudyMeta }> = ({ study }) => {
 /** Renders a case study detail page, or nothing if the slug is unknown (App falls back to the hub). */
 const CaseStudyPage: React.FC<{ slug: string }> = ({ slug }) => {
   const study = findCaseStudy(slug);
-  if (!study || !PAGES[study.slug]) return null;
+  if (!study || !PAGES[study.id ?? study.slug]) return null;
   return <Detail key={study.slug} study={study} />;
 };
 
-export const hasCaseStudy = (slug: string | null) => !!slug && !!findCaseStudy(slug) && !!PAGES[slug];
+/** The active slug for a URL slug (resolving old or alternate slugs), or null if there's no such page. */
+export const resolveCaseSlug = (slug: string | null) => {
+  const study = findCaseStudy(slug);
+  return study && PAGES[study.id ?? study.slug] ? study.slug : null;
+};
 
 export default CaseStudyPage;

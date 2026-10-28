@@ -1,5 +1,5 @@
 import React from 'react';
-import { CaseStudyMeta } from '../data';
+import { CaseStudyMeta, SHOW_CLIENT_NAMES } from '../data';
 import {
   Hero, Section, Lead, ProseWithFacts, FactList, StepCards, ChannelChips, CallScript,
   Quote, CtaPanel, Caption, DiagramFrame, Node, FlowArrow, Eyebrow,
@@ -24,7 +24,7 @@ const EXPECTATIONS = [
   {
     going: '“Not now” means the lead is dead',
     showed: 'Plenty of brokers wanted to stay close without committing to a meeting.',
-    changed: "Offered a softer next step: an invite to the Lloyd's market event",
+    changed: (SHOW_CLIENT_NAMES ? "Offered a softer next step: an invite to the Lloyd's market event" : 'Offered a softer next step: an invite to an industry market event'),
   },
 ];
 
@@ -95,7 +95,7 @@ const IntelligentAI: React.FC<{ study: CaseStudyMeta }> = ({ study }) => (
         label: 'The one thing we learned for them',
         text: "The brokers who felt the pain most weren't the ones with the budget. Larger brokers were, once the pitch moved from saving time to trusting the data.",
       }}
-      chips={['Exeter, UK', '11–50 employees', 'Property-risk data platform']}
+      chips={(SHOW_CLIENT_NAMES ? ['Exeter, UK', '11–50 employees', 'Property-risk data platform'] : ['Property-risk data platform'])}
       statsLabel="Results so far"
     />
 
@@ -114,7 +114,7 @@ const IntelligentAI: React.FC<{ study: CaseStudyMeta }> = ({ study }) => (
             />
           }
         >
-          <p>Intelligent AI is a property-risk and rebuild-cost data platform, built with Lloyd's Lab, insurers, brokers and chartered surveyors. It gives brokers accurate pre-fill data for commercial property submissions, cross-referenced across Land Registry, Ordnance Survey and its own data science models.</p>
+          <p>{(SHOW_CLIENT_NAMES ? "Intelligent AI is a property-risk and rebuild-cost data platform, built with Lloyd's Lab, insurers, brokers and chartered surveyors." : 'The AI insurtech platform is a property-risk and rebuild-cost data platform, built with insurers, brokers and chartered surveyors.')} It gives brokers accurate pre-fill data for commercial property submissions, cross-referenced across Land Registry, Ordnance Survey and its own data science models.</p>
           <p>They came to us with a product that worked and a question they couldn't answer from a spreadsheet. New business had come from a mix of inbound and founder connections, but nothing they could rely on. The brief was simple: get in front of UK insurance brokers, and find out which ones will actually buy.</p>
           <p>They chose Kluvo for a predictable pipeline, without the hassle of hiring and managing SDRs themselves.</p>
         </ProseWithFacts>
@@ -202,7 +202,7 @@ const IntelligentAI: React.FC<{ study: CaseStudyMeta }> = ({ study }) => (
       <Section label="In their words">
         <Quote
           text="Outstanding experience with the Kluvo team. I've worked with a number of outbound agencies in the past and Kluvo has excelled. They got up to speed quickly, were on the phones inside 2 weeks and generated meetings and gathered market feedback. Reporting and account management is also excellent. Highly recommended."
-          by="Intelligent AI"
+          by={(SHOW_CLIENT_NAMES ? 'Intelligent AI' : 'AI insurtech platform')}
         />
       </Section>
 
