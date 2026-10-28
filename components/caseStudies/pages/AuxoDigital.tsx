@@ -1,5 +1,9 @@
 import React from 'react';
-import { CaseStudyMeta } from '../data';
+import { CaseStudyMeta, SHOW_CLIENT_NAMES } from '../data';
+
+// Short client name in running text: mid-sentence and at the start of a sentence.
+const NAME = (SHOW_CLIENT_NAMES ? 'Auxo' : 'the agency');
+const NAME_START = (SHOW_CLIENT_NAMES ? 'Auxo' : 'The agency');
 import {
   Hero, Section, Lead, Statement, Prose, ProseWithFacts, FactList, StepCards, ChannelChips,
   CallScript, CtaPanel, DiagramFrame, Node, Flow, ResultCards, Eyebrow,
@@ -20,7 +24,7 @@ const Split: React.FC = () => (
       <span className="text-[11px] font-semibold leading-snug md:max-w-[6rem]">Handoff: audit booked with the decision-maker</span>
     </div>
     <div className="bg-white border border-slate-200 rounded-2xl p-5">
-      <Eyebrow className="mb-3">Auxo runs</Eyebrow>
+      <Eyebrow className="mb-3">{NAME_START} runs</Eyebrow>
       <ul className="space-y-2">
         {['Run the audit', 'Build the custom marketing plan'].map((t) => (
           <li key={t} className="bg-[#eef2f0] text-[#0d2b23] text-sm font-semibold rounded-lg px-3.5 py-2.5">{t}</li>
@@ -38,7 +42,7 @@ const ColdCallFlow: React.FC = () => (
         <Node title="Cold call" sub="about their ad spend" />,
         <Node title="Right person?" dashed />,
         <Node title="Free audit booked" sub="with the decision-maker" />,
-        <Node title="Custom plan built" sub="by Auxo" />,
+        <Node title="Custom plan built" sub={`by ${NAME}`} />,
         <Node title="Client signed" sub="2 so far, £40k average LTV" dark />,
       ]}
       arrowLabels={[undefined, 'yes']}
@@ -59,7 +63,7 @@ const AuxoDigital: React.FC<{ study: CaseStudyMeta }> = ({ study }) => (
         label: 'What changed',
         text: "Kluvo took over the whole top of the funnel, from hiring the callers to booking audits. The founder only steps in when there's a decision-maker ready to talk.",
       }}
-      chips={['Performance marketing agency', 'Warrington, UK']}
+      chips={(SHOW_CLIENT_NAMES ? ['Performance marketing agency', 'Warrington, UK'] : ['Performance marketing agency'])}
       statsLabel="Results so far"
     />
 
@@ -67,7 +71,7 @@ const AuxoDigital: React.FC<{ study: CaseStudyMeta }> = ({ study }) => (
       <Section label="Before Kluvo">
         <Statement strong="Growth ran through one person." muted="The founder ran the agency and found its clients." />
         <Prose>
-          <p>Auxo Digital is a UK marketing agency based in Warrington. It runs PPC across Google and Bing Ads, paid social, SEO and email marketing, and builds a free custom marketing plan for each prospect before they work together.</p>
+          <p>{(SHOW_CLIENT_NAMES ? 'Auxo Digital is a UK marketing agency based in Warrington.' : 'The digital growth agency is a UK marketing agency.')} It runs PPC across Google and Bing Ads, paid social, SEO and email marketing, and builds a free custom marketing plan for each prospect before they work together.</p>
           <p>New business was founder-led, so growth was capped by how many hours one person had. Hiring a sales team wasn't a quick fix either.</p>
         </Prose>
         <div className="border-t border-slate-200">
@@ -84,7 +88,7 @@ const AuxoDigital: React.FC<{ study: CaseStudyMeta }> = ({ study }) => (
       </Section>
 
       <Section label="Who does what now">
-        <Lead>We gave Auxo a plug-and-play sales team. Kluvo owns everything up to the moment a decision-maker agrees to the free audit. From there, Auxo does what it does best.</Lead>
+        <Lead>We gave {NAME} a plug-and-play sales team. Kluvo owns everything up to the moment a decision-maker agrees to the free audit. From there, {NAME} does what it does best.</Lead>
         <Split />
       </Section>
 
@@ -102,13 +106,13 @@ const AuxoDigital: React.FC<{ study: CaseStudyMeta }> = ({ study }) => (
             />
           }
         >
-          <p>Auxo already had a strong hook: a free audit and a custom marketing plan for every prospect.</p>
+          <p>{NAME_START} already had a strong hook: a free audit and a custom marketing plan for every prospect.</p>
           <p>But a free audit only works if the person on the other end can act on it. So every call is aimed at booking the audit with the decision-maker, not whoever picks up.</p>
         </ProseWithFacts>
       </Section>
 
       <Section label="How the calls sound">
-        <Lead>Nobody wants a call from another marketing agency. So the calls don't lead with Auxo. They lead with the prospect's own ad spend.</Lead>
+        <Lead>Nobody wants a call from another marketing agency. So the calls don't lead with {NAME}. They lead with the prospect's own ad spend.</Lead>
         <CallScript
           framework="talk about their spend, not our agency"
           opener="I've got you on a list of 15 construction companies I'm looking to work with. Do you mind if I take 30 seconds to explain why I've called you specifically? Is that fair?"
@@ -129,8 +133,8 @@ const AuxoDigital: React.FC<{ study: CaseStudyMeta }> = ({ study }) => (
       <Section label="Plug-and-play">
         <StepCards
           steps={[
-            { when: 'Days 1–10', title: 'Set-up', text: "Two dedicated SDRs recruited and onboarded, starting from Kluvo targeting and scripts already proven on other campaigns. No hiring round, no training budget on Auxo's side." },
-            { when: 'Month 1 onwards', title: 'Live calling', text: 'Kluvo runs all the sales admin and the day-to-day management. Auxo stays close through a weekly call and a written report every Monday.' },
+            { when: 'Days 1–10', title: 'Set-up', text: `Two dedicated SDRs recruited and onboarded, starting from Kluvo targeting and scripts already proven on other campaigns. No hiring round, no training budget on ${NAME}'s side.` },
+            { when: 'Month 1 onwards', title: 'Live calling', text: `Kluvo runs all the sales admin and the day-to-day management. ${NAME_START} stays close through a weekly call and a written report every Monday.` },
           ]}
         />
         <ChannelChips items={['Cold calling', 'Free audit offer', 'Managed SDRs']} />

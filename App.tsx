@@ -13,7 +13,7 @@ import TechStack from './components/TechStack';
 import Research from './components/Research';
 import ResearchControl from './components/ResearchControl';
 import CaseStudies from './components/CaseStudies';
-import CaseStudyPage, { hasCaseStudy } from './components/caseStudies/CaseStudyPage';
+import CaseStudyPage, { resolveCaseSlug } from './components/caseStudies/CaseStudyPage';
 import About from './components/About';
 import LeadMagnetWall from './components/LeadMagnetWall';
 import WorkshopPage from './components/WorkshopPage';
@@ -59,7 +59,12 @@ const App: React.FC = () => {
       const slug = path.replace('/case-studies/', '').replace(/\/+$/, '');
       setView('case-studies');
       setResearchSlug(null);
-      setCaseSlug(hasCaseStudy(slug) ? slug : null);
+      const activeSlug = resolveCaseSlug(slug);
+      // Old or alternate slugs redirect to the active one.
+      if (activeSlug && activeSlug !== slug) {
+        window.history.replaceState({}, '', `/case-studies/${activeSlug}`);
+      }
+      setCaseSlug(activeSlug);
     } else if (path === '/case-studies') {
       setView('case-studies');
       setResearchSlug(null);

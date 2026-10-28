@@ -1,12 +1,16 @@
 import React from 'react';
-import { CaseStudyMeta } from '../data';
+import { CaseStudyMeta, SHOW_CLIENT_NAMES } from '../data';
+
+// Client name in running text: mid-sentence and at the start of a sentence.
+const NAME = (SHOW_CLIENT_NAMES ? 'eventr' : 'the event tech platform');
+const NAME_START = (SHOW_CLIENT_NAMES ? 'eventr' : 'The event tech platform');
 import {
   Hero, Section, Lead, Statement, Prose, ProseWithFacts, FactList, CtaPanel, Caption,
   DiagramFrame, Node, FlowArrow, ArrowColumns, ResultCards, Eyebrow,
 } from '../primitives';
 
 const LANES = [
-  { lane: 'Lane 1', name: 'Cold', who: 'Motorsport teams, travel and event management companies', goal: 'New business from accounts that have never heard of eventr' },
+  { lane: 'Lane 1', name: 'Cold', who: 'Motorsport teams, travel and event management companies', goal: `New business from accounts that have never heard of ${NAME}` },
   { lane: 'Lane 2', name: 'Warm', who: 'Contacts met at trade shows such as IMEX', goal: 'Turn stand conversations into demos, called within days of the show', dark: true },
   { lane: 'Lane 3', name: 'Expansion', who: 'Existing customers on smaller plans', goal: 'Open the conversation about moving up to Enterprise' },
 ];
@@ -41,7 +45,7 @@ const ShowContactFlow: React.FC = () => (
           <VLine />
         </div>
       </div>
-      <Node title="Demo happens" sub="logged in eventr's CRM" dark className="mt-1" />
+      <Node title="Demo happens" sub={`logged in ${NAME}'s CRM`} dark className="mt-1" />
     </div>
   </DiagramFrame>
 );
@@ -53,9 +57,9 @@ const Eventr: React.FC<{ study: CaseStudyMeta }> = ({ study }) => (
       eyebrow="Case study · Travel & events software · Trade-show follow-up"
       callout={{
         label: 'In short',
-        text: "We run eventr's outbound on three lanes at once: cold prospects, warm contacts from trade shows, and existing customers ready to grow. The warm lane is timed around eventr's event calendar, so nobody they met at a show waits weeks for a call.",
+        text: `We run ${NAME}'s outbound on three lanes at once: cold prospects, warm contacts from trade shows, and existing customers ready to grow. The warm lane is timed around ${NAME}'s event calendar, so nobody they met at a show waits weeks for a call.`,
       }}
-      chips={['eventr by Soft Pauer', 'Oxfordshire, UK', 'Cold calling · Warm follow-up · Account expansion']}
+      chips={(SHOW_CLIENT_NAMES ? ['eventr by Soft Pauer', 'Oxfordshire, UK', 'Cold calling · Warm follow-up · Account expansion'] : ['Cold calling · Warm follow-up · Account expansion'])}
       statsLabel="At a glance"
     />
 
@@ -63,13 +67,13 @@ const Eventr: React.FC<{ study: CaseStudyMeta }> = ({ study }) => (
       <Section label="The problem">
         <Statement strong="A great show, then silence." muted="Interest from the stand fades within weeks if nobody calls back." />
         <Prose>
-          <p>Trade shows like IMEX are where eventr meets its buyers. Heads of travel, event coordinators and motorsport team managers stop at the stand, have a good conversation and take a card.</p>
+          <p>Trade shows like IMEX are where {NAME} meets its buyers. Heads of travel, event coordinators and motorsport team managers stop at the stand, have a good conversation and take a card.</p>
           <p>Then everyone flies home. Inboxes fill up, the next event starts, and the conversation that felt promising on the stand is forgotten. Without someone calling back quickly, most of that interest disappears.</p>
-          <p>There was a second problem hiding in plain sight. eventr already had customers on smaller plans who could grow into Enterprise, and that pipeline was sitting untouched.</p>
+          <p>There was a second problem hiding in plain sight. {NAME_START} already had customers on smaller plans who could grow into Enterprise, and that pipeline was sitting untouched.</p>
         </Prose>
       </Section>
 
-      <Section label="Who eventr is">
+      <Section label={`Who ${NAME} is`}>
         <ProseWithFacts
           facts={
             <FactList
@@ -83,12 +87,12 @@ const Eventr: React.FC<{ study: CaseStudyMeta }> = ({ study }) => (
             />
           }
         >
-          <p>eventr is a digital itinerary and coordination app for events, motorsport teams and business travel, built by the Soft Pauer team. Team members see what they need to do, when and where. Coordinators push changes in real time, and finance keeps costs in check. It's sold on tiered plans, up to Enterprise.</p>
+          <p>{(SHOW_CLIENT_NAMES ? 'eventr is a digital itinerary and coordination app for events, motorsport teams and business travel, built by the Soft Pauer team.' : 'The event tech platform is a digital itinerary and coordination app for events, motorsport teams and business travel.')} Team members see what they need to do, when and where. Coordinators push changes in real time, and finance keeps costs in check. It's sold on tiered plans, up to Enterprise.</p>
         </ProseWithFacts>
       </Section>
 
       <Section label="Three lanes, one team">
-        <Lead>Instead of one list, we set eventr up with three lanes from day one, each with its own audience and its own reason to talk, all worked by the same two SDRs.</Lead>
+        <Lead>Instead of one list, we set {NAME} up with three lanes from day one, each with its own audience and its own reason to talk, all worked by the same two SDRs.</Lead>
         <div className="space-y-3">
           {LANES.map((l) => (
             <div key={l.name} className={`grid grid-cols-1 sm:grid-cols-[8rem_1fr_1fr] gap-3 sm:gap-6 rounded-2xl p-5 border ${l.dark ? 'bg-[#0d2b23] border-[#0d2b23] text-white' : 'bg-white border-slate-200 text-[#0d2b23]'}`}>
@@ -107,14 +111,14 @@ const Eventr: React.FC<{ study: CaseStudyMeta }> = ({ study }) => (
             </div>
           ))}
           <div className="rounded-2xl p-5 border border-dashed border-[#9daaa6]">
-            <p className="font-bold text-[#0d2b23]">Every booking lands in eventr's CRM</p>
+            <p className="font-bold text-[#0d2b23]">Every booking lands in {NAME}'s CRM</p>
             <p className="text-sm text-[#61756f] mt-1">with notes, a fit rating and a no-show risk flag, whichever lane it came from</p>
           </div>
         </div>
       </Section>
 
       <Section label="The life of a show contact">
-        <Lead>Onboarding took 10 working days: the three lanes set up, scripts written, and bookings connected straight into eventr's CRM. From then on, calling capacity follows eventr's event calendar.</Lead>
+        <Lead>Onboarding took 10 working days: the three lanes set up, scripts written, and bookings connected straight into {NAME}'s CRM. From then on, calling capacity follows {NAME}'s event calendar.</Lead>
         <ShowContactFlow />
         <Caption>The confirmation call is small, but it's what turns a booked demo into a demo that actually happens.</Caption>
       </Section>
@@ -122,7 +126,7 @@ const Eventr: React.FC<{ study: CaseStudyMeta }> = ({ study }) => (
       <Section label="What we fixed along the way">
         <ArrowColumns
           items={[
-            { title: 'Show contacts went cold fast.', text: "We plan calling capacity around eventr's event calendar, so warm contacts are called within days of each show." },
+            { title: 'Show contacts went cold fast.', text: `We plan calling capacity around ${NAME}'s event calendar, so warm contacts are called within days of each show.` },
             { title: 'Not every booking was equal.', text: 'Each demo is rated on use case, authority and intent. Bookings that look at risk get a confirmation call the day before.' },
             { title: 'Existing customers were an untapped pipeline.', text: 'A dedicated expansion lane works through accounts on smaller plans and opens the conversation about Enterprise.' },
           ]}
@@ -132,7 +136,7 @@ const Eventr: React.FC<{ study: CaseStudyMeta }> = ({ study }) => (
       <Section label="What came back">
         <ResultCards
           items={[
-            { eyebrow: 'Demos', title: 'Booked from IMEX follow-up', text: "Each one logged in eventr's CRM with notes, a fit rating and a no-show risk flag.", dark: true },
+            { eyebrow: 'Demos', title: 'Booked from IMEX follow-up', text: `Each one logged in ${NAME}'s CRM with notes, a fit rating and a no-show risk flag.`, dark: true },
             { eyebrow: 'A new door', title: 'A referral', text: 'To a destination management company, on top of the demos.' },
             { eyebrow: 'Growth', title: 'An expansion lane', text: 'Running alongside new business, so existing customers get a proper conversation about upgrading.' },
           ]}
